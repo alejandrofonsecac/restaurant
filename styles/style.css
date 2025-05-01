@@ -1,0 +1,16 @@
+h1 {
+    color:aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img.imagens {
+    max-width: 50px;
+    max-width: 50px;
+    width: auto;
+    height: auto;
+}
+
+img#oloko{
+    max-width: 200px;
+    max-width: 200px;
+}
