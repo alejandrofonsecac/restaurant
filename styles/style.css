@@ -1,11 +1,171 @@
-img.imagens {
-    max-width: 50px;
-    max-width: 50px;
-    width: auto;
-    height: auto;
+@charset "UTF-8";
+
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sriracha&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
-img#oloko{
-    max-width: 200px;
-    max-width: 200px;
+:root {
+    --color-primary: #8B0000;
+
+    /*
+    Fontes:
+        Playfair Display (TÍTULOS PRINCIPAIS)
+        Montserrat (SUBTÍTULOS)
+        Sans-serif (LEITURA PADRÃO)
+    */
+    --font-principal: 'Playfair Display', serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font-padrao: sans-serif, arial;
 }
+
+body {
+    background-color: rgb(229, 218, 196);
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+
+    width: 100vw;
+    background-color: white;
+}
+
+header > h1 {
+    font-family: var(--font-principal);
+    color: var(--color-primary);
+    margin: 8px;
+}
+
+#header-icons {
+    width: 60vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+#header-icons img {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    position: relative;
+}
+
+/*ícone do carrinho */
+.icon-wrapper {
+    position: relative;
+}
+
+/* Bolinha de contador */
+#cart-count {
+    background-color: var(--color-primary);
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+main{
+    width: 100vw;
+    height: 1000vw;
+}
+
+section#primeiro{
+    display: flex;
+    flex-direction: column;
+
+    background-image: url(../imagens/backgrounds/backgrounds/header/pizza-background.jpg);
+    background-position: right center;
+    background-size: cover;
+
+    width: 100vw;
+    height: 500px;
+}
+
+section#primeiro > div#texto001 > h1{
+    font: 4em bolder;
+    color: white;
+    margin-top: 35px;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.473);
+    
+    justify-content: flex-start;
+}
+
+section#primeiro > div#texto001 > p{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.button{
+    width: 70vw;
+    height: 50px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -1px 2px 9px rgba(0, 0, 0, 0.493);
+
+
+}
+
+button#button001{
+    background-color: var(--color-primary);
+    color: white;
+    
+}
+
+button#button002{
+    background-color: white;
+    color: var(--color-primary);
+}
+
+button.button > p{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+section#segundo{
+    background-color: white;
+    margin-top: 10px;
+}
+
+section#segundo > h2{
+    font-family: var(--font-secundaria);
+    color: var(--color-primary);
+    font: 2.5em bolder;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#segundo > img{
+        display: block;
+        margin: 0 auto;       
+}
+
+footer{
+    background-color: yellow;
+    width: 100vw;
+}
+
