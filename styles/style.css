@@ -1,11 +1,23 @@
-img.imagens {
-    max-width: 50px;
-    max-width: 50px;
-    width: auto;
-    height: auto;
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-img#oloko{
-    max-width: 200px;
-    max-width: 200px;
+:root{
+
+    --color-primary: #8B0000
+
+    /*
+    Fontes:
+        Playfair Display (TITULOS PRINCIPAIS)
+        Montserrat (SUBTITULOS)
+        Sans-serif (Leitura {padrao})
+    */
+    
+    --font-principal: 'Playfair Display', serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font-padrao: 'Sans-serif', arial;
 }
