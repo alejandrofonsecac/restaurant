@@ -1,23 +1,60 @@
 @charset "UTF-8";
 
-*{
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sriracha&display=swap');
+
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-:root{
-
-    --color-primary: #8B0000
+:root {
+    --color-primary: #8B0000;
 
     /*
     Fontes:
-        Playfair Display (TITULOS PRINCIPAIS)
-        Montserrat (SUBTITULOS)
-        Sans-serif (Leitura {padrao})
+        Playfair Display (TÍTULOS PRINCIPAIS)
+        Montserrat (SUBTÍTULOS)
+        Sans-serif (LEITURA PADRÃO)
     */
-    
     --font-principal: 'Playfair Display', serif;
     --font-secundaria: 'Montserrat', sans-serif;
-    --font-padrao: 'Sans-serif', arial;
+    --font-padrao: sans-serif, arial;
 }
+
+body {
+    background-color: rgb(229, 218, 196);
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+
+    width: 100vw;
+    background-color: white;
+}
+
+header > h1 {
+    font-family: var(--font-principal);
+    color: var(--color-primary);
+}
+
+#header-icons {
+    width: 60vw;
+    height: 5vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+}
+
+#header-icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px; /* espaçamento entre os ícones */
+}
+
