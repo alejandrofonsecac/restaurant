@@ -6,7 +6,6 @@
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
 }
 
 :root {
@@ -87,21 +86,24 @@ main{
     height: 1000vw;
 }
 
-section.primeiro{
+section#primeiro{
     
-    background-image: url('sua-imagem.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    color: white;
-    text-align: center;
-    position: relative; 
+    background-image: url(../imagens/backgrounds/backgrounds/header/fornalha-background-pq.png);
+    background-position: right center;
+    background-size: cover;
+
+    width: 100vw;
+    height: 500px;
 }
 
-.primeiro h1, .primeiro p {
-    display: inline-block;
-    position: relative;
+section#primeiro > h1{
+
+
+    font: 2em bolder;
+    color: white;
+
+    text-align: center;
 }
 
 footer{
