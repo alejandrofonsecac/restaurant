@@ -31,6 +31,7 @@ body {
 
 header {
     width: 100vw;
+    height: 7vh;
     display: flex;
 
     width: 100vw;
@@ -81,4 +82,30 @@ header > h1 {
     pointer-events: none;
 }
 
+main{
+    width: 100vw;
+    height: 1000vw;
+}
+
+section.primeiro{
+    
+    background-image: url('sua-imagem.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    position: relative; 
+}
+
+.primeiro h1, .primeiro p {
+    display: inline-block;
+    position: relative;
+}
+
+footer{
+    background-color: yellow;
+    width: 100vw;
+}
 
