@@ -87,7 +87,8 @@ main{
 }
 
 section#primeiro{
-    
+    display: flex;
+    flex-direction: column;
 
     background-image: url(../imagens/backgrounds/backgrounds/header/fornalha-background-pq.png);
     background-position: right center;
@@ -97,13 +98,49 @@ section#primeiro{
     height: 500px;
 }
 
-section#primeiro > h1{
-
-
-    font: 2em bolder;
+section#primeiro > div#texto001 > h1{
+    font: 4em bolder;
     color: white;
-
+    margin-top: 35px;
     text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.473);
+    
+    justify-content: flex-start;
+}
+
+section#primeiro > div#texto001 > p{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.button{
+    width: 70vw;
+    height: 50px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -1px 2px 9px rgba(0, 0, 0, 0.493);
+
+
+}
+
+button#button001{
+    background-color: var(--color-primary);
+    color: white;
+    
+}
+
+button#button002{
+    background-color: white;
+    color: var(--color-primary);
+}
+
+button.button > p{
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 footer{
