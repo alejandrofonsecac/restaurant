@@ -40,21 +40,45 @@ header {
 header > h1 {
     font-family: var(--font-principal);
     color: var(--color-primary);
+    margin: 8px;
 }
 
 #header-icons {
     width: 60vw;
-    height: 5vh;
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 #header-icons img {
-    width: 24px;
-    height: 24px;
-    margin-left: 10px; /* espaçamento entre os ícones */
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    position: relative;
 }
+
+/*ícone do carrinho */
+.icon-wrapper {
+    position: relative;
+}
+
+/* Bolinha de contador */
+#cart-count {
+    background-color: var(--color-primary);
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
 
