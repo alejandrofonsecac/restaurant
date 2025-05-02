@@ -90,7 +90,7 @@ section#primeiro{
     display: flex;
     flex-direction: column;
 
-    background-image: url(../imagens/backgrounds/backgrounds/header/fornalha-background-pq.png);
+    background-image: url(../imagens/backgrounds/backgrounds/header/pizza-background.jpg);
     background-position: right center;
     background-size: cover;
 
@@ -141,6 +141,27 @@ button#button002{
 button.button > p{
     font-size: 1.3em;
     font-weight: bold;
+}
+
+section#segundo{
+    background-color: white;
+    margin-top: 10px;
+}
+
+section#segundo > h2{
+    font-family: var(--font-secundaria);
+    color: var(--color-primary);
+    font: 2.5em bolder;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#segundo > img{
+        display: block;
+        margin: 0 auto;       
 }
 
 footer{
