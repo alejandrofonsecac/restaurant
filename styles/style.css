@@ -23,7 +23,7 @@
 }
 
 body {
-    background-color: rgb(229, 218, 196);
+    background-color: rgb(238, 238, 238);
     height: 100vh;
     width: 100vw;
 }
@@ -82,6 +82,7 @@ header > h1 {
 }
 
 main{
+    background-color: rgb(221, 219, 219);
     width: 100vw;
     height: 1000vw;
 }
@@ -144,24 +145,64 @@ button.button > p{
 }
 
 section#segundo{
-    background-color: white;
     margin-top: 10px;
 }
 
 section#segundo > h2{
     font-family: var(--font-secundaria);
     color: var(--color-primary);
-    font: 2.5em bolder;
+    font: 3em bolder;
     text-align: center;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin: 100px auto 10px;
 }
 
 section#segundo > img{
         display: block;
         margin: 0 auto;       
+}
+
+section#segundo > p{
+    font: var(--font-padrao);
+    font-size: 1.1em;
+    font-weight: lighter;
+
+    margin: 10px 50px 30px;
+    text-align: justify;   
+}
+
+section#terceiro{
+    width: 100vw;
+}
+
+section#terceiro > h2{
+    font-family: var(--font-secundaria);
+    color: var(--color-primary);
+    font: 2.8em bolder;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 150px;
+}
+
+section#terceiro > div.box{
+    display: flex;
+
+    background-color: white;
+    width: 75px;
+    height: 75px;
+}
+
+section#terceiro > div.box > img.seta{
+    width: 20px;
+    height: 20px;
 }
 
 footer{
