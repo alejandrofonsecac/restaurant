@@ -235,6 +235,29 @@ img.seta:hover {
     transform: translateY(-5px);
 }
 
+section#quarta{
+    width: 100vw;
+}
+
+section#quarta > h2 {
+    font-family: var(--font-secundaria);
+    color: var(--color-primary);
+    font: 3em bolder;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 100px auto 10px;
+}
+
+section#quarta > p{
+    font: var(--font-padrao);
+    font-size: 1.1em;
+    
+    text-align: center;
+}
 
 footer{
     background-color: yellow;
