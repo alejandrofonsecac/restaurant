@@ -8,22 +8,119 @@
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(238, 238, 238);
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
+    font-family: var(--font-secundaria);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-section {
-    width: 100vw;
-    height: 100vh;
-    padding: 10vh;
+section#cart {
+    padding: 20px;
+    background: #fff;
 }
+
 h1 {
-    color: #8B0000;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.pedido-comida {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.descricao {
+    flex: 1;
+}
+
+.quantidade {
+    text-align: center;
+}
+
+.quantidade button {
+    background-color: #eee;
+    border: none;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.quantidade p {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.preco {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+#entrega, #endereco, #pagamento, #infos {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin: 8px 0 3px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.detalhe {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 24px;
+}
+
+#resumo {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.linha-resumo {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.linha-resumo.total span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#finalizar {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 15px;
 }

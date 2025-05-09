@@ -1,119 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/cart.css">
-    <title>Finalizar compra</title>
+    <title>Finalizar Pedido</title>
 </head>
 <body>
-    
 
     <section id="cart">
         
-        <div>
+        <div id="pedido">
             <h1>Seu Pedido</h1>
-            <div>
-                <img src="imagens/imagens-comidas/main/destaques/spagetti-carbonara.jpg" alt="Spaghetti Carbonara">
-                <h3>Spaghetti Carbonara</h3>
-                <p>Massa fresca, pancetta, ovos</p>
-                <div>
-                    <button>-</button><p id="num_pedido">1</p> <button>+</button>
-                    <p>R$39,90</p>
+
+            <div class="pedido-comida">
+                <img class="img" src="imagens/imagens-comidas/main/destaques/spagetti-carbonara.jpg" alt="Spaghetti Carbonara">
+                <div class="descricao">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Massa fresca, pancetta, ovos</p>
+                </div>
+                <div class="quantidade">
+                    <button>-</button>
+                    <p id="num_pedido">1</p>
+                    <button>+</button>
+                    <p class="preco">R$ 39,90</p>
                 </div>
             </div>
-            <div>
-                <img src="imagens/imagens-comidas/main/destaques/lasanha-bolonhesa.jpg" alt="Lasanha Bolonhesa">
-                <h3>Lasagna Bolognese</h3>
-                <p>Molho bolonhesa, queijo gratinado</p>
-                <div>
-                    <button>-</button><p id="num_pedido">1</p> <button>+</button>
-                    <p>R$45,90</p>
+
+            <div class="pedido-comida">
+                <img class="img" src="imagens/imagens-comidas/main/destaques/lasanha-bolonhesa.jpg" alt="Lasanha Bolonhesa">
+                <div class="descricao">
+                    <h3>Lasagna Bolognese</h3>
+                    <p>Molho bolonhesa, queijo gratinado</p>
+                </div>
+                <div class="quantidade">
+                    <button>-</button>
+                    <p id="num_pedido">1</p>
+                    <button>+</button>
+                    <p class="preco">R$ 45,90</p>
                 </div>
             </div>
         </div>
-        <div>
+
+        <div id="entrega">
             <h3>Forma de Entrega</h3>
-            <div>
-                <div>
-                    <label>
-                        <input type="radio" name="delivery" value="entrega"> Delivery
-                        <p>30-45 min • Taxa a partir de R$ 5,00</p>
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="delivery" value="retirada"> Retirar no Local
-                        <p>15-20 min • Sem taxa</p>
-                    </label>
-                </div>
-            </div>
+            <label><input type="radio" name="delivery" checked> Delivery <span class="detalhe">30-45 min • Taxa a partir de R$ 5,00</span></label><br>
+            <label><input type="radio" name="delivery"> Retirar no Local <span class="detalhe">15-20 min • Sem taxa</span></label>
         </div>
-        <div>
-            <h3>Endereco de Entrega</h3>
-            <div>
-                <label for="cep">CEP</label>
-                <input type="text" id="cep" name="cep" placeholder="00000-000">
-            </div>
-            <div>
-                <label for="endereco">Endereco</label>
-                <input type="text" id="endereco" name="endereco" placeholder="Rua, numero">
-            </div>
-            <div>
-                <label for="complemento">Complemento</label>
-                <input type="text" id="complemento" name="complemento" placeholder="Apto, Bloco, (opcional)">
-            </div>
-            
+
+        <div id="endereco">
+            <h3>Endereço de Entrega</h3>
+            <label>CEP</label>
+            <input type="text" placeholder="00000-000">
+            <label>Endereço</label>
+            <input type="text" placeholder="Rua, número">
+            <label>Complemento</label>
+            <input type="text" placeholder="Apto, bloco (opcional)">
         </div>
-        <div>
-            <!--botar icones no pagamento, bnateu preguica-->
+
+        <div id="pagamento">
             <h3>Forma de Pagamento</h3>
-            <div>
-                <label>
-                    <input type="radio" name="pagamento" value="cartao"> Cartão de Crédito
-                </label>
-            </div>
-            <div>
-                <label>
-                    <input type="radio" name="pagamento" value="dinheiro"> Dinheiro
-                </label>
-            </div>
-            <div>
-                <label>
-                    <input type="radio" name="pagamento" value="pix"> Pix
-                </label>
+            <label><input type="radio" name="pagamento" checked> Cartão de Crédito</label><br>
+            <label><input type="radio" name="pagamento"> PIX</label><br>
+            <label><input type="radio" name="pagamento"> Dinheiro</label>
         </div>
-        <div>
-            <h3>Suas informacoes</h3>
-            <div>
-                <label for="nome">Nome Completo</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome">
-            </div>
-            <div>
-                <label for="whatsapp">WhatsApp</label>
-                <input type="text" name="whatsapp" id="whatsapp" placeholder="(00) 00000-0000">
-            </div>
-            <div>
-                <label for="obs">Observacoes do Pedido</label>
-                <input type="text" name="obs" id="obs" placeholder="Ex: Tirar cebola, ponto da carne...">
-            </div>
+
+        <div id="infos">
+            <h3>Suas Informações</h3>
+            <label>Nome Completo</label>
+            <input type="text" placeholder="Seu nome">
+            <label>WhatsApp</label>
+            <input type="text" placeholder="(00) 00000-0000">
+            <label>Observações do Pedido</label>
+            <input type="text" placeholder="Ex: Tirar cebola, ponto da carne...">
         </div>
     </section>
 
-    <section>
-        <div>
-            <span>Subtotal</span>
-            <span>R$ 85,80</span>
-        </div>
-        <div>
-            <span>Taxa de Entrega</span>
-            <span>R$ 5,00</span>
-        </div>
-        <div>
-            <span>Total</span>
-            <span>R$ 90,80</span>
-        </div>
-        <button>Finalizar Pedido</button>
+    <section id="resumo">
+        <div class="linha-resumo"><span>Subtotal</span><span>R$ 85,80</span></div>
+        <div class="linha-resumo"><span>Taxa de entrega</span><span>R$ 5,00</span></div>
+        <div class="linha-resumo total"><span>Total</span><span>R$ 90,80</span></div>
+        <button id="finalizar">Finalizar Pedido</button>
     </section>
+
 </body>
 </html>
