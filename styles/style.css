@@ -35,7 +35,7 @@ body {
 
 header {
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
     display: flex;
 
     width: 100vw;
@@ -46,7 +46,7 @@ header > h1 {
     font-family: var(--font-principal);
     color: var(--color-primary);
     margin: 5px;
-    font-size: 0.8em;
+    font-size: 2em;
 }
 
 #header-icons {
