@@ -1,6 +1,6 @@
 :root {
     --primary-color: #8B0000;
-    --background-color: #F5F5F5;
+    --background-color: #F9F5F0;
     --text-color: #333333;
     --font-principal: 'Playfair Display', serif;
     --font-secundaria: 'Montserrat', sans-serif;
@@ -21,7 +21,7 @@ body {
 
 section#cart {
     padding: 20px;
-    background: #fff;
+    background: var(--background-color);
 }
 
 h1 {
@@ -29,12 +29,50 @@ h1 {
     margin-bottom: 10px;
 }
 
+.pedido-comida:first-child {
+    border-bottom: #c0c0c08a 0.1px solid;
+}
+
+div#pedido {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+div#entrega {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+div#pagamento {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+div#endereco {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .pedido-comida {
     display: flex;
     align-items: center;
     margin: 15px 0;
-    border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
+}
+
+div#infos {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .img {
@@ -54,13 +92,18 @@ h1 {
 }
 
 .quantidade button {
-    background-color: #eee;
-    border: none;
+    background-color: #ffffff;
+    border: rgb(138, 138, 138) 0.1px solid;
     width: 25px;
     height: 25px;
     margin: 0 5px;
     border-radius: 50%;
     font-weight: bold;
+}
+
+.quantidade button:hover {
+    background-color: #eee;
+
 }
 
 .quantidade p {
@@ -80,10 +123,30 @@ h1 {
 label {
     display: block;
     margin: 8px 0 3px;
+    
 }
+
+div#entrega label {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+div#pagamento label {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 
 input[type="text"] {
     width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -124,3 +187,4 @@ input[type="text"] {
     font-size: 16px;
     margin-top: 15px;
 }
+
