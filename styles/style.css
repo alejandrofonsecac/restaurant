@@ -46,7 +46,7 @@ header > h1 {
     font-family: var(--font-principal);
     color: var(--color-primary);
     margin: 5px;
-    size: 1.2em;
+    size: 1em;
 }
 
 #header-icons {
