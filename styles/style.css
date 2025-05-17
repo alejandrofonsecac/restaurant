@@ -50,7 +50,7 @@ header > h1 {
 }
 
 #header-icons {
-    width: 40vw;
+    width: 55vw;
 
     display: flex;
     justify-content: flex-end;
@@ -286,6 +286,13 @@ section#quarta > div.destaques-cardapio > img {
     border-radius: 10px;
 }
 
+section#quarta > div.destaques-cardapio > div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
 section#quarta > div.destaques-cardapio > div > h3{
     font-family: var(--font-secundaria);
     font-size: 1.1em;
@@ -298,8 +305,7 @@ section#quarta > div.destaques-cardapio > div >  p{
     color: rgba(48, 48, 48, 0.671);
     font-family: var(--font-padrao);
     font-size: 0.8;
-
-    margin: 5px 0px 15px 15px;
+    margin: 3px 0px 0px 15px;
 }
 
 section#quarta > div.destaques-cardapio > div > button {
@@ -314,7 +320,7 @@ section#quarta > div.destaques-cardapio > div > button {
     border-radius: 5px;
     
     text-align: center;
-    margin: 0 auto;
+    margin: 0px auto 0px auto;
 }
 
 
