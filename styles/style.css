@@ -50,7 +50,7 @@ header > h1 {
 }
 
 #header-icons {
-    width: 58vw;
+    width: 40vw;
 
     display: flex;
     justify-content: flex-end;
