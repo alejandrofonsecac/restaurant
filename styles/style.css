@@ -196,7 +196,6 @@ section#terceiro > h2 {
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
-    margin-bottom: 100px;
 }
 
 #geralbox {
@@ -244,6 +243,7 @@ img.seta:hover {
 
 section#quarta{
     width: 100vw;
+    margin-top: 80px;
 }
 
 section#quarta > h2 {
