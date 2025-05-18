@@ -183,7 +183,7 @@ section#segundo > p{
 
 section#terceiro {
     width: 100vw;
-    height: 1000px;
+    height: 700px;
 }
 
 section#terceiro > h2 {
@@ -323,6 +323,76 @@ section#quarta > div.destaques-cardapio > div > button {
     text-align: center;
     margin: 0px auto 0px auto;
 }
+
+section#quinta {
+    background-color: #2D2418;
+    width: 100vw;
+    height: auto; /* altura automática para caber tudo */
+    color: white;
+    font-family: var(--font-padrao);
+    padding: 20px;
+    text-align: center;
+}
+
+section#quinta > h2 {
+    font-weight: bold;
+    font-family: var(--font-secundaria);
+    margin-bottom: 20px;
+}
+
+section#quinta > div#box-all {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 90vw;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.box-son {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    width: 280px;
+}
+
+.box-son img {
+    filter: brightness(0) invert(1); /* Deixa ícone branco */
+}
+
+.box-son .texto p {
+    margin: 0;
+    text-align: left;
+}
+
+.botao-site,
+.botao-whatsapp {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.botao-site {
+    background-color: #8B0000;
+    margin-bottom: 10px;
+}
+
+.botao-whatsapp {
+    background-color: #25D366;
+}
+
 
 
 footer{
