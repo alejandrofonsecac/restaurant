@@ -328,4 +328,5 @@ section#quarta > div.destaques-cardapio > div > button {
 footer{
     background-color: yellow;
     width: 100vw;
+    margin-top: 1000px;
 }
