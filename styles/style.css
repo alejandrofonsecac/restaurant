@@ -346,8 +346,8 @@ section#quinta > div#box-all {
     margin: 0 auto;
     padding: 15px;
     border-radius: 5px;
+
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -396,7 +396,7 @@ section#quinta > div#box-all {
 
 
 footer{
-    background-color: yellow;
+    background-color: gray;
     width: 100vw;
     margin-top: 1000px;
 }
