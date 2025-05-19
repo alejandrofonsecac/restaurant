@@ -394,7 +394,29 @@ section#quinta > div#box-all {
     background-color: #25D366;
 }
 
+section#sexta{
+    width: 90vw;
+    margin: 40px auto;
+}
 
+section#sexta > div#info > h2 {
+    font-family: var(--font-secundaria);
+    font-size: 1.8em;
+    color: var(--color-primary);
+    text-shadow: 3px 1px 11px rgba(0, 0, 0, 0.219);
+
+    margin-top: 50px;
+    text-align: center;
+}
+
+section#sexta > div#info{
+    background-color: white;
+    padding: 10px;
+}
+
+section#sexta > div#info > iframe{   
+    margin: 20px auto 0px auto;
+}
 
 footer{
     background-color: gray;
