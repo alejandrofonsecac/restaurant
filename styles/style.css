@@ -342,7 +342,8 @@ section#quinta > h2 {
 
 section#quinta > div#box-all {
     background-color: rgba(255, 255, 255, 0.1);
-    width: 70vw;
+    width: 100%;
+    max-width: 250px; /* ou 900px, você escolhe o limite */
     margin: 0 auto;
     padding: 15px;
     border-radius: 5px;
