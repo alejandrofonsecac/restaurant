@@ -90,7 +90,7 @@ header > h1 {
 main{
     background-color: rgb(221, 219, 219);
     width: 100vw;
-    height: 1000vw;
+    height: 1500vw;
 }
 
 section#primeiro{
@@ -330,8 +330,10 @@ section#quinta {
     height: auto; /* altura automática para caber tudo */
     color: white;
     font-family: var(--font-padrao);
+
     padding: 20px;
     text-align: center;
+    margin-bottom: -20px;
 }
 
 section#quinta > h2 {
@@ -395,8 +397,19 @@ section#quinta > div#box-all {
 }
 
 section#sexta{
-    width: 90vw;
-    margin: 40px auto;
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+section#sexta > div#info > article{
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+
+    margin: auto;
+    padding: 10px;
 }
 
 section#sexta > div#info > h2 {
@@ -410,11 +423,15 @@ section#sexta > div#info > h2 {
 }
 
 section#sexta > div#info{
-    background-color: white;
+    display: flex;
     padding: 10px;
+
+    flex-wrap: wrap;
 }
 
 section#sexta > div#info > iframe{   
+    width: 340px;
+    height: 300px;
     margin: 20px auto 0px auto;
 }
 
