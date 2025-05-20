@@ -1,3 +1,7 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sriracha&display=swap');
+
 :root {
     --primary-color: #8B0000;
     --background-color: #F9F5F0;
@@ -18,61 +22,48 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
 }
-
-section#cart {
+    
+header {
     padding: 20px;
-    background: var(--background-color);
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 h1 {
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 1px;
+    font-size: 2.5em;
 }
 
 .pedido-comida:first-child {
     border-bottom: #c0c0c08a 0.1px solid;
 }
 
-div#pedido {
+section#pedido {
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
 }
 
-div#entrega {
+section > div > div#entrega-opcoes, div#pagamento-opcoes, div#endereco-opcoes, div#infos-opcoes {
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
-}
-
-div#pagamento {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-div#endereco {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
 }
 .pedido-comida {
     display: flex;
     align-items: center;
     margin: 15px 0;
     padding-bottom: 10px;
-}
-
-div#infos {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .img {
@@ -99,6 +90,7 @@ div#infos {
     margin: 0 5px;
     border-radius: 50%;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .quantidade button:hover {
@@ -126,19 +118,6 @@ label {
     
 }
 
-div#entrega label {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-div#pagamento label {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-
 input[type="text"] {
     width: 100%;
     padding: 8px;
@@ -146,7 +125,7 @@ input[type="text"] {
     border-radius: 4px;
 }
 
-input[type="radio"] {
+label.radio {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
