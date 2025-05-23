@@ -6,6 +6,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -423,22 +424,40 @@ section#sexta > div#info > h2 {
 }
 
 section#sexta > div#info{
-    display: flex;
     padding: 10px;
+}
 
+section#sexta > div#info > article > iframe{   
+    width: 275px;
+    height: 127px;
+    margin: 8px auto 0px auto;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section#sexta > article{
+    display: flex;
     flex-wrap: wrap;
 }
 
-section#sexta > div#info > iframe{   
-    width: 340px;
-    height: 300px;
-    margin: 20px auto 0px auto;
-}
-
-section#sexta
 
 footer{
     background-color: gray;
     width: 100vw;
     margin-top: 1000px;
+}
+
+.box-son {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.box-son .texto {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
 }
