@@ -419,7 +419,7 @@ section#sexta > div#info > article {
     width: 300px;
     min-height: 350px;
     border-radius: 10px;
-    margin: auto;
+    margin: 30px auto;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -446,6 +446,45 @@ section#sexta > div#info > article > iframe {
     border-radius: 5px;
 }
 
+section#setima{
+    background-color: white;
+    width: 300px;
+    min-height: 350px;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section#setima > div > h2{
+    font-family: var(--font-secundaria);
+    font-weight: bold;
+}
+
+section#setima > div > form > p{
+    font-family: var(--font-padrao);
+    margin: 10px 0px;
+}
+
+.boxform{
+    width: 260px;
+    height: 30px;
+}
+
+#imensagem{
+    width: 260px;
+    height: 100px;
+    vertical-align: top;
+    resize: none;
+}
+
+footer{
+    background-color: gray;
+    width: 100vw;
+    margin-top: 1000px;
+}
+
+/*Dedicados*/
 .box-son {
     display: flex;
     align-items: center;
@@ -464,11 +503,4 @@ section#sexta > div#info > article > iframe {
     font-size: 14px;
     color: #333;
     margin: 0;
-}
-
-
-footer{
-    background-color: gray;
-    width: 100vw;
-    margin-top: 1000px;
 }
