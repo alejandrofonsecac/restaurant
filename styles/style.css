@@ -364,7 +364,13 @@ section > div#box-all > div.texto > p{
     display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
+    width: 280px;
+}
+
+.box-son2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     width: 280px;
 }
 
@@ -375,6 +381,7 @@ section > div#box-all > div.texto > p{
 .box-son .texto p {
     margin: 0;
     text-align: left;
+    color: white;
 }
 
 .botao-site,
