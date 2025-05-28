@@ -29,7 +29,7 @@ html, body {
 }
 
 body {
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(221, 219, 219);
     height: 100vh;
     width: 100vw;
 }
@@ -50,48 +50,10 @@ header > h1 {
     font-size: 1.7em;
 }
 
-#header-icons {
-    width: 55vw;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px;
-}
-
-#header-icons img {
-    width: 32px;
-    height: 32px;
-    margin-left: 20px;
-    position: relative;
-}
-
-/*ícone do carrinho */
-.icon-wrapper {
-    position: relative;
-}
-
-/* Bolinha de contador */
-#cart-count {
-    background-color: var(--color-primary);
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    color: white;
-    font-size: 12px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 18px;
-    font-weight: bold;
-    pointer-events: none;
-}
-
 main{
     background-color: rgb(221, 219, 219);
     width: 100vw;
-    height: 1500vw;
+    min-height: 100vh;
 }
 
 section#primeiro{
@@ -451,7 +413,7 @@ section#setima{
     width: 300px;
     min-height: 350px;
     border-radius: 10px;
-    margin: 30px auto;
+    margin: 30px auto 0px auto;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -479,9 +441,38 @@ section#setima > div > form > p{
 }
 
 footer{
-    background-color: gray;
+    background-color: rgb(221, 219, 219);
     width: 100vw;
-    margin-top: 1000px;
+    height: auto;
+}
+
+footer > div > h2{
+    font-family: var(--font-secundaria);
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+footer > div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: white;
+    width: 100vw;
+    margin-top: 30px;
+}
+
+footer > div > p{
+    font-family: var(--font-padrao);
+    text-align: center;
+    color: black;
+}
+
+footer > div > img{
+    margin: 8px 5px;
 }
 
 /*Dedicados*/
@@ -503,4 +494,42 @@ footer{
     font-size: 14px;
     color: #333;
     margin: 0;
+}
+
+#header-icons {
+    width: 55vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+#header-icons img {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    position: relative;
+}
+
+/*ícone do carrinho */
+.icon-wrapper {
+    position: relative;
+}
+
+/* Bolinha de contador */
+#cart-count {
+    background-color: var(--color-primary);
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-weight: bold;
+    pointer-events: none;
 }
