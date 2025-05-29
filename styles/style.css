@@ -96,8 +96,7 @@ button{
 
 button.button-menu{
     background-color: var(--color-primary);
-    color: white;
-    
+    color: white;   
 }
 
 button.button-order-now{
@@ -110,12 +109,25 @@ button > p{
     font-weight: bold;
 }
 
-section.food-categories{
+/* Animações */
+button.button-menu:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+button.button-order-now:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+
+/* Categorias de categorias */
+section.food-categorias{
     width: 100vw;
     height: 700px;
 }
 
-section.food-categories > h2 {
+section.food-categorias > h2 {
     font-family: var(--font-secundaria);
     color: var(--color-primary);
     font: 2.8em bolder;
@@ -145,10 +157,6 @@ section.food-categories > h2 {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-}
-
-.box:hover {
-    transform: scale(1.03);
 }
 
 .box p {
@@ -251,6 +259,10 @@ section.menu-highlights > div.food-cart > div > button {
     
     text-align: center;
     margin: 0px auto 0px auto;
+}
+
+section.menu-highlights > div.food-cart > div > button:hover{
+
 }
 
 section.delivery {
@@ -505,3 +517,13 @@ footer > div > img{
     font-weight: bold;
     pointer-events: none;
 }
+
+
+.animation-scale {
+    transition: transform 0.3s;
+}
+
+.animation-scale.-active {
+    transform: scale(1.05);
+}
+
