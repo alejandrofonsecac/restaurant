@@ -10,72 +10,75 @@
 <body>
     <header>
         <h1>Pasta Bella</h1>
-        <div id="header-icons">
+        <div class="header-icons">
+        <!-- Carrinho -->
             <div class="icon-wrapper">
                 <img src="imagens/icones/icones/carrinho-carrinho.png" alt="Carrinho" id="cart-icon">
-                <span id="cart-count">0</span>
+                <!-- Contador de itens no carrinho -->
+                <span class="cart-count">0</span>
             </div>
+            <!-- Menu -->
             <img src="imagens/icones/icones/hamburger.png" alt="Menu">
         </div>
         
     </header>
 
-    <main>
-        
-            <section id="primeiro" class="imagem">
-                
-                <div id="texto001">
+    <main>           
+            <section class="home">
+                <!--Subtitulo-->
+                <div class="caption">
                     <h1>Pasta Bella</h1>
                     <p>Sabores da Itália direto para sua casa</p>
                 </div>
-                
-                    <button class="button" id="button001">
+                    <!-- Link para ir ao menu/cardapio -->
+                    <button class="button-menu" >
                         <p>Ver Cardápio</p>
                     </button>
-                                        
-                    <button class="button" id="button002">
+                    <!-- Link para ir ao menu, se tiver alguma coisa no carrinho vai levar ao carrinho. -->                   
+                    <button class="button-order-now">
                         <p>Peça Agora</p>
                     </button>
                                
             </section>
 
-            <section id="segundo">
-                <h2>Sobre Nós</h2>
-                    <img src="imagens/imagens-comidas/main/header-main/cozinheiro.jpg" alt="cozinheiro" width="350">
-                        <p>Desde 2015, o Pasta Bella traz para você o verdadeiro sabor da Itália com receitas tradicionais e ingredientes selecionados. Nossa missão é proporcionar uma experiência gastronômica autêntica, com o conforto da sua casa. <br>
-                        Nossas massas são preparadas artesanalmente todos os dias, seguindo receitas de família que atravessaram gerações, combinadas com técnicas modernas para garantir o melhor sabor em cada mordida.</p>
-            </section>
 
-            <section id="terceiro">
+            <section class="food-categories">
                 <h2>Nosso Cardápio</h2>
                 
-                <div id="geralbox">
-                    <div class="box">
+                <div class="menu-index">
+
+                    <div class="box" class="left">
+                    <!-- Categorias de massas -->
                         <img src="imagens/imagens-comidas/main/cardapio/massas.jpg" alt="massas" width="100">
                         <p>Massas</p>
                         <img src="imagens/icones/icones/seta-direita-vermelha.png" alt="seta-para-direita" class="seta">
                     </div>
-                    <div class="box">
+                    <!-- Categorias de Almoço e Janta -->
+                    <div class="box" class="right">
                         <img src="imagens/imagens-comidas/main/cardapio/almoço-e-janta.jpg" alt="Almoço e Janta" width="100">
                         <p>Almoço e Janta</p>
                         <img src="imagens/icones/icones/seta-direita-vermelha.png" alt="seta-para-direita" class="seta">
                     </div>
-                    <div class="box">
+                    <!-- Categorias de Pratos Executivos -->
+                    <div class="box" class="left">
                         <img src="imagens/imagens-comidas/main/cardapio/pratos-executivos.jpg" alt="Pratos Executivos" width="100">
                         <p>Pratos Executivos</p>
                         <img src="imagens/icones/icones/seta-direita-vermelha.png" alt="seta-para-direita" class="seta">
                     </div>
-                    <div class="box">
+                    <!-- Categorias de Comidas Sem Glúten -->
+                    <div class="box" class="right">
                         <img src="imagens/imagens-comidas/main/cardapio/sem-gluten.jpg" alt="Sem Gluten" width="100">
                         <p>Sem Glúten</p>
                         <img src="imagens/icones/icones/seta-direita-vermelha.png" alt="seta-para-direita" class="seta">
                     </div>
-                    <div class="box">
+                    <!-- Categorias de Porções & Fast Foods -->
+                    <div class="box" class="left">
                         <img src="imagens/imagens-comidas/main/cardapio/porções-e-fast-food.jpg" alt="Porçoes e Fast Foods" width="100">
                         <p>Porções & Fast Food</p>
                         <img src="imagens/icones/icones/seta-direita-vermelha.png" alt="seta-para-direita" class="seta">
                     </div>
-                    <div class="box">
+                    <!-- Categorias de Sobremesas & Bebidas -->
+                    <div class="box" class="right">
                         <img src="imagens/imagens-comidas/main/cardapio/sobremesas-e-bebidas.jpg" alt="Sobremesas e Bebidas" width="100">
                         <p>Sobremesas & Bebidas</p>
                         <img src="imagens/icones/icones/seta-direita-vermelha.png" alt="seta-para-direita" class="seta">
@@ -85,11 +88,12 @@
             
             </section>
                 
-                <section id="quarta">
+                <section class="menu-highlights">
                     <h2>Destaques do Cardápio</h2>
                         <p>Nossos produtos mais pedidos</p>
                     
-                            <div class="destaques-cardapio">
+                            <!-- Card destaques -->
+                            <div class="food-cart">
                                 <img src="imagens/imagens-comidas/main/destaques/spagetti-carbonara.jpg" alt="Spaghetti Carbonara" width="280" height="250">
                                     
                                 <div>
@@ -100,7 +104,8 @@
                                 </div>
                             </div>
                     
-                            <div class="destaques-cardapio">
+                            <!-- Card destaques -->
+                            <div class="food-cart">
                                 <img src="imagens/imagens-comidas/main/destaques/lasanha-bolonhesa.jpg" alt="Lasanha Bolonhesa" width="200">
 
                                 <div>
@@ -111,7 +116,8 @@
                                 </div>
                             </div>
                             
-                            <div class="destaques-cardapio">
+                            <!-- Card destaques -->
+                            <div class="food-cart">
                                 <img src="imagens/imagens-comidas/main/destaques/rissoto-de-fungo.jpg" alt="risotto de fungo" width="200">
 
                                 <div>
@@ -122,9 +128,11 @@
                             </div>
                 </section>
 
-                <section id="quinta">
+                <section class="delivery">
                     <h2>Delivery</h2>
-                        <div id="box-all">
+                        <div class="box-all">
+
+                        <!-- Horarios -->
                             <div class="box-son">
                                 <img src="imagens/icones/icones/relogio2.png" alt="Relogio" width="30">
                                 <div class="texto">
@@ -133,6 +141,7 @@
                             </div>
                         </div>
 
+                        <!-- Tempo de Entrega -->
                         <div class="box-son">
                             <img src="imagens/icones/icones/motocicleta.png" alt="Motocicleta" width="30">
                             <div class="texto">
@@ -141,6 +150,7 @@
                             </div>
                         </div>
 
+                        <!-- Área de Entrega -->
                         <div class="box-son">
                             <img src="imagens/icones/icones/localizacao.png" alt="Localização" width="30">
                             <div class="texto">
@@ -155,36 +165,40 @@
         </section>
 
     
-        <section id="sexta">
-            <div id="info">
+        <section class="info">
+            <div>
                 <h2>Contato e Localização</h2>                   
                         <article>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41987.83091434007!2d2.2628820312500015!3d48.872712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f58915a5091%3A0x3ccf51c60ae858f!2sLa%20Petite%20Bleue!5e0!3m2!1spt-BR!2sbr!4v1746131910132!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 
-                                <div class="box-son2">
+                                <!-- Localização -->
+                                <div class="box-son">
                                     <img src="imagens/icones/icones/localizacao.png" alt="Localização" width="30">
-                                    <p class="texto">Rua das Oliveiras. 123 - Centro São Paulo. SP</p>
+                                    <p class="txt">Rua das Oliveiras. 123 - Centro São Paulo. SP</p>
                                 </div>
                             
-                            
-                                <div class="box-son2">
+                                <!-- Telefone -->
+                                <div class="box-son">
                                     <img src="imagens/icones/icones/telefone.png" alt="Telefone" width="30">
-                                    <p class="texto">(11) 99999-9999</p>
+                                    <p class="txt">(11) 99999-9999</p>
                                 </div>
                             
-                            <p>
-                                <img src="imagens/icones/icones/email.png" alt="Email" width="30">
-                                contato@pastabella.com.br
-                            </p>
-                            <p>
-                                <img src="imagens/icones/icones/relogio.png" alt="Relogia" width="30">
-                            Terça a Domingo: 18h às 23h                                               </p>
+                                <!-- Email -->
+                                <div class="box-son">
+                                    <img src="imagens/icones/icones/email.png" alt="Email" width="30">
+                                    <p class="txt">contato@pastabella.com.br</p>
+                                </div>
+                                      
+                                <!-- Horarios -->
+                                <div class="box-son">
+                                    <img src="imagens/icones/icones/relogio.png" alt="Relogia" width="30">
+                                    <p class="txt">Terça a Domingo: 18h às 23h </p>
+                                </div>                                       
                         </article>
-            </div>
+                </div>
             </section>
 
-        <!--Falta concertar o FORM-->
-            <section id="setima">
+            <section class="contato">
                 <div>
                     <h2>Fale Conosco</h2>
                     <form action="" method="post">
