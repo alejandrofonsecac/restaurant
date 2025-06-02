@@ -59,7 +59,7 @@ section.home{
     display: flex;
     flex-direction: column;
 
-    background-image: url(../imagens/index-page/backgrounds/pizza-background.jpg);
+    background-image: url(../imagens/backgrounds/pizza-background.jpg);
     background-position: right center;
     background-size: cover;
     
