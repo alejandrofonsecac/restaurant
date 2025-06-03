@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
+
+
 main{
     width: 90vw;
     background-color: blue;
+}
+
+section.home{
+    width: 100%;
 }
