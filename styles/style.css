@@ -157,6 +157,12 @@ section.food-categorias > h2 {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.box:hover{
+    filter: brightness(0.9);
+    transform: translateY(-5px);
     transition: transform 0.2s;
 }
 

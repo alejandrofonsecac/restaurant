@@ -3,10 +3,19 @@
 
 
 main{
-    width: 90vw;
+    width: 80vw;
     background-color: blue;
 }
 
 section.home{
     width: 100%;
+}
+
+.menu-index > .box{
+    width: 230px;
+    height: auto;
+}
+
+.menu-index > .box > img.img-food{
+    width: 140px;
 }
