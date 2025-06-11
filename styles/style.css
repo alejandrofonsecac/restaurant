@@ -215,7 +215,8 @@ section.menu-highlights > p{
 section.menu-highlights > div.menu-all{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column
+    flex-direction: column;
+    align-content: space-around;
 }
 
 section.menu-highlights > div.menu-all div.food-cart {

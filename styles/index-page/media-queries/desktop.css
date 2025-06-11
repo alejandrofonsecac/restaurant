@@ -13,6 +13,7 @@ section.home{
 
 .menu-index{
     width: 80%;
+    max-width: 705px;
 }
 
 .menu-index > .box{
@@ -24,3 +25,17 @@ section.home{
     width: 140px;
 }
 
+section.menu-highlights > div.menu-all {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+}
+    
+section.menu-highlights > div.menu-all div.food-cart {
+        min-width: 250px; 
+        margin-bottom: 30px;
+}
+
+section.menu-highlights > .menu-all > .food-cart > div > button.animation-scale{
+    margin: 10px auto;
+}
