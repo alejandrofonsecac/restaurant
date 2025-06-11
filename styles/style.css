@@ -185,6 +185,9 @@ img.seta:hover {
     transform: translateY(-5px);
 }
 
+
+
+
 section.menu-highlights{
     width: 100%;
     margin-top: 80px;
@@ -196,9 +199,7 @@ section.menu-highlights > h2 {
     font: 3em bolder;
     text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 
     margin: 100px auto 10px;
 }
@@ -211,18 +212,22 @@ section.menu-highlights > p{
     margin-bottom: 50px;
 }
 
-section.menu-highlights > div.food-cart {
+section.menu-highlights > div.menu-all{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column
+}
+
+section.menu-highlights > div.menu-all div.food-cart {
     width: 315px;
     height: 350px;
     background-color: white;
 
-    margin: auto;
-    margin-bottom: 50px;
-
+    margin-bottom: 50px; 
     border-radius: 10px;
 }
 
-section.menu-highlights > div.food-cart > img {
+section.menu-highlights > div.menu-all div.food-cart > img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -231,14 +236,14 @@ section.menu-highlights > div.food-cart > img {
     border-radius: 10px;
 }
 
-section.menu-highlights > div.food-cart > div{
+section.menu-highlights > div.menu-all div.food-cart > div{
     width: 100%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
 }
 
-section.menu-highlights > div.food-cart > div > h3{
+section.menu-highlights > div.menu-all div.food-cart > div > h3{
     font-family: var(--font-secundaria);
     font-size: 1.1em;
 
@@ -246,14 +251,14 @@ section.menu-highlights > div.food-cart > div > h3{
     margin-top: 20px;
 }
 
-section.menu-highlights > div.food-cart > div >  p{
+section.menu-highlights > div.menu-all div.food-cart > div >  p{
     color: rgba(48, 48, 48, 0.671);
     font-family: var(--font-padrao);
     font-size: 0.8;
     margin: 3px 0px 0px 15px;
 }
 
-section.menu-highlights > div.food-cart > div > button {
+section.menu-highlights > div.menu-all div.food-cart > div > button {
     width: 220px;
     height: 25px;
     background-color: #8B0000;
