@@ -26,16 +26,31 @@ section.home{
 }
 
 section.menu-highlights > div.menu-all {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
     
 section.menu-highlights > div.menu-all div.food-cart {
-        min-width: 250px; 
-        margin-bottom: 30px;
+    min-width: 250px; 
+    margin-bottom: 30px;
 }
 
 section.menu-highlights > .menu-all > .food-cart > div > button.animation-scale{
     margin: 10px auto;
+}
+
+section.delivery > .box-all{
+    width: 50%;
+}
+
+section.delivery > .box-soon{
+   display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+section.delivery > .box-all >.box-soon{
+    width: 100%;
 }

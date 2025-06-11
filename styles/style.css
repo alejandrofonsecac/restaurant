@@ -274,6 +274,10 @@ section.menu-highlights > div.menu-all div.food-cart > div > button {
     margin: 0px auto 0px auto;
 }
 
+
+
+
+
 section.delivery {
     background-color: #2D2418;
     width: 100%;
@@ -294,8 +298,7 @@ section.delivery > h2 {
 
 section.delivery > div{
     background-color: rgba(255, 255, 255, 0.1);
-    width: 100%;
-    max-width: 250px; /* ou 900px, você escolhe o limite */
+    width: 25%;
     margin: 0 auto;
     padding: 15px;
     border-radius: 5px;
@@ -313,7 +316,7 @@ section.delivery > div > div.texto > p{
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 280px;
+    width: 100%;
 }
 
 .box-son2{
@@ -327,7 +330,7 @@ section.delivery > div > div.texto > p{
     filter: brightness(0) invert(1); /* Deixa ícone branco */
 }
 
-.box-son .texto p {
+.box-son  > .texto p {
     margin: 0;
     text-align: left;
     color: white;
