@@ -12,17 +12,18 @@ section.home{
 }
 
 .menu-index{
-    width: 80%;
-    max-width: 705px;
+    width: 55%;
+    max-width: 600px;
 }
 
 .menu-index > .box{
-    width: 230px;
+    width: 150px;
     height: auto;
 }
 
 .menu-index > .box > img.img-food{
     width: 140px;
+    border-radius: 5px;
 }
 
 section.menu-highlights > div.menu-all {
