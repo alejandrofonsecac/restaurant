@@ -11,6 +11,10 @@ section.home{
     width: 100%;
 }
 
+.menu-index{
+    width: 80%;
+}
+
 .menu-index > .box{
     width: 230px;
     height: auto;
@@ -18,4 +22,8 @@ section.home{
 
 .menu-index > .box > img.img-food{
     width: 140px;
+}
+
+.menu-highlights{
+    
 }
