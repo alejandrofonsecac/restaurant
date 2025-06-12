@@ -52,7 +52,6 @@ header > h1 {
 main{
     background-color: rgb(221, 219, 219);
     width: 100vw;
-    min-height: 110vh;
 }
 
 section.home{
@@ -208,7 +207,7 @@ section.menu-highlights > p{
     font: var(--font-padrao);
     font-size: 1.1em;
     text-align: center;
-
+    color: white;
     margin-bottom: 50px;
 }
 
