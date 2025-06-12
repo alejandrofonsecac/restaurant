@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
-
+body{
+    background-color: white;
+}
 
 main{
-    width: 80vw;
-    background-color: blue;
+    width: 80%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
 }
 
 section.home{
@@ -46,12 +49,20 @@ section.delivery > .box-all{
 }
 
 section.delivery > .box-soon{
-   display: flex;
+    display: flex;
     align-items: center;
-    gap: 10px;
     justify-content: center;
 }
 
+
 section.delivery > .box-all >.box-soon{
     width: 100%;
+}
+
+section.info > div > article{
+    width: 100%;
+}
+
+section.contato{
+    width: 33%;
 }

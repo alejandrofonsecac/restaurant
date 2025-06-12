@@ -52,7 +52,7 @@ header > h1 {
 main{
     background-color: rgb(221, 219, 219);
     width: 100vw;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 section.home{
@@ -356,8 +356,18 @@ section.delivery > div > div.texto > p{
     margin-bottom: 10px;
 }
 
+.botao-site:hover{
+    transform: translateY(-3px);
+    transition: transform 0.2s;
+}
+
 .botao-whatsapp {
     background-color: #25D366;
+}
+
+.botao-whatsapp:hover{
+    transform: translateY(-3px);
+    transition: transform 0.2s;
 }
 
 section.info {
@@ -404,11 +414,19 @@ section.info .box-son img {
     filter: brightness(0);
 }
 
+
+
+
+section.contato{
+    width: 400px;
+}
+
 section.contato{
     background-color: white;
-    width: 300px;
     min-height: 350px;
     border-radius: 10px;
+    width: 100%;
+
     margin: 30px auto 0px auto;
     padding: 20px;
     box-sizing: border-box;
@@ -424,6 +442,46 @@ section.contato > div > form > p{
     margin: 10px 0px;
 }
 
+.contato {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto ;
+    padding: 20px;
+}
+
+.contato form {
+    width: 100%;
+}
+
+.contato label {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contato label p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contato .text {
+    width: 100%; 
+    padding: 10px;
+    box-sizing: border-box;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit; 
+}
+
+
+.contato textarea.text {
+    min-height: 150px;
+    resize: vertical;
+}
+
+
+
+
 .boxform{
     width: 260px;
     height: 30px;
@@ -435,6 +493,9 @@ section.contato > div > form > p{
     vertical-align: top;
     resize: none;
 }
+
+
+
 
 footer{
     background-color: rgb(221, 219, 219);
