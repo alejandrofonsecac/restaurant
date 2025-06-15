@@ -33,3 +33,71 @@
     transform: translateY(-3px);
     transition: transform 0.2s;
 }
+
+.box-son {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.box-son img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.box-son .texto {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.header-icons {
+    width: 55vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-icons img {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    position: relative;
+}
+
+/*ícone do carrinho */
+.icon-wrapper {
+    position: relative;
+}
+
+/* Bolinha de contador */
+.cart-count {
+    background-color: var(--color-primary);
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+
+.animation-scale {
+    transition: transform 0.3s;
+}
+
+.animation-scale.-active {
+    transform: scale(1.05);
+}
+
