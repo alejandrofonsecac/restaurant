@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+section.info {
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+section.info > div > article {
+    background-color: white;
+    width: 300px;
+    min-height: 350px;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section.info > div > h2 {
+    font-family: var(--font-secundaria);
+    font-size: 1.8em;
+    color: var(--color-primary);
+    text-shadow: 3px 1px 11px rgba(0, 0, 0, 0.219);
+    margin-top: 50px;
+    text-align: center;
+}
+
+section.info > div {
+    padding: 10px;
+}
+
+/* IFRAME */
+section.info > div > article > iframe {
+    width: 100%;
+    height: 127px;
+    margin: 8px auto 15px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+section.info .box-son img {
+    filter: brightness(0) saturate(100%); /* Preto puro */
+    /* Ou alternativamente: */
+    filter: brightness(0);
+}
