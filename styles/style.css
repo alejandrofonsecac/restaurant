@@ -54,6 +54,12 @@ main{
     width: 100vw;
 }
 
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 section.home{
     display: flex;
     flex-direction: column;
