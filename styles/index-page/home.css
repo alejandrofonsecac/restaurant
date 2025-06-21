@@ -14,7 +14,7 @@ section.home{
 section.home > .container > div.caption > h1{
     font: 4em bolder;
     color: white;
-    margin-top: 35px;
+    margin-top: 40px;
     text-align: center;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.473);
     
@@ -26,13 +26,13 @@ section.home > .container >div.caption > p{
     font-size: 2em;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 button{
     width: 70vw;
     height: 50px;
-    margin: 10px auto;
+    margin: 16px auto;
     border: none;
     border-radius: 10px;
     box-shadow: -1px 2px 9px rgba(0, 0, 0, 0.493);

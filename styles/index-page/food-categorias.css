@@ -7,7 +7,7 @@ section.food-categorias{
 }
 
 
-section.food-categorias  .container > h2 {
+section.food-categorias > .container > h2 {
     font-family: var(--font-secundaria);
     color: var(--color-primary);
     font: 2.8em bolder;
@@ -16,7 +16,7 @@ section.food-categorias  .container > h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 160px;
 }
 
 div.menu-index {
