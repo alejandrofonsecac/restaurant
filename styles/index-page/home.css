@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 section.home{
-    display: flex;
-    flex-direction: column;
 
     background-image: url(.../../../../imagens/index-page/backgrounds/pizza-background.jpg);
     background-position: right center;
@@ -13,7 +11,7 @@ section.home{
     height: 500px;
 }
 
-section.home > div.caption > h1{
+section.home > .container > div.caption > h1{
     font: 4em bolder;
     color: white;
     margin-top: 35px;
@@ -23,7 +21,7 @@ section.home > div.caption > h1{
     justify-content: flex-start;
 }
 
-section.home > div.caption > p{
+section.home > .container >div.caption > p{
     color: white;
     font-size: 2em;
     font-weight: bold;
@@ -40,14 +38,20 @@ button{
     box-shadow: -1px 2px 9px rgba(0, 0, 0, 0.493);
 }
 
-button.button-menu{
+.container > button.button-menu{
     background-color: var(--color-primary);
-    color: white;   
+    color: white;  
+    margin: auto; 
 }
 
-button.button-order-now{
+.container > button.button-order-now{
     background-color: white;
     color: var(--color-primary);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 button > p{
