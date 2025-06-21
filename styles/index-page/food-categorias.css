@@ -7,7 +7,7 @@ section.food-categorias{
 }
 
 
-section.food-categorias > h2 {
+section.food-categorias  .container > h2 {
     font-family: var(--font-secundaria);
     color: var(--color-primary);
     font: 2.8em bolder;
