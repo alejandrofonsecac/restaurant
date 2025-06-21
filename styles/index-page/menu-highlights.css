@@ -10,9 +10,6 @@ section.menu-highlights > h2 {
     color: var(--color-primary);
     font: 3em bolder;
     text-align: center;
-
-
-
     margin: 100px auto 10px;
 }
 
@@ -20,15 +17,14 @@ section.menu-highlights > p{
     font: var(--font-padrao);
     font-size: 1.1em;
     text-align: center;
-    color: white;
+    color: black;
     margin-bottom: 50px;
 }
 
 section.menu-highlights > div.menu-all{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 section.menu-highlights > div.menu-all div.food-cart {
