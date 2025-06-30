@@ -30,8 +30,6 @@ html, body {
 
 body {
     background-color: rgb(221, 219, 219);
-    height: 100vh;
-    width: 100%;
 }
 
 header {
@@ -51,7 +49,7 @@ header > h1 {
 
 main{
     background-color: rgb(221, 219, 219);
-    width: 100vw;
+    width: 100%;
 }
 
 footer{
