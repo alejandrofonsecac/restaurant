@@ -1,19 +1,9 @@
 @charset "UTF-8";
 
 section.info {
-    width: 400px;
+    width: 100%;
     height: auto;
     margin: auto;
-}
-
-section.info > div > article {
-    background-color: white;
-    width: 300px;
-    min-height: 350px;
-    border-radius: 10px;
-    margin: 30px auto;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 section.info > div > h2 {
@@ -27,6 +17,7 @@ section.info > div > h2 {
 
 section.info > div {
     padding: 10px;
+    width: 100%;
 }
 
 /* IFRAME */

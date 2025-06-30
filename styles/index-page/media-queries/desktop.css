@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgb(83,83,83);
+    background-color: rgb(65, 60, 60);
 }
 
 main{
     width: 80%;
-    background-color: rgb(65, 60, 60);
+    background-color: white;
     border-radius: 5px;
 }
 
@@ -62,8 +62,20 @@ section.delivery > .box-all >.box-soon{
     width: 100%;
 }
 
-section.info > div > article{
-    width: 100%;
+section.info {
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+section.info > div > article {
+    background-color: white;
+    width: 380px;
+    min-height: 350px;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 section.contato{
