@@ -6,7 +6,6 @@ section.food-categorias{
     height: auto;
 }
 
-
 section.food-categorias > .container > h2 {
     font-family: var(--font-secundaria);
     color: var(--color-primary);
@@ -22,16 +21,17 @@ section.food-categorias > .container > h2 {
 div.menu-index {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
     gap: 20px;
     padding: 16px;
+    justify-content: center;
+    justify-items: center;
 }
 
 div.box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px;
+    width: 180px;
     padding: 5px;
     background-color: white;
     border-radius: 10px;
