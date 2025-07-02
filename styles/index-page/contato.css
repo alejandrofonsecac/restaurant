@@ -1,35 +1,28 @@
 @charset "UTF-8";
 
-section.contato{
+section.contato {
     width: 400px;
 }
 
-section.contato{
+section.contato {
     background-color: white;
     min-height: 350px;
     border-radius: 10px;
     width: 100%;
-
+    max-width: 600px;
     margin: 30px auto 0px auto;
     padding: 20px;
     box-sizing: border-box;
 }
 
-section.contato > div > h2{
+section.contato > div > h2 {
     font-family: var(--font-secundaria);
     font-weight: bold;
 }
 
-section.contato > div > form > p{
+section.contato > div > form > p {
     font-family: var(--font-padrao);
     margin: 10px 0px;
-}
-
-.contato {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto ;
-    padding: 20px;
 }
 
 .contato form {
@@ -53,23 +46,28 @@ section.contato > div > form > p{
     box-sizing: border-box;  
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: inherit; 
+    font-family: inherit;
 }
 
-
+/* Especificamente para o textarea */
 .contato textarea.text {
     min-height: 150px;
     resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.boxform{
+
+/*
+.boxform {
     width: 260px;
     height: 30px;
 }
 
-#imensagem{
+#imensagem {
     width: 260px;
     height: 100px;
     vertical-align: top;
     resize: none;
 }
+*/
