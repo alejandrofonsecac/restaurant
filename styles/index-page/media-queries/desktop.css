@@ -10,9 +10,12 @@ main{
     border-radius: 5px;
 }
 
+
+
+/* HOME.CSS */
 section.home{
     width: 100%;
-}
+} 
 
 .menu-index{
     width: 55%;
@@ -30,6 +33,9 @@ section.home{
     border-radius: 5px;
 }
 
+
+
+/* menu-highlights */
 section.menu-highlights > div.menu-all {
     flex-direction: row;
     justify-content: space-around;
@@ -45,6 +51,16 @@ section.menu-highlights > .menu-all > .food-cart > div > button.animation-scale{
     margin: 10px auto;
 }
 
+.box-son {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 9px;
+    justify-content: center;
+}
+
+
+/* delivery.css */
 section.delivery > div.box-all{
     width: 50%;
 }
@@ -62,6 +78,9 @@ section.delivery > .box-all >.box-soon{
     width: 100%;
 }
 
+
+
+/* info.css */
 section.info {
     width: 400px;
     height: auto;
@@ -78,6 +97,9 @@ section.info > div > article {
     box-sizing: border-box;
 }
 
+
+
+/* contato.css */
 section.contato{
     width: 33%;
 }

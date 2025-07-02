@@ -20,8 +20,8 @@ section.food-categorias > .container > h2 {
 
 div.menu-index {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
     padding: 16px;
     justify-content: center;
     justify-items: center;
@@ -32,9 +32,9 @@ div.box {
     flex-direction: column;
     align-items: center;
     width: 180px;
-    padding: 5px;
+    padding: 8px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
 }

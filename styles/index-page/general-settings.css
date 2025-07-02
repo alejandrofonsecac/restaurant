@@ -31,7 +31,9 @@ html, body {
 body {
     background-color: rgb(221, 219, 219);
     width: 100%;
+    overflow-x: hidden;
 }
+
 
 header {
     width: 100%;
