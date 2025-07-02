@@ -29,8 +29,15 @@ section.info > div > article > iframe {
     border-radius: 5px;
 }
 
-section.info .box-son img {
+section.info .location-box img {
     filter: brightness(0) saturate(100%); /* Preto puro */
     /* Ou alternativamente: */
     filter: brightness(0);
+}
+
+.location-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
 }
