@@ -21,7 +21,7 @@ section.home > .container > div.caption > h1{
     justify-content: flex-start;
 }
 
-section.home > .container >div.caption > p{
+section.home > .container > div.caption > p{
     color: white;
     font-size: 2em;
     font-weight: bold;

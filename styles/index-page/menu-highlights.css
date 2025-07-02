@@ -25,6 +25,7 @@ section.menu-highlights > div.menu-all{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 section.menu-highlights > div.menu-all div.food-cart {
