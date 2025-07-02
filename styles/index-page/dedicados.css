@@ -6,6 +6,12 @@
     margin: 0 auto;
 }
 
+.animation:hover{
+    filter: brightness(0.9);
+    transform: translateY(-5px);
+    transition: transform 0.2s;
+}
+
 .botao-site,
 .botao-whatsapp {
     margin-top: 20px;
