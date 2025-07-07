@@ -50,6 +50,10 @@ header > h1 {
     font-size: 1.7em;
 }
 
+header > div.header-icons > span.material-symbols-outlined{
+    font-size: 33px;
+}
+
 main{
     background-color: white;
 }
