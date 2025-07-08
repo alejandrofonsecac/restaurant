@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+:root {
+    --color-primary: #8B0000;
+
+    /*
+    Fontes:
+        Playfair Display (TÍTULOS PRINCIPAIS)
+        Montserrat (SUBTÍTULOS)
+        Sans-serif (LEITURA PADRÃO)
+    */
+    --font-principal: 'Playfair Display', serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font-padrao: sans-serif, arial;
+}
+
 body{
     background-color: white;
 }
@@ -30,12 +44,25 @@ header > .menu-desktop{
 }
 
 header > .menu-desktop > li{
+    font-family: var(--font-secundaria);
+    font-weight: bold;
+    font-size: 1.2em;
+
     margin-right: 20px;
+    padding: 10px;
     list-style: none;
+    background-color: white;
+    border-radius: 7px;
+}
+
+header > ul.menudesktop > li:hover{
+    background-color: #8B0000;
+    color: white;
 }
 
 header > .menu-desktop > li > a{
     text-decoration: none;
+    color: #8B0000;
 }
 
 
