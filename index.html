@@ -20,22 +20,8 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <script>
-        function MudouTamanho(){
-            if(window.innerWidth >= 650){
-                itens.style.display = 'block'
-            }else{
-                itens.style.display = 'none'
-            }
-        }
-
-        function clickMenu(){
-            if(itens.style.display == 'block'){
-                itens.style.display = 'none'
-            } else{
-                itens.style.display = 'block'
-            }
-        }
+    <script src="scripts/Nova pasta/menu.js" onload="">
+        
     </script>
 
     <title>Casa nobre</title>
@@ -64,7 +50,7 @@
         </ul>
     </menu>
 
-    <ul style="display: none;" class="menu-desktop">
+    <ul class="menu-desktop" style="display: none;" id="itens-desktop">
         <li><a href="#">Contato</a></li>
         <li><a href="#">Cardapio</a></li>
         <li><a href="#">Alguma coisa</a></li>
