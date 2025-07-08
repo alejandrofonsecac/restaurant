@@ -15,12 +15,27 @@ header{
 }
 
 header > h1{
-    text-align: left;
     font-size: 2.7em;
+    margin-right: 40px;
 }
 
 header > div.header-icons > span{
     display: none;
+}
+
+header > .menu-desktop{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header > .menu-desktop > li{
+    margin-right: 20px;
+    list-style: none;
+}
+
+header > .menu-desktop > li > a{
+    text-decoration: none;
 }
 
 

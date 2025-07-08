@@ -48,15 +48,17 @@ header > h1 {
     margin: 5px;
 }
 
+header > .menu-desktop{
+    display: none;
+}
+
+header > div.header-icons{
+    width: auto;
+}
+
 header > div.header-icons > span.material-icons{
     font-size: 33px;
     margin: 0px 5px;
-}
-
-header > div.header-icons > menu.itens{
-    background-color: blue;
-    width: 300px;
-    height: 300px;
 }
 
 main{
