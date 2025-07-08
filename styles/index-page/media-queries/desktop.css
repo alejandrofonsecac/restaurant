@@ -10,6 +10,22 @@ main{
     border-radius: 5px;
 }
 
+header{
+    height: 80px;
+}
+
+header > h1{
+    text-align: left;
+    font-size: 2.7em;
+}
+
+header > div.header-icons{
+    display: none;
+}
+
+header > div.header-icons > ul.menu-desktop{
+    display: block;
+}
 
 
 /* HOME.CSS */
