@@ -19,12 +19,8 @@ header > h1{
     font-size: 2.7em;
 }
 
-header > div.header-icons{
+header > div.header-icons > span{
     display: none;
-}
-
-header > div.header-icons > ul.menu-desktop{
-    display: block;
 }
 
 
