@@ -1,8 +1,52 @@
 @charset "UTF-8";
 
 /* Alterar para (com underline igual ao JSX): */
-#root > main > section.Categorias_imagens > .container > .Massas_Category{
-    width: 80px !important;
-    height: 100px !important;
-    background-color: white !important;
+/* Container principal */
+.Massas_Category {
+    position: relative;
+    width: 80px;
+    height: 100px;
+    overflow: hidden;
+}
+
+/* Container da imagem */
+.Massas_Category .image-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo da imagem */
+.Massas_Category .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px); /* Aplica o desfoque apenas na imagem */
+    transition: filter 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+/* Estilo do texto */
+.Massas_Category p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    z-index: 2; /* Garante que o texto fique acima da imagem */
+    width: 100%;
+    text-align: center;
+}
+
+/* Overlay opcional para melhor contraste */
+.Massas_Category::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
