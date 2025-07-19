@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sriracha&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+:root {
+    --color-primary: #8B0000;
+
+    /*
+    Fontes:
+        Playfair Display (TÍTULOS PRINCIPAIS)
+        Montserrat (SUBTÍTULOS)
+        Sans-serif (LEITURA PADRÃO)
+    */
+    --font-principal: 'Playfair Display', serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font-padrao: sans-serif, arial;
+}
+
+body {
+    background-color: rgb(221, 219, 219);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+header > h1 {
+    font-family: var(--font-principal);
+    color: var(--color-primary);
+    margin: 5px;
+}
+
+header > .menu-desktop{
+    display: none;
+}
+
+header > div.header-icons{
+    width: auto;
+}
+
+header > div.header-icons > span.material-icons{
+    font-size: 33px;
+    margin: 0px 5px;
+}
