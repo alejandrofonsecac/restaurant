@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <!-- Adicione o Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- React (biblioteca core) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- ReactDOM (para renderizar no navegador) -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel (para transformar JSX em JavaScript normal) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function Cardapio(){
+            const clickMenu = () => {
+                const itens = document.getElementById('itens');
+                if(itens.style.display === 'none') {
+                    itens.style.display = 'block';
+                } else {
+                    itens.style.display = 'none';
+                }
+            };
+            
+            return(
+                <>
+                    <header>
+                        <h1>Pasta Bella</h1>
+                        <ul className="menu-desktop" id="itensdesktop">
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Cardapio</a></li>
+                            <li><a href="#">Alguma coisa</a></li>
+                        </ul>  
+                        <div className="header-icons">
+                            {/* Carrinho */}
+                            <div className="icon-wrapper">
+                                <span className="material-icons">shopping_cart</span>
+                                {/* Contador de itens no carrinho */}
+                                <span className="cart-count">0</span>
+                            </div>
+                        </div>
+
+                        {/* Menu */}
+                        <span className="material-icons" onClick={clickMenu}>menu</span>
+            
+                        <menu id="itens" style={{display: 'none'}} className="menu-mobile">
+                            <ul>
+                                <li><a href="#">Opção 1</a></li>
+                                <li><a href="#">Opção 2</a></li>
+                                <li><a href="#">Opção 3</a></li>
+                                <li><a href="#">Opção 4</a></li>
+                                <li><a href="#">Opção 5</a></li>
+                            </ul>
+                        </menu>
+                    </header>
+
+                    <main>
+                    </main>
+
+                    <footer>
+                    </footer>
+                </>
+            )
+        }
+
+        // Renderizar o componente
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Cardapio />);
+    </script>
+</body>
+</html>
