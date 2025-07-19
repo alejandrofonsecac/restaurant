@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Alterar para (com underline igual ao JSX): */
+main > section.Categorias_imagens > .Massas_Category {
+    width: 80px !important;
+    height: 100px !important;
+    background-color: white !important;
+}

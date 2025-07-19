@@ -15,8 +15,10 @@
     <!-- Babel (para transformar JSX em JavaScript normal) -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <link rel="stylesheet" href="../styles/cardapio/index.css">
-    <link rel="stylesheet" href="../styles/index-page/dedicados.css">
+ <!-- Coloque o CSS específico (categorias.css) DEPOIS do CSS geral -->
+<link rel="stylesheet" href="../styles/cardapio/index.css">
+<link rel="stylesheet" href="../styles/cardapio/categorias.css">
+<link rel="stylesheet" href="../styles/index-page/dedicados.css">
 
     <link rel="stylesheet" media="(min-width: 1050px)" href="../styles/cardapio/mediaQuery/desktop.css">
 
@@ -25,6 +27,7 @@
     <div id="root"></div>
 
     <script type="text/babel">
+
         function Cardapio(){
             const clickMenu = () => {
                 const itens = document.getElementById('itens');
@@ -68,32 +71,40 @@
                     </header>
 
                     <main>
-                        <div>
-                            <div>
-                                
-                            </div>
+                        <section className='Categorias_imagens'>
+                            <h1>Pasta Bella</h1> 
                             
-                            <div>
-                                
-                            </div>
+                            <div className='container'>
+                                <div className='Massas_Category background'>
+                                    <p>Massas</p>
+                                </div>
                             
-                            <div>
+                                <div className='Pratos_Executivos_Category background'>
+                                    <p>Pratos Executivos</p>
+                                </div>
                                 
-                            </div>
+                                <div className='Porcoes_Fast_Foods_Category background'>
+                                    <p>Porções</p>
+                                </div>
                             
-                            <div>
-                                
-                            </div>
+                                <div className='Almoço_e_Janta_Category background'>
+                                    <p>Almoço e Janta</p>
+                                </div>
                             
-                            <div>
-                                
-                            </div>
+                                <div className='Sem_Gluten_Category background'>
+                                    <p>Sem Glúten</p>
+                                </div>
                             
-                            <div>
-                                
-                            </div>
+                                <div className='Bebidas background'>
+                                    <p>Bebidas</p>
+                                </div>
+
+                                <div className='Sobremesas background'>
+                                    <p>Sobremesas</p>    
+                                </div>
                             
-                        </div>
+                            </div>
+                        </section>
                     </main>
 
                     <footer>
