@@ -1,124 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardapio</title>
-    <!-- Adicione o Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    
-    <!-- React (biblioteca core) -->
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <!-- ReactDOM (para renderizar no navegador) -->
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <!-- Babel (para transformar JSX em JavaScript normal) -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
- <!-- Coloque o CSS específico (categorias.css) DEPOIS do CSS geral -->
-<link rel="stylesheet" href="../styles/cardapio/index.css">
-<link rel="stylesheet" href="../styles/cardapio/categorias.css">
-<link rel="stylesheet" href="../styles/index-page/dedicados.css">
-
-    <link rel="stylesheet" media="(min-width: 1050px)" href="../styles/cardapio/mediaQuery/desktop.css">
-
+  <meta charset="UTF-8">
+  <title>Restaurante React</title>
+  <!-- Mantenha seus links de CSS existentes -->
+  <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    <div id="root"></div>
-
-    <script type="text/babel">
-
-        function Cardapio(){
-            const clickMenu = () => {
-                const itens = document.getElementById('itens');
-                if(itens.style.display === 'none') {
-                    itens.style.display = 'block';
-                } else {
-                    itens.style.display = 'none';
-                }
-            };
-            
-            return(
-                <>
-                    <header>
-                        <h1>Pasta Bella</h1>
-                        <ul className="menu-desktop" id="itensdesktop">
-                            <li><a href="#">Contato</a></li>
-                            <li><a href="#">Cardapio</a></li>
-                            <li><a href="#">Alguma coisa</a></li>
-                        </ul>  
-                        <div className="header-icons">
-                            {/* Carrinho */}
-                            <div className="icon-wrapper">
-                                <span className="material-icons">shopping_cart</span>
-                                {/* Contador de itens no carrinho */}
-                                <span className="cart-count">0</span>
-                            </div>
-                        </div>
-
-                        {/* Menu */}
-                        <span className="material-icons" onClick={clickMenu}>menu</span>
-            
-                        <menu id="itens" style={{display: 'none'}} className="menu-mobile">
-                            <ul>
-                                <li><a href="#">Opção 1</a></li>
-                                <li><a href="#">Opção 2</a></li>
-                                <li><a href="#">Opção 3</a></li>
-                                <li><a href="#">Opção 4</a></li>
-                                <li><a href="#">Opção 5</a></li>
-                            </ul>
-                        </menu>
-                    </header>
-
-                    <main>
-                        <section className='Categorias_imagens'>
-                            <h1>Pasta Bella</h1> 
-                            
-                            <div className='container'>
-                                <div className='Massas_Category'>                                   
-                                <div className="image-wrapper">
-                                    <img src="../imagens/index-page/cardapio/massas.jpg" alt="Massas" />
-                                </div>
-                                <p>Massas</p>
-                            </div>
-                            
-                                <div className='Pratos_Executivos_Category background'>
-
-                                </div>
-                                
-                                <div className='Porcoes_Fast_Foods_Category background'>
-                                    <p>Porções</p>
-                                </div>
-                            
-                                <div className='Almoço_e_Janta_Category background'>
-                                    <p>Almoço e Janta</p>
-                                </div>
-                            
-                                <div className='Sem_Gluten_Category background'>
-                                    <p>Sem Glúten</p>
-                                </div>
-                            
-                                <div className='Bebidas background'>
-                                    <p>Bebidas</p>
-                                </div>
-
-                                <div className='Sobremesas background'>
-                                    <p>Sobremesas</p>    
-                                </div>
-                            
-                            </div>
-                        </section>
-                    </main>
-
-                    <footer>
-                    </footer>
-                </>
-            )
-        }
-
-        // Renderizar o componente
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<Cardapio />);
-    </script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  
+  <!-- Mantenha scripts essenciais que precisam carregar primeiro -->
+  <script src="/scripts/analytics.js"></script>
 </body>
 </html>
