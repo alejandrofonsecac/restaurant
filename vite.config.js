@@ -7,10 +7,11 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'public/index.html'),
-        cardapio: resolve(__dirname, 'public/cardapio.html')
+        main: resolve(__dirname, 'index.html'),          // Página principal
+        cardapio: resolve(__dirname, 'cardapio/cardapio.html') // Página do cardápio
       }
-    }
+    },
+    outDir: 'dist'
   },
   server: {
     port: 3000
