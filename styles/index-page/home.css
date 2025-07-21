@@ -38,13 +38,13 @@ button{
     box-shadow: -1px 2px 9px rgba(0, 0, 0, 0.493);
 }
 
-.container > button.button-menu{
+.container > a > button.button-menu{
     background-color: var(--color-primary);
     color: white;  
     margin: auto; 
 }
 
-.container > button.button-order-now{
+.container > a > button.button-order-now{
     background-color: white;
     color: var(--color-primary);
 }
