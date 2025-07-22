@@ -1,5 +1,4 @@
 import React from 'react';
-import './Header.css'; // Ou Header.module.css
 
 function Header() {
   return (
@@ -28,16 +27,6 @@ function Header() {
       </menu>
     </header>
   );
-}
-
-function clickMenu() {
-  // Implemente a lógica do menu aqui
-  const menu = document.getElementById('itens');
-  if (menu.style.display === 'none') {
-    menu.style.display = 'block';
-  } else {
-    menu.style.display = 'none';
-  }
 }
 
 export default Header;
