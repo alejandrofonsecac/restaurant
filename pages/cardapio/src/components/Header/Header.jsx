@@ -15,7 +15,7 @@ function Header() {
           <span className="cart-count">0</span>
         </div>
       </div>
-      <span className="material-icons" onClick={clickMenu}>menu</span>
+      <span className="material-icons" >menu</span>
       <menu id="itens" style={{ display: 'none' }} className="menu-mobile">
         <ul>
           <li><a href="#">Opção 1</a></li>
