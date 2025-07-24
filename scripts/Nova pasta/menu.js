@@ -1,10 +1,14 @@
-function MudouTamanho(){
-            if(window.innerWidth >= 650){
-                itens.style.display = 'block'
-            }else{
-                itens.style.display = 'none'
-            }
+function MudouTamanho() {
+    if (window.innerWidth >= 650) {
+        itens.style.display = 'block';
+        // Remove o overlay se existir
+        if (document.querySelector('.menu-overlay')) {
+            document.body.removeChild(document.querySelector('.menu-overlay'));
         }
+    } else {
+        itens.style.display = 'none';
+    }
+}
 
         function clickMenu(){
             if(itens.style.display == 'block'){
@@ -45,4 +49,36 @@ function MudouTamanho(){
                 itens.style.padding = '20px';
                 itens.style.overflowY = 'auto';
             }
+
+            // Adiciona o ícone de fechar
+
+            const closeOverlay = document.createElement('span');
+            closeOverlay.className = 'material-symbols-outlined';
+            closeOverlay.textContent = 'close';
+            closeOverlay.style.position = 'absolute';
+            closeOverlay.style.top = '5px';    
+            closeOverlay.style.right = '10px';
+            
+            // Adiciona evento de clique no X
+            itens.appendChild(closeOverlay);
+            closeOverlay.addEventListener('click', function(e) {
+                e.stopPropagation();
+                itens.style.display = 'none';
+                if (document.querySelector('.menu-overlay')) {
+                    document.body.removeChild(document.querySelector('.menu-overlay'));
+                }
+            });
+
+            // Quando clicar fecha o menu e remove o overlay
+            itens.addEventListener('click', function(e) {
+                itens.display = 'none';
+                document.body.removeChild(document.querySelector('.menu-overlay'));
+            })
+                
+
+            if(window.innerWidth >= 1050){
+                itens.style.display = 'none';
+                document.body.removeChild(document.querySelector('.menu-overlay'));
+                document.getElementsByClassName('material-icons')[0].style.display = 'none';
+            }                                                                   
         }
