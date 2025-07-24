@@ -19,7 +19,7 @@ header {
     height: auto;
     display: flex;
     justify-content: space-around;
-    background-color: gray;
+    background-color: white;
 }
 
 header > h1 {

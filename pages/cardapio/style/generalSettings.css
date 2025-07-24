@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+:root {
+    --color-primary: #8B0000;
+
+    /*
+    Fontes:
+        Playfair Display (TÍTULOS PRINCIPAIS)
+        Montserrat (SUBTÍTULOS)
+        Sans-serif (LEITURA PADRÃO)
+    */
+    --font-principal: 'Playfair Display', serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font-padrao: sans-serif, arial;
+}
+
+body {
+    background-color: rgb(221, 219, 219);
+    margin: 0px;
+}

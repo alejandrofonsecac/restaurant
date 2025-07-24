@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../style/header.css';
 import '../../../style/main.css';
+import '../../../style/generalSettings.css';
 
 function Header() {
   return (
