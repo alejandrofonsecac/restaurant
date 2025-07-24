@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+header{
+    height: 80px;
+}
+
+header > h1{
+    font-size: 2.7em;
+    margin-right: 40px;
+}
+
+header > div.header-icons > span{
+    display: none;
+}
+
+header > .menu-desktop{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header > .menu-desktop > li{
+    font-family: var(--font-secundaria);
+    font-weight: bold;
+    font-size: 1.2em;
+
+    margin-right: 20px;
+    padding: 10px;
+    list-style: none;
+    background-color: white;
+    border-radius: 7px;
+}
+
+header > ul.menudesktop > li:hover{
+    background-color: #8B0000;
+    color: white;
+}
+
+header > .menu-desktop > li > a{
+    text-decoration: none;
+    color: #8B0000;
+}

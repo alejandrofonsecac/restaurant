@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../../style/header.css';
+import '../../../style/main.css';
 
 function Header() {
   return (
@@ -9,13 +11,18 @@ function Header() {
         <li><a href="#">Cardapio</a></li>
         <li><a href="#">Alguma coisa</a></li>
       </ul>
+      
       <div className="header-icons">
         <div className="icon-wrapper">
-          <span className="material-icons">shopping_cart</span>
-          <span className="cart-count">0</span>
+            <span className="material-icons">shopping_cart</span>
+            <span className="cart-count">0</span>
+        </div>
+        
+        <div>
+          <span className="material-icons" >menu</span>
         </div>
       </div>
-      <span className="material-icons" >menu</span>
+
       <menu id="itens" style={{ display: 'none' }} className="menu-mobile">
         <ul>
           <li><a href="#">Opção 1</a></li>
