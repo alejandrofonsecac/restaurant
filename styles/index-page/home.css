@@ -32,7 +32,7 @@ section.home > .container > div.caption > p{
 button{
     width: 70vw;
     height: 50px;
-    margin: 16px auto;
+    margin: 16px auto !important;
     border: none;
     border-radius: 10px;
     box-shadow: -1px 2px 9px rgba(0, 0, 0, 0.493);
@@ -41,7 +41,10 @@ button{
 .container > a > button.button-menu{
     background-color: var(--color-primary);
     color: white;  
-    margin: auto; 
+}
+
+.container > a{
+    margin: auto;
 }
 
 .container > a > button.button-order-now{
