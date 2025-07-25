@@ -82,3 +82,8 @@ function MudouTamanho() {
                 document.getElementsByClassName('material-icons')[0].style.display = 'none';
             }                                                                   
         }
+
+        function clickMenuBody() {
+            document.body.removeChild(document.querySelector('.menu-overlay'));
+            itens.style.display = 'block';
+        }
