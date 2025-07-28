@@ -62,6 +62,11 @@ header > div.header-icons > span.material-icons{
     margin: 0px 5px;
 }
 
+header > div.header-icons > span.material-icons > ul > li {
+    list-style: none;
+    text-decoration: none;
+}
+
 main{
     background-color: white;
 }
