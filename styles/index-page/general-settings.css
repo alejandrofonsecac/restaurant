@@ -36,6 +36,8 @@ body {
 }
 
 
+
+/* ---Header--- */
 header {
     width: 100%;
     display: flex;
@@ -67,9 +69,33 @@ header > div.header-icons > span.material-icons > ul > li {
     text-decoration: none;
 }
 
+/* ---Menu JS--- */
+
+header > .header-icons > menu#itens > ul > li {
+    list-style: none;
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+header > .header-icons > menu#itens > ul > li > a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-family: var(--font-secundaria);
+    font-weight: bold;
+}
+/* Animação Menu */
+
+
+
+/* ---MAIN--- */
+
 main{
     background-color: white;
 }
+
+
+
+/* ---Footer---*/
 
 footer{
     background-color: rgb(221, 219, 219);

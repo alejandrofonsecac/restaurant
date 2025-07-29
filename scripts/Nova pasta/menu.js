@@ -34,11 +34,15 @@ function clickMenu() {
         itens.style.top = '0';
         itens.style.right = '0';
         itens.style.width = '40%';
-        itens.style.height = '100%';
+        itens.style.height = '50%';
         itens.style.backgroundColor = 'white';
         itens.style.zIndex = '1000';
         itens.style.padding = '20px';
+        itens.style.margin = '15px'
         itens.style.overflowY = 'auto';
+
+
+
 
         // Adiciona o ícone de fechar
         const closeOverlay = document.createElement('span');
@@ -62,6 +66,8 @@ function clickMenu() {
         setTimeout(() => {//?
             document.addEventListener('click', closeMenuOnClickOutside);
         }, 0);
+
+        
     }
 }
 
