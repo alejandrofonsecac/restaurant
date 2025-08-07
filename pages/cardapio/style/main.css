@@ -1,1 +1,49 @@
 @charset "UTF-8";
+
+
+*{
+    box-sizing: border-box;
+}
+
+main > menu{
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    padding: 0 !important;
+}
+
+.container {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    padding-bottom: 10px; /* Espaço para a barra */
+    gap: 8px; /* Substitui margens dos itens */
+}
+
+/* Esconde a barra padrão e personaliza (Chrome/Safari/Edge) */
+.container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px; /* Espaço para a barra */
+    gap: 8px;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Cor personalizada */
+}
+.container::-webkit-scrollbar {
+    height: 4px;
+    background: transparent;
+}
+.container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+.itens {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 40px;
+    background: red;
+    scroll-snap-align: start;
+}

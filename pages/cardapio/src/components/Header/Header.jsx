@@ -1,4 +1,6 @@
 import React from 'react';
+
+//Estilos
 import '../../../style/header.css';
 import '../../../style/main.css';
 import '../../../style/generalSettings.css';
