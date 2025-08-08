@@ -3,6 +3,7 @@
 
 *{
     box-sizing: border-box;
+    user-select: none;
 }
 
 main > menu{
@@ -12,38 +13,52 @@ main > menu{
     padding: 0 !important;
 }
 
+/* Configuração de background Menu */
+
+.PizzasMenu {
+    background: url('../public/imagens/') no-repeat center center;
+    background-size: cover;
+}
+
 .container {
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* Firefox */
     padding-bottom: 10px; /* Espaço para a barra */
-    gap: 8px; /* Substitui margens dos itens */
+    gap: 8px;
 }
 
-/* Esconde a barra padrão e personaliza (Chrome/Safari/Edge) */
 .container {
     display: flex;
+    align-items: center;
+    width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 8px; /* Espaço para a barra */
     gap: 8px;
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Cor personalizada */
+    padding: 10px;
+    scrollbar-width: none; /* Firefox */
+    cursor: grab;
 }
+
+.container:active {
+    cursor: grabbing;
+}
+
 .container::-webkit-scrollbar {
-    height: 4px;
-    background: transparent;
+    display: none;
 }
-.container::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 2px;
-}
+
 .itens {
     flex: 0 0 auto;
     width: 150px;
     height: 40px;
     background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     scroll-snap-align: start;
+    white-space: nowrap;
+    color: white;
 }
