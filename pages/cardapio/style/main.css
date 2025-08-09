@@ -1,3 +1,14 @@
+@charset "UTF-8";
+
+
+:root{
+    --primary-color: #ff6347; /* Cor primária */
+    --secondary-color: #f0f0f0; /* Cor secundária */
+    --text-color: #333; /* Cor do texto */
+    --background-color: #fff; /* Cor de fundo */
+    --border-radius: 8px; /* Raio de borda padrão */
+}
+
 * {
     box-sizing: border-box;
     user-select: none;
@@ -50,7 +61,7 @@ main > menu {
     user-select: none;
 }
 
-/* Estilo específico para o item de Pizza */
+/* Estilo específico para o item do Menu*/
 .principalMenu{
     background: url('../public/imagens/menuImagens/principalMenu.jpg') no-repeat center center;
     background-size: cover;
@@ -93,3 +104,37 @@ main > menu {
     background: url('../public/imagens/menuImagens/bebidasMenu.jpg') no-repeat center center;
     background-size: cover;
 }
+
+/* FOOD ITEM */
+
+.food-item {
+    width: 100%;
+    display: flex;
+}
+
+.food-item > div{
+    width: 80%;
+    padding: 10px;
+}
+
+.food-item > div > h4 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #1f1f1f;
+}
+
+.food-item > div > p {
+    font-size: 0.7em;
+    color: #585858e3;
+    margin-top: 5px;
+}
+
+.food-item > span.margueritaPizza {
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioPizza/margueritaPizza.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}
+
