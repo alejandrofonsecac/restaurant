@@ -5,10 +5,10 @@
 
 main > menu {
     width: 90%;
-    height: 150px;
+    height: 70px;
     margin: auto;
     padding: 0 !important;
-    touch-action: pan-y; /* Melhora a resposta ao toque */
+    touch-action: pan-y;
 }
 
 .container {
@@ -46,11 +46,16 @@ main > menu {
     scroll-snap-align: start;
     white-space: nowrap;
     border-radius: 8px;
-    transition: transform 0.2s ease; /* Efeito sutil ao clicar */
+    transition: transform 0.2s ease;
     user-select: none;
 }
 
 /* Estilo específico para o item de Pizza */
+.principalMenu{
+    background: url('../public/imagens/menuImagens/principalMenu.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 .PizzasMenu {
     background: url('../public/imagens/menuImagens/pizzaMenu.jpeg') no-repeat center center;
     background-size: cover;
@@ -61,5 +66,30 @@ main > menu {
     font-size: 1.2rem;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-    pointer-events: none; /* Permite clicar através do texto */
+    pointer-events: none;
+}
+
+.pratosExecutivos {
+    background: url('../public/imagens/menuImagens/pratosExecutivosMenu.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.porções{
+    background: url('../public/imagens/menuImagens/porçõesMenu.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.semGluten{
+    background: url('../public/imagens/menuImagens/semGlutenMenu.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.sobremesas{
+    background: url('../public/imagens/menuImagens/sobremesasMenu.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.bebidas{
+    background: url('../public/imagens/menuImagens/bebidasMenu.jpg') no-repeat center center;
+    background-size: cover;
 }

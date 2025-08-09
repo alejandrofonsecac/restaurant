@@ -117,15 +117,18 @@ function Main() {
                     onTouchMove={handleTouchMove}
                     onTouchEnd={handleEnd}
                 >
-                    <div className="itens menuPrincipalMenu"><p>Menu Principal</p></div>
+                    <div className="itens principalMenu"><p>Menu Principal</p></div>
                     <div className="PizzasMenu"><p>Pizzas</p></div>
-                    <div className="itens PratosExecutivos"><p>Pratos Executivos</p></div>
-                    <div className="itens Porções"><p>Porções</p></div>
-                    <div className="itens SemGluten"><p>Sem Glúten</p></div>
-                    <div className="itens Sobremesas"><p>Sobremesas</p></div>
-                    <div className="itens Bebidas"><p>Bebidas</p></div>
+                    <div className="itens pratosExecutivos"><p>Pratos Executivos</p></div>
+                    <div className="itens porções"><p>Porções</p></div>
+                    <div className="itens semGluten"><p>Sem Glúten</p></div>
+                    <div className="itens sobremesas"><p>Sobremesas</p></div>
+                    <div className="itens bebidas"><p>Bebidas</p></div>
                 </div>
             </menu>
+
+            
+
         </main>
     );
 }
