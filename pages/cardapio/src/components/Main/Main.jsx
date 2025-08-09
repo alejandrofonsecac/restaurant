@@ -1,63 +1,107 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import '../../../style/main.css';
 
 function Main() {
     const containerRef = useRef(null);
 
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-    let velocity = 0;
-    let lastX;
-    let momentumID;
+    // Variáveis de estado para o carrossel
+    const state = useRef({
+        isDown: false,
+        startX: 0,
+        scrollLeft: 0,
+        velocity: 0,
+        lastX: 0,
+        momentumID: null,
+        lastTime: 0
+    }).current;
 
     // Para a inércia
     const stopMomentum = () => {
-        cancelAnimationFrame(momentumID);
+        cancelAnimationFrame(state.momentumID);
     };
 
     // Função que cria o efeito de desaceleração
     const momentumScroll = () => {
-        containerRef.current.scrollLeft += velocity;
-        velocity *= 0.95; // fator de desaceleração (quanto menor, mais rápido para)
-        if (Math.abs(velocity) > 0.2) {
-            momentumID = requestAnimationFrame(momentumScroll);
+        containerRef.current.scrollLeft += state.velocity;
+        state.velocity *= 0.95; // fator de desaceleração
+        
+        if (Math.abs(state.velocity) > 0.5) {
+            state.momentumID = requestAnimationFrame(momentumScroll);
+        } else {
+            // Snap suave quando a velocidade for baixa
+            const container = containerRef.current;
+            const itemWidth = 150 + 8; // largura do item + gap
+            const snapPosition = Math.round(container.scrollLeft / itemWidth) * itemWidth;
+            
+            container.scrollTo({
+                left: snapPosition,
+                behavior: 'smooth'
+            });
         }
     };
 
-    const handleMouseDown = (e) => {
-        isDown = true;
-        startX = e.pageX - containerRef.current.offsetLeft;
-        scrollLeft = containerRef.current.scrollLeft;
-        lastX = startX;
+    const handleDown = (clientX) => {
+        state.isDown = true;
+        const container = containerRef.current;
+        state.startX = clientX - container.getBoundingClientRect().left;
+        state.scrollLeft = container.scrollLeft;
+        state.lastX = state.startX;
+        state.velocity = 0;
+        state.lastTime = performance.now();
         stopMomentum();
     };
 
-    const handleMouseLeave = () => {
-        if (isDown) {
-            isDown = false;
+    const handleMove = (clientX) => {
+        if (!state.isDown) return;
+        
+        const container = containerRef.current;
+        const x = clientX - container.getBoundingClientRect().left;
+        const walk = (x - state.startX) * 1.5; // sensibilidade do arrasto
+        container.scrollLeft = state.scrollLeft - walk;
+
+        // Calcula velocidade para a inércia
+        const now = performance.now();
+        const deltaTime = now - state.lastTime;
+        
+        if (deltaTime > 0) {
+            state.velocity = (container.scrollLeft - (state.scrollLeft - walk)) / deltaTime * 16;
+        }
+        
+        state.lastX = x;
+        state.lastTime = now;
+    };
+
+    const handleEnd = () => {
+        if (state.isDown) {
+            state.isDown = false;
             momentumScroll();
         }
     };
 
-    const handleMouseUp = () => {
-        if (isDown) {
-            isDown = false;
-            momentumScroll();
-        }
+    // Eventos de mouse
+    const handleMouseDown = (e) => {
+        handleDown(e.clientX);
     };
 
     const handleMouseMove = (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - containerRef.current.offsetLeft;
-        const walk = (x - startX) * 1;
-        containerRef.current.scrollLeft = scrollLeft - walk;
-
-        // Calcula velocidade para a inércia
-        velocity = x - lastX;
-        lastX = x;
+        handleMove(e.clientX);
     };
+
+    // Eventos de touch
+    const handleTouchStart = (e) => {
+        handleDown(e.touches[0].clientX);
+    };
+
+    const handleTouchMove = (e) => {
+        handleMove(e.touches[0].clientX);
+    };
+
+    // Cleanup effect
+    useEffect(() => {
+        return () => {
+            stopMomentum();
+        };
+    }, []);
 
     return (
         <main>
@@ -66,12 +110,15 @@ function Main() {
                     className="container"
                     ref={containerRef}
                     onMouseDown={handleMouseDown}
-                    onMouseLeave={handleMouseLeave}
-                    onMouseUp={handleMouseUp}
+                    onMouseLeave={handleEnd}
+                    onMouseUp={handleEnd}
                     onMouseMove={handleMouseMove}
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleEnd}
                 >
                     <div className="itens menuPrincipalMenu"><p>Menu Principal</p></div>
-                    <div className="itens PizzasMenu"><p>Pizzas</p></div>
+                    <div className="PizzasMenu"><p>Pizzas</p></div>
                     <div className="itens PratosExecutivos"><p>Pratos Executivos</p></div>
                     <div className="itens Porções"><p>Porções</p></div>
                     <div className="itens SemGluten"><p>Sem Glúten</p></div>

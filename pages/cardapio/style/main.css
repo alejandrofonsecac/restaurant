@@ -1,45 +1,30 @@
-@charset "UTF-8";
-
-
-*{
+* {
     box-sizing: border-box;
     user-select: none;
 }
 
-main > menu{
+main > menu {
     width: 90%;
     height: 150px;
     margin: auto;
     padding: 0 !important;
-}
-
-/* Configuração de background Menu */
-
-.PizzasMenu {
-    background: url('../public/imagens/') no-repeat center center;
-    background-size: cover;
-}
-
-.container {
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    padding-bottom: 10px; /* Espaço para a barra */
-    gap: 8px;
+    touch-action: pan-y; /* Melhora a resposta ao toque */
 }
 
 .container {
     display: flex;
     align-items: center;
     width: 100%;
+    height: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; /* Adiciona suavidade ao scroll programático */
     -webkit-overflow-scrolling: touch;
     gap: 8px;
     padding: 10px;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
     cursor: grab;
+    overscroll-behavior-x: contain; /* Previne o scroll da página quando chega no final */
 }
 
 .container:active {
@@ -50,15 +35,31 @@ main > menu{
     display: none;
 }
 
-.itens {
+/* Estilo para todos os itens do menu */
+.itens, .PizzasMenu {
     flex: 0 0 auto;
     width: 150px;
-    height: 40px;
-    background: red;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     scroll-snap-align: start;
     white-space: nowrap;
+    border-radius: 8px;
+    transition: transform 0.2s ease; /* Efeito sutil ao clicar */
+    user-select: none;
+}
+
+/* Estilo específico para o item de Pizza */
+.PizzasMenu {
+    background: url('../public/imagens/menuImagens/pizzaMenu.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.PizzasMenu > p, .itens > p {
     color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    pointer-events: none; /* Permite clicar através do texto */
 }
