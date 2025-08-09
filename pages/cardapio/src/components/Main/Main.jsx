@@ -128,6 +128,63 @@ function Main() {
             </menu>
 
             
+                        {/* Categoria Pizzas */}
+            <div className="category-container">
+            <h3 className="category-title">🍕 Pizzas</h3>
+            <div className="food-items">
+                
+                <div className="food-item">
+                <h4 className="food-name">Margherita</h4>
+                <p className="ingredients">Massa artesanal, molho de tomate italiano, mussarela de búfala, manjericão fresco, azeite extra virgem</p>
+                </div>
+                
+                <div className="food-item">
+                <h4 className="food-name">Pepperoni</h4>
+                <p className="ingredients">Massa crocante, molho de tomate, mussarela, fatias generosas de pepperoni</p>
+                </div>
+                
+                <div className="food-item">
+                <h4 className="food-name">Frango com Catupiry</h4>
+                <p className="ingredients">Massa bem passada, molho de tomate, mussarela, frango desfiado temperado, catupiry cremoso</p>
+                </div>
+                
+                <div className="food-item">
+                <h4 className="food-name">Calabresa</h4>
+                <p className="ingredients">Molho de tomate, queijo mussarela, calabresa fatiada, cebola roxa, orégano</p>
+                </div>
+                
+                <div className="food-item">
+                <h4 className="food-name">Quatro Queijos</h4>
+                <p className="ingredients">Queijo mussarela, parmesão, gorgonzola e catupiry sobre massa fina</p>
+                </div>
+                
+                <div className="food-item">
+                <h4 className="food-name">Portuguesa</h4>
+                <p className="ingredients">Presunto, ovos, cebola, azeitona, pimentão, molho e queijo mussarela</p>
+                </div>
+                
+                <div className="food-item">
+                <h4 className="food-name">Vegetariana</h4>
+                <p className="ingredients">Abobrinha grelhada, berinjela, pimentões coloridos, cebola, tomate, molho e queijo</p>
+                </div>
+                
+                <div className="food-item">
+                <h4 className="food-name">Napolitana</h4>
+                <p className="ingredients">Molho artesanal, queijo, tomate fresco, orégano, manjericão</p>
+                </div>
+                
+                <div className="food-item">
+                <h4 className="food-name">Toscana</h4>
+                <p className="ingredients">Linguiça toscana artesanal, molho de tomate, mussarela, pimenta-do-reino</p>
+                </div>
+                
+                <div className="food-item">
+                <h4 className="food-name">Bella Speciale</h4>
+                <p className="ingredients">Molho secreto da casa, presunto parma, rúcula, tomate seco, lascas de parmesão</p>
+                </div>
+                
+            </div>
+            </div>
 
         </main>
     );
