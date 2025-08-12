@@ -132,9 +132,89 @@ main > menu {
 .food-item > span.margueritaPizza {
     width: 40%;
     height: 60px;
-    background: url('../public/imagens/cardapioPizza/margueritaPizza.jpg') no-repeat center center;
+    background: url('../public/imagens/cardapioPizza/pizzaMarguerita.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 8px;
     margin: 8px;
 }
 
+.food-item > span.pepperoniPizza {
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioPizza/pizzaPeperoni.jpeg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.food-item > span.frangoPizza {
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioPizza/pizzaFrango.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}   
+
+.food-item > span.calabresaPizza {
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioPizza/pizzaCalabresa.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.food-item > span.queijosPizza {
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioPizza/pizza4Queijos.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.food-item > span.portuguesaPizza {
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioPizza/pizzaPortuguesa.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.food-item > span.vegetarianaPizza {
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioPizza/pizzaVegetariana.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.food-item > span.napolitanaPizza {
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioPizza/pizzaNapolitana.jpeg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.food-item > span.toscanaPizza {
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioPizza/pizzaToscana.jpeg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.food-item > span.bellaPizza {
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioPizza/pizzaBella.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}
