@@ -107,7 +107,7 @@ function Main() {
         <main>
             <menu>
                 <div
-                    className="container"
+                    className="containerMenu"
                     ref={containerRef}
                     onMouseDown={handleMouseDown}
                     onMouseLeave={handleEnd}
