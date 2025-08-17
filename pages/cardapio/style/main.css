@@ -122,6 +122,7 @@ main > menu {
 .food-item {
     width: 100%;
     display: flex;
+    align-items: center;
 }
 
 .food-item > div{
