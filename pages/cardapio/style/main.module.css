@@ -225,3 +225,15 @@ main > menu {
     border-radius: 8px;
     margin: 8px;
 }
+
+
+/* Massas */
+
+.espagueteBolonhesa{
+    width: 40%;
+    height: 60px;
+    background: url('../public/imagens/cardapioMassas/mobile/espagueteBolonhesa.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 8px;
+}

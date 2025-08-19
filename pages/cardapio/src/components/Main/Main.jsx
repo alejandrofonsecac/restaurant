@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import '../../../style/main.css';
+import style from '../../../style/main.module.css'
 
 function Main() {
     const containerRef = useRef(null);
@@ -226,8 +226,8 @@ function Main() {
                     <h4>Espaguete à Bolonhesa</h4>
                     <p>Espaguete com molho de carne moída cozido lentamente com tomate, cebola e ervas</p>
                 </div>
-                <span>
-                    <img src="/images/massas/bolonhesa.jpg" alt="Espaguete à Bolonhesa" />
+                <span className={style.espagueteBolonhesa}>
+                    
                 </span>
                 </div>
 
