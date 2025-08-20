@@ -364,7 +364,7 @@ function Main() {
                 <div className={style.foodItem}>
                 <div>
                     <h4>Filé à Parmegiana</h4>
-                    <p> className={style.ingredients}Filé empanado com molho de tomate e queijo, arroz branco e batatas fritas</p>
+                    <p className={style.ingredients}>Filé empanado com molho de tomate e queijo, arroz branco e batatas fritas</p>
                 </div>
                 <span>
                     <img src="/images/pratos/parmegiana.jpg" alt="Filé à Parmegiana" />
@@ -386,7 +386,7 @@ function Main() {
                 <div className={style.foodItem}>
                 <div>
                     <h4>Bife Acebolado</h4>
-                    <p>Acompanha arroz, feijão, farofa e salada</p>
+                    <p className={style.ingredients}>Acompanha arroz, feijão, farofa e salada</p>
                 </div>
                 <span>
                     <img src="/images/pratos/acebolado.jpg" alt="Bife Acebolado" />
@@ -419,7 +419,7 @@ function Main() {
                 <div className={style.foodItem}>
                 <div>
                     <h4>Risoto de Cogumelos</h4>
-                    <p>Arroz arbório, cogumelos frescos, vinho branco, parmesão</p>
+                    <p className={style.ingredients}>Arroz arbório, cogumelos frescos, vinho branco, parmesão</p>
                 </div>
                 <span>
                     <img src="/images/pratos/risoto.jpg" alt="Risoto de Cogumelos" />
