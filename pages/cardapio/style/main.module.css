@@ -113,13 +113,13 @@ main > menu {
     margin-top: 5px;
 }
 
-.food-name{
+.foodName{
     font-size: 1.2em;
     margin: 0;
     color: #1f1f1f;
 }
 
-.food-item {
+.foodItem {
     width: 100%;
     display: flex;
     align-items: center;
