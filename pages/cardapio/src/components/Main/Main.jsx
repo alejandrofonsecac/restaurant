@@ -133,86 +133,85 @@ function Main() {
                 <h3 className="category-title">Pizzas</h3>
                 <div className="food-items">
                 
-                <div className={style.foodItem}>
-                    <div>
-                        <h4 className={style.foodName}>Margherita</h4>
-                        <p className={style.ingredients}>Massa artesanal, molho de tomate italiano, mussarela de búfala, manjericão fresco, azeite extra virgem</p>
+                    <div className={style.foodItem}>
+                        <div>
+                            <h4 className={style.foodName}>Margherita</h4>
+                            <p className={style.ingredients}>Massa artesanal, molho de tomate italiano, mussarela de búfala, manjericão fresco, azeite extra virgem</p>
+                        </div>
+                        <span className={style.margueritaPizza}></span>
                     </div>
-                    <span className='margueritaPizza'></span>
-                </div>
-                
-                <div className={style.foodItem}>
-                    <div>
-                        <h4 className="food-name">Pepperoni</h4>
-                        <p className={style.ingredients}>Massa crocante, molho de tomate, mussarela, fatias generosas de pepperoni</p>
+                    
+                    <div className={style.foodItem}>
+                        <div>
+                            <h4 className="food-name">Pepperoni</h4>
+                            <p className={style.ingredients}>Massa crocante, molho de tomate, mussarela, fatias generosas de pepperoni</p>
+                        </div>
+                        <span className={style.pepperoniPizza}></span>
                     </div>
-                    <span className='pepperoniPizza'></span>
-                </div>
-                
-                <div className={style.foodItem}>
-                    <div>
-                        <h4 className="food-name">Frango com Catupiry</h4>
-                        <p className={style.ingredients}>Massa bem passada, molho de tomate, mussarela, frango desfiado temperado, catupiry cremoso</p>
+                    
+                    <div className={style.foodItem}>
+                        <div>
+                            <h4 className="food-name">Frango com Catupiry</h4>
+                            <p className={style.ingredients}>Massa bem passada, molho de tomate, mussarela, frango desfiado temperado, catupiry cremoso</p>
+                        </div>
+                        <span className={style.frangoPizza}></span>
                     </div>
-                    <span className='frangoPizza'></span>
-                </div>
-                
-                <div className={style.foodItem}>
-                    <div>
-                        <h4 className="food-name">Calabresa</h4>
-                        <p className={style.ingredients}>Molho de tomate, queijo mussarela, calabresa fatiada, cebola roxa, orégano</p>
+                    
+                    <div className={style.foodItem}>
+                        <div>
+                            <h4 className="food-name">Calabresa</h4>
+                            <p className={style.ingredients}>Molho de tomate, queijo mussarela, calabresa fatiada, cebola roxa, orégano</p>
+                        </div>
+                        <span className={style.calabresaPizza}></span>
                     </div>
-                    <span className='calabresaPizza'></span>
-                </div>
-                
-                <div className={style.foodItem}>
-                    <div>
-                        <h4 className="food-name">Quatro Queijos</h4>
-                        <p className={style.ingredients}>Queijo mussarela, parmesão, gorgonzola e catupiry sobre massa fina</p>
+                    
+                    <div className={style.foodItem}>
+                        <div>
+                            <h4 className="food-name">Quatro Queijos</h4>
+                            <p className={style.ingredients}>Queijo mussarela, parmesão, gorgonzola e catupiry sobre massa fina</p>
+                        </div>
+                        <span className={style.queijosPizza}></span>
                     </div>
-                    <span className='queijosPizza'></span>
-                </div>
-                
-                <div className={style.foodItem}>
-                    <div>
-                        <h4 className="food-name">Portuguesa</h4>
-                        <p className={style.ingredients}>Presunto, ovos, cebola, azeitona, pimentão, molho e queijo mussarela</p>
+                    
+                    <div className={style.foodItem}>
+                        <div>
+                            <h4 className="food-name">Portuguesa</h4>
+                            <p className={style.ingredients}>Presunto, ovos, cebola, azeitona, pimentão, molho e queijo mussarela</p>
+                        </div>
+                        <span className={style.portuguesaPizza}></span>
                     </div>
-                    <span className='portuguesaPizza'></span>
-                </div>
-                
-                <div className={style.foodItem}>
-                    <div>
-                        <h4 className="food-name">Vegetariana</h4>
-                        <p className={style.ingredients}>Abobrinha grelhada, berinjela, pimentões coloridos, cebola, tomate, molho e queijo</p>
+                    
+                    <div className={style.foodItem}>
+                        <div>
+                            <h4 className="food-name">Vegetariana</h4>
+                            <p className={style.ingredients}>Abobrinha grelhada, berinjela, pimentões coloridos, cebola, tomate, molho e queijo</p>
+                        </div>
+                        <span className={style.vegetarianaPizza}></span>
                     </div>
-                    <span className='vegetarianaPizza'></span>
-                </div>
-                
-                <div className={style.foodItem}>
-                    <div>
-                        <h4 className="food-name">Napolitana</h4>
-                        <p className={style.ingredients}>Molho artesanal, queijo, tomate fresco, orégano, manjericão</p>
+                    
+                    <div className={style.foodItem}>
+                        <div>
+                            <h4 className="food-name">Napolitana</h4>
+                            <p className={style.ingredients}>Molho artesanal, queijo, tomate fresco, orégano, manjericão</p>
+                        </div>
+                        <span className={style.napolitanaPizza}></span>
                     </div>
-                    <span className='napolitanaPizza'></span>
-                </div>
-                
-                <div className={style.foodItem}>
-                    <div>
-                        <h4 className="food-name">Toscana</h4>
-                        <p className={style.ingredients}>Linguiça toscana artesanal, molho de tomate, mussarela, pimenta-do-reino</p>
+                    
+                    <div className={style.foodItem}>
+                        <div>
+                            <h4 className="food-name">Toscana</h4>
+                            <p className={style.ingredients}>Linguiça toscana artesanal, molho de tomate, mussarela, pimenta-do-reino</p>
+                        </div>
+                        <span className={style.toscanaPizza}></span>
                     </div>
-                    <span className='toscanaPizza'></span>
-                </div>
-                
-                <div className={style.foodItem}>
-                    <div>
-                        <h4 className="food-name">Bella Speciale</h4>
-                        <p className={style.ingredients}>Molho secreto da casa, presunto parma, rúcula, tomate seco, lascas de parmesão</p>
-                    </div>
-                    <span className='bellaPizza'></span>
-                </div>
-                
+                    
+                    <div className={style.foodItem}>
+                        <div>
+                            <h4 className="food-name">Bella Speciale</h4>
+                            <p className={style.ingredients}>Molho secreto da casa, presunto parma, rúcula, tomate seco, lascas de parmesão</p>
+                        </div>
+                        <span className={style.bellaPizza}></span>
+                    </div>                    
             </div>
 
                         {/* Categoria Massas - Completa */}
@@ -237,9 +236,7 @@ function Main() {
                     <h4>Fettuccine Alfredo</h4>
                     <p className={style.ingredients}>Molho cremoso de parmesão, manteiga e creme de leite</p>
                 </div>
-                <span>
-                    <img src="/images/massas/alfredo.jpg" alt="Fettuccine Alfredo" />
-                </span>
+                    <span className={style.fettucineAlfredo}></span>
                 </div>
 
                 {/* Massa 3 */}
