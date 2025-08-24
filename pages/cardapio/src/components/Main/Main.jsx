@@ -139,6 +139,10 @@ function Main() {
                             <p className={style.ingredients}>Massa artesanal, molho de tomate italiano, mussarela de búfala, manjericão fresco, azeite extra virgem</p>
                         </div>
                         <span className={style.margueritaPizza}></span>
+                        <div>
+                            <button>Adicionar</button>
+                            <p></p>
+                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
@@ -147,6 +151,10 @@ function Main() {
                             <p className={style.ingredients}>Massa crocante, molho de tomate, mussarela, fatias generosas de pepperoni</p>
                         </div>
                         <span className={style.pepperoniPizza}></span>
+                        <div>
+                            <button>Adicionar ao Carrinho</button>
+                            <p id='preco'></p>
+                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
@@ -155,6 +163,10 @@ function Main() {
                             <p className={style.ingredients}>Massa bem passada, molho de tomate, mussarela, frango desfiado temperado, catupiry cremoso</p>
                         </div>
                         <span className={style.frangoPizza}></span>
+                        <div>
+                            <button>Adicionar ao Carrinho</button>
+                            <p id='preco'></p>
+                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
@@ -163,6 +175,10 @@ function Main() {
                             <p className={style.ingredients}>Molho de tomate, queijo mussarela, calabresa fatiada, cebola roxa, orégano</p>
                         </div>
                         <span className={style.calabresaPizza}></span>
+                        <div>
+                            <button>Adicionar ao Carrinho</button>
+                            <p id='preco'></p>
+                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
@@ -171,6 +187,10 @@ function Main() {
                             <p className={style.ingredients}>Queijo mussarela, parmesão, gorgonzola e catupiry sobre massa fina</p>
                         </div>
                         <span className={style.queijosPizza}></span>
+                        <div>
+                            <button>Adicionar ao Carrinho</button>
+                            <p id='preco'></p>
+                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
@@ -179,6 +199,10 @@ function Main() {
                             <p className={style.ingredients}>Presunto, ovos, cebola, azeitona, pimentão, molho e queijo mussarela</p>
                         </div>
                         <span className={style.portuguesaPizza}></span>
+                        <div>
+                            <button>Adicionar ao Carrinho</button>
+                            <p id='preco'></p>
+                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
@@ -187,6 +211,10 @@ function Main() {
                             <p className={style.ingredients}>Abobrinha grelhada, berinjela, pimentões coloridos, cebola, tomate, molho e queijo</p>
                         </div>
                         <span className={style.vegetarianaPizza}></span>
+                        <div>
+                            <button>Adicionar ao Carrinho</button>
+                            <p id='preco'></p>
+                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
@@ -195,6 +223,10 @@ function Main() {
                             <p className={style.ingredients}>Molho artesanal, queijo, tomate fresco, orégano, manjericão</p>
                         </div>
                         <span className={style.napolitanaPizza}></span>
+                        <div>
+                            <button>Adicionar ao Carrinho</button>
+                            <p id='preco'></p>
+                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
@@ -203,6 +235,10 @@ function Main() {
                             <p className={style.ingredients}>Linguiça toscana artesanal, molho de tomate, mussarela, pimenta-do-reino</p>
                         </div>
                         <span className={style.toscanaPizza}></span>
+                        <div>
+                            <button>Adicionar ao Carrinho</button>
+                            <p id='preco'></p>
+                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
@@ -211,6 +247,10 @@ function Main() {
                             <p className={style.ingredients}>Molho secreto da casa, presunto parma, rúcula, tomate seco, lascas de parmesão</p>
                         </div>
                         <span className={style.bellaPizza}></span>
+                        <div>
+                            <button>Adicionar ao Carrinho</button>
+                            <p id='preco'></p>
+                        </div>
                     </div>                    
             </div>
 
@@ -225,9 +265,11 @@ function Main() {
                     <h4>Espaguete à Bolonhesa</h4>
                     <p className={style.ingredients}>Espaguete com molho de carne moída cozido lentamente com tomate, cebola e ervas</p>
                 </div>
-                <span className={style.espagueteBolonhesa}>
-                    
-                </span>
+                <span className={style.espagueteBolonhesa}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Massa 2 */}
@@ -237,6 +279,10 @@ function Main() {
                     <p className={style.ingredients}>Molho cremoso de parmesão, manteiga e creme de leite</p>
                 </div>
                     <span className={style.fettucineAlfredo}></span>
+                    <div>
+                        <button>Adicionar ao Carrinho</button>
+                        <p id='preco'></p>
+                    </div>
                 </div>
 
                 {/* Massa 3 */}
@@ -245,9 +291,11 @@ function Main() {
                     <h4>Ravioli de Ricota com Espinafre</h4>
                     <p className={style.ingredients}>Recheio cremoso com molho branco leve</p>
                 </div>
-                <span>
-                    <img src="/images/massas/ravioli.jpg" alt="Ravioli de Ricota" />
-                </span>
+                <span className={style.raviolliRicota}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Massa 4 */}
@@ -256,9 +304,11 @@ function Main() {
                     <h4>Penne ao Pesto</h4>
                     <p className={style.ingredients}>Molho pesto fresco de manjericão, nozes, alho, parmesão e azeite</p>
                 </div>
-                <span>
-                    <img src="/images/massas/pesto.jpg" alt="Penne ao Pesto" />
-                </span>
+                <span className={style.pennePesto}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Massa 5 */}
@@ -267,9 +317,11 @@ function Main() {
                     <h4>Lasanha à Bolonhesa</h4>
                     <p className={style.ingredients}>Camadas de massa com carne, queijo e molho</p>
                 </div>
-                <span>
-                    <img src="/images/massas/lasanha.jpg" alt="Lasanha à Bolonhesa" />
-                </span>
+                <span className={style.lasanhaBolonhesa}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Massa 6 */}
@@ -278,9 +330,11 @@ function Main() {
                     <h4>Gnocchi ao Sugo</h4>
                     <p className={style.ingredients}>Nhoque de batata com molho de tomate e manjericão</p>
                 </div>
-                <span>
-                    <img src="/images/massas/gnocchi.jpg" alt="Gnocchi ao Sugo" />
-                </span>
+                <span className={style.gnocchiSugo}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Massa 7 */}
@@ -289,9 +343,11 @@ function Main() {
                     <h4>Canelone de Frango</h4>
                     <p className={style.ingredients}>Recheado com frango e catupiry, coberto com molho rosé</p>
                 </div>
-                <span>
-                    <img src="/images/massas/canelone.jpg" alt="Canelone de Frango" />
-                </span>
+                <span className={style.caneloneFrango}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Massa 8 */}
@@ -300,9 +356,11 @@ function Main() {
                     <h4>Espaguete Carbonara</h4>
                     <p className={style.ingredients}>Bacon, ovos, queijo parmesão e pimenta do reino</p>
                 </div>
-                <span>
-                    <img src="/images/massas/carbonara.jpg" alt="Espaguete Carbonara" />
-                </span>
+                <span className={style.espagueteCarbonara}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Massa 9 */}
@@ -311,9 +369,11 @@ function Main() {
                     <h4>Rondelli de Presunto e Queijo</h4>
                     <p className={style.ingredients}>Molho bechamel e queijo gratinado</p>
                 </div>
-                <span>
-                    <img src="/images/massas/rondelli.jpg" alt="Rondelli de Presunto" />
-                </span>
+                <span className={style.rondelliPresunto}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Massa 10 */}
@@ -322,9 +382,11 @@ function Main() {
                     <h4>Farfalle à Quatro Queijos</h4>
                     <p className={style.ingredients}>Molho de mussarela, gorgonzola, catupiry e parmesão</p>
                 </div>
-                <span>
-                    <img src="/images/massas/farfalle.jpg" alt="Farfalle à Quatro Queijos" />
-                </span>
+                <span className={style.farfalleQueijos}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Massa 11 */}
@@ -333,9 +395,11 @@ function Main() {
                     <h4>Tagliatelle à Puttanesca</h4>
                     <p className={style.ingredients}>Azeitonas, alcaparras, tomate e alho</p>
                 </div>
-                <span>
-                    <img src="/images/massas/tagliatelle.jpg" alt="Tagliatelle à Puttanesca" />
-                </span>
+                <span className={style.tagliatellePutatesca}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Massa 12 */}
@@ -344,9 +408,11 @@ function Main() {
                     <h4>Tortellini de Carne com Molho Funghi</h4>
                     <p>Cogumelos frescos, creme e queijo</p>
                 </div>
-                <span>
-                    <img src="/images/massas/tortellini.jpg" alt="Tortellini de Carne" />
-                </span>
+                <span className={style.tortelliniCarne}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
             </div>
@@ -363,9 +429,11 @@ function Main() {
                     <h4>Filé à Parmegiana</h4>
                     <p className={style.ingredients}>Filé empanado com molho de tomate e queijo, arroz branco e batatas fritas</p>
                 </div>
-                <span>
-                    <img src="/images/pratos/parmegiana.jpg" alt="Filé à Parmegiana" />
-                </span>
+                <span className={style.fileParmegiana}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Prato 2 */}
@@ -374,9 +442,11 @@ function Main() {
                     <h4>Strogonoff de Frango</h4>
                     <p className={style.ingredients}>Arroz branco, batata palha e frango em molho cremoso</p>
                 </div>
-                <span>
-                    <img src="/images/pratos/strogonoff.jpg" alt="Strogonoff de Frango" />
-                </span>
+                <span className={style.strogonoffFrango}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Prato 3 */}
@@ -385,9 +455,11 @@ function Main() {
                     <h4>Bife Acebolado</h4>
                     <p className={style.ingredients}>Acompanha arroz, feijão, farofa e salada</p>
                 </div>
-                <span>
-                    <img src="/images/pratos/acebolado.jpg" alt="Bife Acebolado" />
-                </span>
+                <span className={style.bifeAcebolado}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Prato 4 */}
@@ -396,9 +468,11 @@ function Main() {
                     <h4>Peixe Grelhado com Legumes</h4>
                     <p className={style.ingredients}>Tilápia grelhada com mix de legumes no vapor</p>
                 </div>
-                <span>
-                    <img src="/images/pratos/peixe.jpg" alt="Peixe Grelhado" />
-                </span>
+                <span className={style.peixeGrelhado}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Prato 5 */}
@@ -407,9 +481,11 @@ function Main() {
                     <h4>Frango Grelhado com Purê</h4>
                     <p className={style.ingredients}>Purê de batata caseiro e arroz</p>
                 </div>
-                <span>
-                    <img src="/images/pratos/frango.jpg" alt="Frango Grelhado" />
-                </span>
+                <span className={style.frangoGrelhado}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Prato 6 */}
@@ -418,9 +494,11 @@ function Main() {
                     <h4>Risoto de Cogumelos</h4>
                     <p className={style.ingredients}>Arroz arbório, cogumelos frescos, vinho branco, parmesão</p>
                 </div>
-                <span>
-                    <img src="/images/pratos/risoto.jpg" alt="Risoto de Cogumelos" />
-                </span>
+                <span className={style.risotoCogumelos}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Prato 7 */}
@@ -429,9 +507,11 @@ function Main() {
                     <h4>Almôndegas ao Sugo</h4>
                     <p className={style.ingredients}>Com arroz branco e purê de batata</p>
                 </div>
-                <span>
-                    <img src="/images/pratos/almondegas.jpg" alt="Almôndegas ao Sugo" />
-                </span>
+                <span className={style.almondegasSugo}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Prato 8 */}
@@ -440,9 +520,11 @@ function Main() {
                     <h4>Carne Assada com Polenta</h4>
                     <p className={style.ingredients}>Fatias macias de carne com molho e polenta cremosa</p>
                 </div>
-                <span>
-                    <img src="/images/pratos/polenta.jpg" alt="Carne Assada" />
-                </span>
+                <span className={style.carneAssada}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
             </div>
@@ -459,9 +541,11 @@ function Main() {
                     <h4>Batata Frita Tradicional</h4>
                     <p className={style.ingredients}>Batatas crocantes com sal e orégano</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/batata-frita.jpg" alt="Batata Frita Tradicional" />
-                </span>
+                <span className={style.batataFritaTrad}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 2 */}
@@ -470,9 +554,11 @@ function Main() {
                     <h4>Batata Rústica com Alho e Alecrim</h4>
                     <p className={style.ingredients}>Batatas assadas com alho fresco e alecrim</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/batata-rustica.jpg" alt="Batata Rústica" />
-                </span>
+                <span className={style.batataRustica}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 3 */}
@@ -481,9 +567,11 @@ function Main() {
                     <h4>Polenta Frita</h4>
                     <p className={style.ingredients}>Palitos de polenta crocantes</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/polenta-frita.jpg" alt="Polenta Frita" />
-                </span>
+                <span className={style.polentaFrita}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 4 */}
@@ -492,9 +580,11 @@ function Main() {
                     <h4>Mandioca Frita</h4>
                     <p className={style.ingredients}>Servida com molho da casa</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/mandioca.jpg" alt="Mandioca Frita" />
-                </span>
+                <span className={style.mandiocaFrita}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 5 */}
@@ -503,9 +593,11 @@ function Main() {
                     <h4>Anéis de Cebola Empanados</h4>
                     <p className={style.ingredients}>Cebola empanada crocante</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/aneis-cebola.jpg" alt="Anéis de Cebola" />
-                </span>
+                <span className={style.aneisCebola}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 6 */}
@@ -514,9 +606,11 @@ function Main() {
                     <h4>Iscas de Frango Empanadas</h4>
                     <p className={style.ingredients}>Acompanha molho mostarda e mel</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/iscas-frango.jpg" alt="Iscas de Frango" />
-                </span>
+                <span className={style.iscasFrango}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 7 */}
@@ -525,9 +619,11 @@ function Main() {
                     <h4>Mini Almôndegas</h4>
                     <p>Com molho de tomate</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/mini-almondegas.jpg" alt="Mini Almôndegas" />
-                </span>
+                <span className={style.miniAlmondegas}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 8 */}
@@ -536,9 +632,11 @@ function Main() {
                     <h4>Bolinho de Arroz com Queijo</h4>
                     <p className={style.ingredients}>Bolinho crocante com recheio de queijo derretido</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/bolinho-arroz.jpg" alt="Bolinho de Arroz" />
-                </span>
+                <span className={style.bolinhoArroz}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 9 */}
@@ -547,9 +645,11 @@ function Main() {
                     <h4>Mini Pizzas (6 unid)</h4>
                     <p className={style.ingredients}>Sabores variados</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/mini-pizzas.jpg" alt="Mini Pizzas" />
-                </span>
+                <span className={style.miniPizzas}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 10 */}
@@ -558,9 +658,11 @@ function Main() {
                     <h4>Pão de Alho com Queijo</h4>
                     <p className={style.ingredients}>4 unidades</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/pao-alho.jpg" alt="Pão de Alho" />
-                </span>
+                <span className={style.paoAlho}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 11 */}
@@ -569,9 +671,11 @@ function Main() {
                     <h4>Tábua de Frios</h4>
                     <p className={style.ingredients}>Presunto parma, salame, queijos, azeitonas</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/tabua-frios.jpg" alt="Tábua de Frios" />
-                </span>
+                <span className={style.tabuaFrios}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 {/* Porção 12 */}
@@ -580,9 +684,11 @@ function Main() {
                     <h4>Cesta de Pães com Patês Artesanais</h4>
                     <p className={style.ingredients}>Pães variados com seleção de patês</p>
                 </div>
-                <span>
-                    <img src="/images/porcoes/cesta-paes.jpg" alt="Cesta de Pães" />
-                </span>
+                <span className={style.cestaPaes}></span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
             </div>
@@ -601,6 +707,10 @@ function Main() {
                 <span>
                     <img src="/images/sem-gluten/espaguete.jpg" alt="Espaguete Sem Glúten" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -611,6 +721,10 @@ function Main() {
                 <span>
                     <img src="/images/sem-gluten/risoto.jpg" alt="Risoto de Frango" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -618,9 +732,17 @@ function Main() {
                     <h4>Nhoque de Mandioquinha com Molho Suave</h4>
                     <p className={style.ingredients}>Feito com mandioquinha fresca</p>
                 </div>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 <span>
                     <img src="/images/sem-gluten/nhoque.jpg" alt="Nhoque de Mandioquinha" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -631,6 +753,10 @@ function Main() {
                 <span>
                     <img src="/images/sem-gluten/salada.jpg" alt="Salada Bella" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -641,6 +767,10 @@ function Main() {
                 <span>
                     <img src="/images/sem-gluten/quibe.jpg" alt="Quibe de Abóbora" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -651,6 +781,10 @@ function Main() {
                 <span>
                     <img src="/images/sem-gluten/panqueca.jpg" alt="Panqueca de Tapioca" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
             </div>
@@ -669,6 +803,10 @@ function Main() {
                 <span>
                     <img src="/images/sobremesas/tiramisu.jpg" alt="Tiramisù Tradicional" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -679,6 +817,10 @@ function Main() {
                 <span>
                     <img src="/images/sobremesas/panna-cotta.jpg" alt="Panna Cotta" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -689,6 +831,10 @@ function Main() {
                 <span>
                     <img src="/images/sobremesas/torta-limao.jpg" alt="Torta de Limão" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -699,6 +845,10 @@ function Main() {
                 <span>
                     <img src="/images/sobremesas/mousse.jpg" alt="Mousse de Chocolate" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -709,6 +859,10 @@ function Main() {
                 <span>
                     <img src="/images/sobremesas/gelato.jpg" alt="Gelato Italiano" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -719,6 +873,10 @@ function Main() {
                 <span>
                     <img src="/images/sobremesas/cannoli.jpg" alt="Cannoli" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -729,6 +887,10 @@ function Main() {
                 <span>
                     <img src="/images/sobremesas/cheesecake.jpg" alt="Cheesecake" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -739,6 +901,10 @@ function Main() {
                 <span>
                     <img src="/images/sobremesas/brownie.jpg" alt="Brownie" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -749,6 +915,10 @@ function Main() {
                 <span>
                     <img src="/images/sobremesas/creme-brulee.jpg" alt="Creme Brûlée" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -759,6 +929,10 @@ function Main() {
                 <span>
                     <img src="/images/sobremesas/pudim.jpg" alt="Pudim" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
             </div>
@@ -779,6 +953,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/refrigerante.jpg" alt="Refrigerante Lata" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -789,6 +967,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/agua.jpg" alt="Água Mineral" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -799,6 +981,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/suco.jpg" alt="Suco Natural" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -809,6 +995,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/detox.jpg" alt="Suco Detox" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -819,6 +1009,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/cha-gelado.jpg" alt="Chá Gelado" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -829,6 +1023,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/cha-quente.jpg" alt="Chá Quente" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -839,6 +1037,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/cafe.jpg" alt="Café Expresso" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -849,6 +1051,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/capuccino.jpg" alt="Capuccino" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -859,6 +1065,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/cerveja.jpg" alt="Cerveja Long Neck" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -869,6 +1079,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/vinho-tinto.jpg" alt="Vinho Tinto" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -879,6 +1093,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/vinho-branco.jpg" alt="Vinho Branco" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -889,6 +1107,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/spritz.jpg" alt="Spritz Italiano" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -899,6 +1121,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/tonica.jpg" alt="Água Tônica" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
                 <div className={style.foodItem}>
@@ -909,6 +1135,10 @@ function Main() {
                 <span>
                     <img src="/images/bebidas/limonada.jpg" alt="Limonada Siciliana" />
                 </span>
+                <div>
+                    <button>Adicionar ao Carrinho</button>
+                    <p id='preco'></p>
+                </div>
                 </div>
 
             </div>

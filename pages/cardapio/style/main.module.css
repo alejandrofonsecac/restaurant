@@ -136,113 +136,229 @@ main > menu {
     margin-top: 5px;
 }
 
-.margueritaPizza {
+
+/*------ Imagens ------*/
+
+.foodItem > span{
     width: 40%;
     height: 60px;
-    background: url('../public/imagens/cardapioPizza/pizzaMarguerita.jpg') no-repeat center center;
-    background-size: cover;
     border-radius: 8px;
     margin: 8px;
+}
+
+.margueritaPizza {
+    background: url('../public/imagens/cardapioPizza/mobile/pizzaMarguerita.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 .pepperoniPizza {
-    width: 40%;
-    height: 60px;
-    background: url('../public/imagens/cardapioPizza/pizzaPeperoni.jpeg') no-repeat center center;
+    background: url('../public/imagens/cardapioPizza/mobile/pizzaPeperoni.jpg') no-repeat center center;
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
 }
 
 .frangoPizza {
-    width: 40%;
-    height: 60px;
-    background: url('../public/imagens/cardapioPizza/pizzaFrango.jpg') no-repeat center center;
+    background: url('../public/imagens/cardapioPizza/mobile/pizzaFrango.jpg') no-repeat center center;
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
 }   
 
 .calabresaPizza {
-    width: 40%;
-    height: 60px;
-    background: url('../public/imagens/cardapioPizza/pizzaCalabresa.jpg') no-repeat center center;
+    background: url('../public/imagens/cardapioPizza/mobile/pizzaCalabresa.jpg') no-repeat center center;
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
 }
 
 .queijosPizza {
-    width: 40%;
-    height: 60px;
-    background: url('../public/imagens/cardapioPizza/pizza4Queijos.jpg') no-repeat center center;
+    background: url('../public/imagens/cardapioPizza/mobile/pizzaQueijos.jpg') no-repeat center center;
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
 }
 
 .portuguesaPizza {
-    width: 40%;
-    height: 60px;
-    background: url('../public/imagens/cardapioPizza/pizzaPortuguesa.jpg') no-repeat center center;
+    background: url('../public/imagens/cardapioPizza/mobile/pizzaPortuguesa.jpg') no-repeat center center;
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
 }
 
 .vegetarianaPizza {
-    width: 40%;
-    height: 60px;
-    background: url('../public/imagens/cardapioPizza/pizzaVegetariana.jpg') no-repeat center center;
+    background: url('../public/imagens/cardapioPizza/mobile/pizzaVegetariana.jpg') no-repeat center center;
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
 }
 
 .napolitanaPizza {
-    width: 40%;
-    height: 60px;
-    background: url('../public/imagens/cardapioPizza/pizzaNapolitana.jpeg') no-repeat center center;
+    background: url('../public/imagens/cardapioPizza/mobile/pizzaNapolitana.jpg') no-repeat center center;
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
 }
 
 .toscanaPizza {
-    width: 40%;
-    height: 60px;
-    background: url('../public/imagens/cardapioPizza/pizzaToscana.jpeg') no-repeat center center;
+    background: url('../public/imagens/cardapioPizza/mobile/') no-repeat center center;
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
 }
 
 .bellaPizza {
-    width: 40%;
-    height: 60px;
-    background: url('../public/imagens/cardapioPizza/pizzaBella.jpg') no-repeat center center;
+    background: url('../public/imagens/cardapioPizza/mobile/pizzaBella.jpg') no-repeat center center;
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
 }
 
 
 /* Massas */
 
 .espagueteBolonhesa{
-    width: 40%;
-    height: 60px;
     background: url('../public/imagens/cardapioMassas/mobile/espagueteBolonhesa.jpg') no-repeat center center;
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
 }
 
-.fettucineAlfredo{
-    width: 40%;
-    height: 60px;
+.fettucineAlfredo{/*False*/
+    background-image: url('../public/imagens/cardapioMassas/mobile/');
+    background-size: cover;
+}
+
+.raviolliRicota{/*FALSE*/
+    background-image: url('../public/imagens/cardapioMassas/mobile/');
+    background-size: cover;
+}
+
+.pennePesto{/*false*/
+    background-image: url('../public/imagens/cardapioMassas/mobile/');
+    background-size: cover;
+}
+
+.lasanhaBolonhesa{
+    background-image: url('../public/imagens/cardapioMassas/mobile/lasanhaBolonhesa.jpg');
+    background-size: cover;
+}
+
+.gnocchiSugo{/*false*/
+    background-image: url('../public/imagens/cardapioMassas/mobile/');
+    background-size: cover;
+}
+
+.caneloneFrango{/*false*/
+    background-image: url('../public/imagens/cardapioMassas/mobile/');
+    background-size: cover;
+}
+
+.espagueteCarbonara{
+    background-image: url('../public/imagens/cardapioMassas/mobile/espagueteCarbonara.jpg');
+    background-size: cover;
+}
+
+.rondelliPresunto{
+    background-image: url('../public/imagens/cardapioMassas/mobile/rondelliQueijoPresunto.jpg');
+    background-size: cover;
+}
+
+.farfalleQueijos{
+    background-image: url('../public/imagens/cardapioMassas/mobile/farfalleQueijos.jpg');
+    background-size: cover;
+}
+
+.tagliatellePutatesca{
+    background-image: url('../public/imagens/cardapioMassas/mobile/tagliattePunttanesca.jpg');
+    background-size: cover;
+}
+
+.tortelliniCarne{
     background-image: url('../public/imagens/cardapioMassas/mobile/tortelliCarne.jpg');
     background-size: cover;
-    border-radius: 8px;
-    margin: 8px;
+}
+
+/* Pratos Executivos */
+
+.fileParmegiana{
+    background-image: url('../public/imagens/cardapioExecutivos/mobile/fileParmegiana.jpg');
+    background-size: cover;
+}
+
+.strogonoffFrango{
+    background-image: url('../public/imagens/cardapioExecutivos/mobile/strogonofFrango.jpg');
+    background-size: cover;
+}
+
+.bifeAcebolado{
+    background-image: url('../public/imagens/cardapioExecutivos/mobile/bifeAcebolado.jpg');
+    background-size: cover;
+}
+
+.peixeGrelhado{
+    background-image: url('../public/imagens/cardapioExecutivos/mobile/peixeLegumes.jpg');
+    background-size: cover;
+}
+
+.frangoGrelhado{
+    background-image: url('../public/imagens/cardapioExecutivos/mobile/frangoPure.jpg');
+    background-size: cover;
+}
+
+.risotoCogumelos{
+    background-image: url('../public/imagens/cardapioExecutivos/mobile/risotoCogumelos.jpg');
+    background-size: cover;
+}
+
+.almondegasSugo{
+    background-image: url('../public/imagens/cardapioExecutivos/mobile/almondegasSugo.jpg');
+    background-size: cover;
+}
+
+.carneAssada{
+    background-image: url('../public/imagens/cardapioExecutivos/mobile/carneAssada.jpg');
+    background-size: cover;
+}
+
+/* Porções */
+
+.batataFritaTrad{/*false*/
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/');
+    background-size: cover;
+}
+
+.batataRustica{/*false*/
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/');
+    background-size: cover;
+}
+
+.polentaFrita{
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/polentaFrita.jpg');
+    background-size: cover;
+}
+
+.mandiocaFrita{
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/mandiocaFrita.jpg');
+    background-size: cover;
+}
+
+.aneisCebola{
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/aneisCebola.jpg');
+    background-size: cover;
+}
+
+.iscasFrango{
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/iscasFrango.jpg');
+    background-size: cover;
+}
+
+.miniAlmondegas{
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/miniAlmondegas.jpg');
+    background-size: cover;
+}
+
+.bolinhoArroz{/*false*/
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/');
+    background-size: cover;
+}
+
+.miniPizzas{
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/miniPizza.jpg');
+    background-size: cover;
+}
+
+.paoAlho{
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/paodAlhoQueijo.jpg');
+    background-size: cover;
+}
+
+.tabuaFrios{
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/tabuaFrios.jpg');
+    background-size: cover;
+}
+
+.cestaPaes{
+    background-image: url('../public/imagens/cardapioPorcoes/mobile/');
+    background-size: cover;
 }
