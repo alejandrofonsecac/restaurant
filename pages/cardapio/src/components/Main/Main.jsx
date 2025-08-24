@@ -704,9 +704,7 @@ function Main() {
                     <h4>Espaguete Sem Glúten ao Pomodoro</h4>
                     <p className={style.ingredients}>Molho de tomate fresco, manjericão e parmesão</p>
                 </div>
-                <span>
-                    <img src="/images/sem-gluten/espaguete.jpg" alt="Espaguete Sem Glúten" />
-                </span>
+                <span className={style.espagueteSemGluten}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -718,9 +716,7 @@ function Main() {
                     <h4>Risoto de Frango com Legumes</h4>
                     <p className={style.ingredients}>Sem uso de farinha ou glúten</p>
                 </div>
-                <span>
-                    <img src="/images/sem-gluten/risoto.jpg" alt="Risoto de Frango" />
-                </span>
+                <span className={style.risotoLegumes}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -732,13 +728,7 @@ function Main() {
                     <h4>Nhoque de Mandioquinha com Molho Suave</h4>
                     <p className={style.ingredients}>Feito com mandioquinha fresca</p>
                 </div>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                <span>
-                    <img src="/images/sem-gluten/nhoque.jpg" alt="Nhoque de Mandioquinha" />
-                </span>
+                <span className={style.nhoqueMandioquinha}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -750,9 +740,7 @@ function Main() {
                     <h4>Salada Bella</h4>
                     <p className={style.ingredients}>Alface, rúcula, tomate, pepino, ovo cozido, frango grelhado</p>
                 </div>
-                <span>
-                    <img src="/images/sem-gluten/salada.jpg" alt="Salada Bella" />
-                </span>
+                <span className={style.saladaBella}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -764,9 +752,7 @@ function Main() {
                     <h4>Quibe de Abóbora Assado com Hortelã</h4>
                     <p className={style.ingredients}>Acompanhado de salada</p>
                 </div>
-                <span>
-                    <img src="/images/sem-gluten/quibe.jpg" alt="Quibe de Abóbora" />
-                </span>
+                <span className={style.quibeAbobora}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -778,9 +764,7 @@ function Main() {
                     <h4>Panqueca de Tapioca com Recheio de Queijo e Tomate</h4>
                     <p className={style.ingredients}>Massa 100% sem glúten</p>
                 </div>
-                <span>
-                    <img src="/images/sem-gluten/panqueca.jpg" alt="Panqueca de Tapioca" />
-                </span>
+                <span className={style.panquecaTapioca}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>

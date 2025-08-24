@@ -358,7 +358,39 @@ main > menu {
     background-size: cover;
 }
 
-.cestaPaes{
+.cestaPaes{/*false*/
     background-image: url('../public/imagens/cardapioPorcoes/mobile/');
+    background-size: cover;
+}
+
+/* Sem Gluten */
+
+.espagueteSemGluten{
+    background-image: url('../public/imagens/cardapioSemGluten/mobile/espaguetePomodoro.jpg');
+    background-size: cover;
+}
+
+.risotoLegumes{
+    background-image: url('../public/imagens/cardapioSemGluten/mobile/frangoLegumes.jpg');
+    background-size: cover;
+}
+
+.nhoqueMandioquinha{
+    background-image: url('../public/imagens/cardapioSemGluten/mobile/nhoqueMandioquinha.jpg');
+    background-size: cover;
+}
+
+.saladaBella{
+    background-image: url('../public/imagens/cardapioSemGluten/mobile/saladaBella.jpg');
+    background-size: cover;
+}
+
+.quibeAbobora{
+    background-image: url('../public/imagens/cardapioSemGluten/mobile/quibeAbobora.jpg');
+    background-size: cover;
+}
+
+.panquecaTapioca{
+    background-image: url('../public/imagens/cardapioSemGluten/mobile/panquecasTapioca.jpg');
     background-size: cover;
 }
