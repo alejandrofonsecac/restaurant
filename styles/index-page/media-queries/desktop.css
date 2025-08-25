@@ -48,7 +48,7 @@ header > .menu-desktop > li{
     font-weight: bold;
     font-size: 1.2em;
 
-    margin-right: 20px;
+    margin: 20px 5px;
     padding: 10px;
     list-style: none;
     background-color: white;

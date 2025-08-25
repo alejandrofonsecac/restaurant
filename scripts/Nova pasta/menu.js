@@ -40,6 +40,7 @@ function clickMenu() {
         itens.style.padding = '20px';
         itens.style.margin = '15px'
         itens.style.overflowY = 'auto';
+        itens.style.borderRadius = '15px';
 
 
 

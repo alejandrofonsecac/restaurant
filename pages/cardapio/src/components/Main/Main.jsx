@@ -139,6 +139,7 @@ function Main() {
                             <p className={style.ingredients}>Massa artesanal, molho de tomate italiano, mussarela de búfala, manjericão fresco, azeite extra virgem</p>
                         </div>
                         <span className={style.margueritaPizza}></span>
+                        
                         <div>
                             <button>Adicionar</button>
                             <p></p>

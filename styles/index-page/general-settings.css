@@ -49,6 +49,11 @@ header > h1 {
     font-family: var(--font-principal);
     color: var(--color-primary);
     margin: 5px;
+    width: 325px;
+}
+
+header > ul{
+    margin: auto;
 }
 
 header > .menu-desktop{
@@ -56,7 +61,7 @@ header > .menu-desktop{
 }
 
 header > div.header-icons{
-    width: auto;
+    width: 300px;
 }
 
 header > div.header-icons > span.material-icons{
@@ -91,6 +96,7 @@ header > .header-icons > menu#itens > ul > li > a {
 
 main{
     background-color: white;
+    margin: auto;
 }
 
 

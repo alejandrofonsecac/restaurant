@@ -128,6 +128,7 @@ main > menu {
 .food-item > div{
     width: 80%;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .food-item > div > p {
@@ -140,13 +141,13 @@ main > menu {
 /*------ Imagens ------*/
 
 .foodItem > span{
-    width: 40%;
+    width: 100px;
     height: 60px;
     border-radius: 8px;
     margin: 8px;
 }
 
-.margueritaPizza {
+ .margueritaPizza {
     background: url('../public/imagens/cardapioPizza/mobile/pizzaMarguerita.jpg') no-repeat center center;
     background-size: cover;
 }
