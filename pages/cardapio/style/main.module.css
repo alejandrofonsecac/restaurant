@@ -394,3 +394,122 @@ main > menu {
     background-image: url('../public/imagens/cardapioSemGluten/mobile/panquecasTapioca.jpg');
     background-size: cover;
 }
+
+/* Sobremesas */
+
+.tiramisuTradicional{
+    background-image: url('../public/imagens/cardapioSobremesas/mobile/tiramisuTradicinal.jpg');
+    background-size: cover;
+}
+
+.pannaCotta{
+    background-image: url('../public/imagens/cardapioSobremesas/mobile/pannaCota.jpg');
+    background-size: cover;
+}
+
+.tortaLimao{
+    background-image: url('../public/imagens/cardapioSobremesas/mobile/tortaLimao.jpg');
+    background-size: cover;
+}
+
+.mousseChocolate{
+    background-image: url('../public/imagens/cardapioSobremesas/mobile/moouseChocolate.jpg');
+    background-size: cover;
+}
+
+.gelatoItaliano{
+    background-image: url('../public/imagens/cardapioSobremesas/mobile/gelatoItaliano.jpg');
+    background-size: cover;
+}
+
+.cannoliRicota{
+    background-image: url('../public/imagens/cardapioSobremesas/mobile/cannoliRicota.jpg');
+    background-size: cover;
+}
+
+.cheesecakeFrutas{
+    background-image: url('../public/imagens/cardapioSobremesas/mobile/chescakeVermelhas.jpg');
+    background-size: cover;
+}
+
+.brownieNutella{
+    background-image: url('../public/imagens/cardapioSobremesas/mobile/brownieNutella.jpg');
+    background-size: cover;
+}
+
+.cremeBaunilha{
+    background-image: url('../public/imagens/cardapioSobremesas/mobile/cremeBrulle.jpg');
+    background-size: cover;
+}
+
+.miniPudim{
+    background-image: url('../public/imagens/cardapioSobremesas/mobile/pudim.jpg');
+    background-size: cover;
+}
+
+/* Bebidas */
+
+.refrigeranteLata{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/refrigerantes.jpg');
+    background-size: cover;
+}
+
+.agua{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/aguaMirenal.jpg');
+    background-size: cover;
+}
+
+.sucoNatural{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/sucoNatural.jpg');
+    background-size: cover;
+}
+
+.sucoDetox{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/sucoDetox.jpg');
+    background-size: cover;
+}
+
+.chaGelado{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/cha.jpg');
+    background-size: cover;
+}
+
+.cafeExpresso{/* cafeExpresso */
+    background-image: url('../public/imagens/cardapioBebidas/mobile/');
+    background-size: cover;
+}
+
+.capuccinoCremoso{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/capuccinoCremoso.jpg');
+    background-size: cover;
+}
+
+.cervejaLongNeck{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/cervejasLongNeck.jpg');
+    background-size: cover;
+}
+
+.vinhoTinto{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/vinhoTinto.jpg');
+    background-size: cover;
+}
+
+.vinhoBranco{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/vinhoBranco.jpg');
+    background-size: cover;
+}
+
+.spritzItaliano{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/spritzItaliano.jpg');
+    background-size: cover;
+}
+
+.aguaTonica{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/aguaTonica.jpg');
+    background-size: cover;
+}
+
+.limonadaSiciliana{
+    background-image: url('../public/imagens/cardapioBebidas/mobile/limonadaSiciliana.jpg');
+    background-size: cover;
+}

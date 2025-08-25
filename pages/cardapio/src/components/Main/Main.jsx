@@ -784,9 +784,7 @@ function Main() {
                     <h4>Tiramisù Tradicional</h4>
                     <p className={style.ingredients}>Creme de mascarpone, café e cacau</p>
                 </div>
-                <span>
-                    <img src="/images/sobremesas/tiramisu.jpg" alt="Tiramisù Tradicional" />
-                </span>
+                <span className={style.tiramisuTradicional}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -798,9 +796,7 @@ function Main() {
                     <h4>Panna Cotta com Frutas Vermelhas</h4>
                     <p className={style.ingredients}>Creme italiano com calda de frutas</p>
                 </div>
-                <span>
-                    <img src="/images/sobremesas/panna-cotta.jpg" alt="Panna Cotta" />
-                </span>
+                <span className={style.pannaCotta}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -812,9 +808,7 @@ function Main() {
                     <h4>Torta de Limão com Merengue</h4>
                     <p className={style.ingredients}>Base crocante, creme de limão e merengue</p>
                 </div>
-                <span>
-                    <img src="/images/sobremesas/torta-limao.jpg" alt="Torta de Limão" />
-                </span>
+                <span className={style.tortaLimao}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -826,9 +820,7 @@ function Main() {
                     <h4>Mousse de Chocolate Meio Amargo</h4>
                     <p className={style.ingredients}>Textura aerada e sabor intenso</p>
                 </div>
-                <span>
-                    <img src="/images/sobremesas/mousse.jpg" alt="Mousse de Chocolate" />
-                </span>
+                <span className={style.mousseChocolate}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -840,9 +832,7 @@ function Main() {
                     <h4>Gelato Italiano (3 sabores)</h4>
                     <p className={style.ingredients}>Chocolate, baunilha e frutas vermelhas</p>
                 </div>
-                <span>
-                    <img src="/images/sobremesas/gelato.jpg" alt="Gelato Italiano" />
-                </span>
+                <span className={style.gelatoItaliano}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -854,9 +844,7 @@ function Main() {
                     <h4>Cannoli com Ricota e Gotas de Chocolate</h4>
                     <p className={style.ingredients}>Massa crocante recheada</p>
                 </div>
-                <span>
-                    <img src="/images/sobremesas/cannoli.jpg" alt="Cannoli" />
-                </span>
+                <span className={style.cannoliRicota}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -868,9 +856,7 @@ function Main() {
                     <h4>Cheesecake de Frutas Vermelhas</h4>
                     <p className={style.ingredients}>Base de biscoito, creme de queijo e geleia</p>
                 </div>
-                <span>
-                    <img src="/images/sobremesas/cheesecake.jpg" alt="Cheesecake" />
-                </span>
+                <span className={style.cheesecakeFrutas}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -882,9 +868,7 @@ function Main() {
                     <h4>Brownie com Calda de Nutella</h4>
                     <p className={style.ingredients}>Quentinho e acompanha sorvete</p>
                 </div>
-                <span>
-                    <img src="/images/sobremesas/brownie.jpg" alt="Brownie" />
-                </span>
+                <span className={style.brownieNutella}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -896,9 +880,7 @@ function Main() {
                     <h4>Creme Brûlée com Baunilha</h4>
                     <p className={style.ingredients}>Creme francês com açúcar queimado</p>
                 </div>
-                <span>
-                    <img src="/images/sobremesas/creme-brulee.jpg" alt="Creme Brûlée" />
-                </span>
+                <span className={style.cremeBaunilha}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -910,9 +892,7 @@ function Main() {
                     <h4>Mini Pudim de Leite Condensado</h4>
                     <p className={style.ingredients}>Porção individual com calda de caramelo</p>
                 </div>
-                <span>
-                    <img src="/images/sobremesas/pudim.jpg" alt="Pudim" />
-                </span>
+                <span className={style.miniPudim}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -934,9 +914,7 @@ function Main() {
                     <h4>Refrigerante Lata (350ml)</h4>
                     <p className={style.ingredients}>Coca-Cola, Guaraná Antarctica, Fanta Laranja, Sprite</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/refrigerante.jpg" alt="Refrigerante Lata" />
-                </span>
+                <span className={style.refrigeranteLata}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -948,9 +926,7 @@ function Main() {
                     <h4>Água Mineral</h4>
                     <p className={style.ingredients}>Com ou sem gás (500ml)</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/agua.jpg" alt="Água Mineral" />
-                </span>
+                <span className={style.agua}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -962,9 +938,7 @@ function Main() {
                     <h4>Suco Natural (300ml)</h4>
                     <p className={style.ingredients}>Laranja, Uva, Abacaxi com Hortelã, Manga</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/suco.jpg" alt="Suco Natural" />
-                </span>
+                <span className={style.sucoNatural}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -976,9 +950,7 @@ function Main() {
                     <h4>Suco Detox (300ml)</h4>
                     <p className={style.ingredients}>Couve, limão, gengibre e maçã</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/detox.jpg" alt="Suco Detox" />
-                </span>
+                <span className={style.sucoDetox}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -990,23 +962,7 @@ function Main() {
                     <h4>Chá Gelado (500ml)</h4>
                     <p className={style.ingredients}>Limão ou Pêssego</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/cha-gelado.jpg" alt="Chá Gelado" />
-                </span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Chá Quente (300ml)</h4>
-                    <p className={style.ingredients}>Hortelã, Camomila ou Erva-Doce</p>
-                </div>
-                <span>
-                    <img src="/images/bebidas/cha-quente.jpg" alt="Chá Quente" />
-                </span>
+                <span className={style.chaGelado}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -1018,9 +974,7 @@ function Main() {
                     <h4>Café Expresso</h4>
                     <p className={style.ingredients}>Grãos 100% arábica</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/cafe.jpg" alt="Café Expresso" />
-                </span>
+                <span className={style.cafeExpresso}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -1032,9 +986,7 @@ function Main() {
                     <h4>Capuccino Cremoso</h4>
                     <p className={style.ingredients}>Com chocolate em pó ou canela</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/capuccino.jpg" alt="Capuccino" />
-                </span>
+                <span className={style.capuccinoCremoso}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -1046,9 +998,7 @@ function Main() {
                     <h4>Cerveja Long Neck (355ml)</h4>
                     <p className={style.ingredients}>Heineken, Budweiser, Stella Artois</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/cerveja.jpg" alt="Cerveja Long Neck" />
-                </span>
+                <span className={style.cervejaLongNeck}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -1060,9 +1010,7 @@ function Main() {
                     <h4>Vinho Tinto Taça (180ml)</h4>
                     <p className={style.ingredients}>Chianti ou Merlot</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/vinho-tinto.jpg" alt="Vinho Tinto" />
-                </span>
+                <span className={style.vinhoTinto}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -1074,9 +1022,7 @@ function Main() {
                     <h4>Vinho Branco Taça (180ml)</h4>
                     <p className={style.ingredients}>Chardonnay ou Sauvignon Blanc</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/vinho-branco.jpg" alt="Vinho Branco" />
-                </span>
+                <span className={style.vinhoBranco}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -1088,9 +1034,7 @@ function Main() {
                     <h4>Spritz Italiano</h4>
                     <p className={style.ingredients}>Aperol com prosecco e soda</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/spritz.jpg" alt="Spritz Italiano" />
-                </span>
+                <span className={style.spritzItaliano}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -1102,9 +1046,7 @@ function Main() {
                     <h4>Água Tônica com Limão</h4>
                     <p className={style.ingredients}>Servida com gelo e rodelas de limão</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/tonica.jpg" alt="Água Tônica" />
-                </span>
+                <span className={style.aguaTonica}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
@@ -1116,9 +1058,7 @@ function Main() {
                     <h4>Limonada Siciliana</h4>
                     <p className={style.ingredients}>Feita com limões frescos e hortelã</p>
                 </div>
-                <span>
-                    <img src="/images/bebidas/limonada.jpg" alt="Limonada Siciliana" />
-                </span>
+                <span className={style.limonadaSiciliana}></span>
                 <div>
                     <button>Adicionar ao Carrinho</button>
                     <p id='preco'></p>
