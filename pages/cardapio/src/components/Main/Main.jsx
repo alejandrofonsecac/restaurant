@@ -30,7 +30,7 @@ function Main() {
         } else {
             // Snap suave quando a velocidade for baixa
             const container = containerRef.current;
-            const itemWidth = 150 + 8; // largura do item + gap
+            const itemWidth = 150 + 8;
             const snapPosition = Math.round(container.scrollLeft / itemWidth) * itemWidth;
             
             container.scrollTo({
@@ -134,16 +134,15 @@ function Main() {
                 <div className="food-items">
                 
                     <div className={style.foodItem}>
-                        <div>
+                        <div className={style.informationItem}>
                             <h4 className={style.foodName}>Margherita</h4>
                             <p className={style.ingredients}>Massa artesanal, molho de tomate italiano, mussarela de búfala, manjericão fresco, azeite extra virgem</p>
+                            <div className={style.shoppingInfo}>
+                                <button>Adicionar</button>
+                                <p>23423</p>
+                            </div>                            
                         </div>
                         <span className={style.margueritaPizza}></span>
-                        
-                        <div>
-                            <button>Adicionar</button>
-                            <p></p>
-                        </div>
                     </div>
                     
                     <div className={style.foodItem}>

@@ -138,9 +138,25 @@ main > menu {
 }
 
 
+
 /*------ Imagens ------*/
 
+.informationItem{
+    display: flex;
+    width: 100%;
+}
+
+.shoppingInfo{
+    display: flex;
+}
+
+
+.foodItem > div{
+    display: block;
+}
+
 .foodItem > span{
+    display: block;
     width: 100px;
     height: 60px;
     border-radius: 8px;
