@@ -8,7 +8,9 @@ import '../../../style/generalSettings.css';
 function Header() {
   return (
     <header className="header">
-      <h1>Pasta Bella</h1>
+      <a href="../../../../index.html">
+        <h1>Pasta Bella</h1>
+      </a>
       <ul className="menu-desktop" id="itensdesktop">
         <li><a href="#">Contato</a></li>
         <li><a href="#">Cardapio</a></li>

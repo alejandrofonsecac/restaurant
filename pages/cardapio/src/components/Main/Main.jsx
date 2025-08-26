@@ -146,929 +146,927 @@ function Main() {
                     </div>
                     
                     <div className={style.foodItem}>
-                        <div className={style.informationItem}>
-                            <h4 className="food-name">Pepperoni</h4>
-                            <p className={style.ingredients}>Massa crocante, molho de tomate, mussarela, fatias generosas de pepperoni</p>
+    <div className={style.informationItem}>
+        <h4 className={style.foodName}>Pepperoni</h4>
+        <p className={style.ingredients}>Massa crocante, molho de tomate, mussarela, fatias generosas de pepperoni</p>
+        <div className={style.shoppingInfo}>
+            <button>Adicionar</button>
+            <p id='preco'></p>
+        </div> 
+    </div>
+    <span className={style.pepperoniPizza}></span>
+</div>
 
-                            <div className={style.shoppingInfo}>
-                                <button>Adicionar</button>
-                                <p id='preco'></p>
-                            </div> 
-                        </div>
-                        <span className={style.pepperoniPizza}></span>
-                    </div>
-                    
-                    <div className={style.foodItem}>
-                        <div className={style.informationItem}>
-                            <h4 className="food-name">Frango com Catupiry</h4>
-                            <p className={style.ingredients}>Massa bem passada, molho de tomate, mussarela, frango desfiado temperado, catupiry cremoso</p>
+<div className={style.foodItem}>
+    <div className={style.informationItem}>
+        <h4 className={style.foodName}>Frango com Catupiry</h4>
+        <p className={style.ingredients}>Massa bem passada, molho de tomate, mussarela, frango desfiado temperado, catupiry cremoso</p>
+        <div className={style.shoppingInfo}>
+            <button>Adicionar</button>
+            <p id='preco'></p>
+        </div> 
+    </div>
+    <span className={style.frangoPizza}></span>
+</div>
 
-                            <div className={style.shoppingInfo}>
-                                <button>Adicionar</button>
-                                <p id='preco'></p>
-                            </div> 
-                        </div>
-                        <span className={style.frangoPizza}></span>
-                    </div>
-                    
-                    <div className={style.foodItem}>
-                        <div>
-                            <h4 className="food-name">Calabresa</h4>
-                            <p className={style.ingredients}>Molho de tomate, queijo mussarela, calabresa fatiada, cebola roxa, orégano</p>
-                        </div>
-                        <span className={style.calabresaPizza}></span>
-                        <div>
-                            <button>Adicionar ao Carrinho</button>
-                            <p id='preco'></p>
-                        </div>
-                    </div>
-                    
-                    <div className={style.foodItem}>
-                        <div>
-                            <h4 className="food-name">Quatro Queijos</h4>
-                            <p className={style.ingredients}>Queijo mussarela, parmesão, gorgonzola e catupiry sobre massa fina</p>
-                        </div>
-                        <span className={style.queijosPizza}></span>
-                        <div>
-                            <button>Adicionar ao Carrinho</button>
-                            <p id='preco'></p>
-                        </div>
-                    </div>
-                    
-                    <div className={style.foodItem}>
-                        <div>
-                            <h4 className="food-name">Portuguesa</h4>
-                            <p className={style.ingredients}>Presunto, ovos, cebola, azeitona, pimentão, molho e queijo mussarela</p>
-                        </div>
-                        <span className={style.portuguesaPizza}></span>
-                        <div>
-                            <button>Adicionar ao Carrinho</button>
-                            <p id='preco'></p>
-                        </div>
-                    </div>
-                    
-                    <div className={style.foodItem}>
-                        <div>
-                            <h4 className="food-name">Vegetariana</h4>
-                            <p className={style.ingredients}>Abobrinha grelhada, berinjela, pimentões coloridos, cebola, tomate, molho e queijo</p>
-                        </div>
-                        <span className={style.vegetarianaPizza}></span>
-                        <div>
-                            <button>Adicionar ao Carrinho</button>
-                            <p id='preco'></p>
-                        </div>
-                    </div>
-                    
-                    <div className={style.foodItem}>
-                        <div>
-                            <h4 className="food-name">Napolitana</h4>
-                            <p className={style.ingredients}>Molho artesanal, queijo, tomate fresco, orégano, manjericão</p>
-                        </div>
-                        <span className={style.napolitanaPizza}></span>
-                        <div>
-                            <button>Adicionar ao Carrinho</button>
-                            <p id='preco'></p>
-                        </div>
-                    </div>
-                    
-                    <div className={style.foodItem}>
-                        <div>
-                            <h4 className="food-name">Toscana</h4>
-                            <p className={style.ingredients}>Linguiça toscana artesanal, molho de tomate, mussarela, pimenta-do-reino</p>
-                        </div>
-                        <span className={style.toscanaPizza}></span>
-                        <div>
-                            <button>Adicionar ao Carrinho</button>
-                            <p id='preco'></p>
-                        </div>
-                    </div>
-                    
-                    <div className={style.foodItem}>
-                        <div>
-                            <h4 className="food-name">Bella Speciale</h4>
-                            <p className={style.ingredients}>Molho secreto da casa, presunto parma, rúcula, tomate seco, lascas de parmesão</p>
-                        </div>
-                        <span className={style.bellaPizza}></span>
-                        <div>
-                            <button>Adicionar ao Carrinho</button>
-                            <p id='preco'></p>
-                        </div>
-                    </div>                    
+<div className={style.foodItem}>
+    <div className={style.informationItem}>
+        <h4 className={style.foodName}>Calabresa</h4>
+        <p className={style.ingredients}>Molho de tomate, queijo mussarela, calabresa fatiada, cebola roxa, orégano</p>
+        <div className={style.shoppingInfo}>
+            <button>Adicionar</button>
+            <p id='preco'></p>
+        </div>
+    </div>
+    <span className={style.calabresaPizza}></span>
+</div>
+
+<div className={style.foodItem}>
+    <div className={style.informationItem}>
+        <h4 className={style.foodName}>Quatro Queijos</h4>
+        <p className={style.ingredients}>Queijo mussarela, parmesão, gorgonzola e catupiry sobre massa fina</p>
+        <div className={style.shoppingInfo}>
+            <button>Adicionar +</button>
+            <p id='preco'></p>
+        </div>
+    </div>
+    <span className={style.queijosPizza}></span>
+</div>
+
+<div className={style.foodItem}>
+    <div className={style.informationItem}>
+        <h4 className={style.foodName}>Portuguesa</h4>
+        <p className={style.ingredients}>Presunto, ovos, cebola, azeitona, pimentão, molho e queijo mussarela</p>
+        <div className={style.shoppingInfo}>
+            <button>Adicionar</button>
+            <p id='preco'></p>
+        </div>
+    </div>
+    <span className={style.portuguesaPizza}></span>
+</div>
+
+<div className={style.foodItem}>
+    <div className={style.informationItem}>
+        <h4 className={style.foodName}>Vegetariana</h4>
+        <p className={style.ingredients}>Abobrinha grelhada, berinjela, pimentões coloridos, cebola, tomate, molho e queijo</p>
+        <div className={style.shoppingInfo}>
+            <button>Adicionar</button>
+            <p id='preco'></p>
+        </div>
+    </div>
+    <span className={style.vegetarianaPizza}></span>
+</div>
+
+<div className={style.foodItem}>
+    <div className={style.informationItem}>
+        <h4 className={style.foodName}>Napolitana</h4>
+        <p className={style.ingredients}>Molho artesanal, queijo, tomate fresco, orégano, manjericão</p>
+        <div className={style.shoppingInfo}>
+            <button>Adicionar</button>
+            <p id='preco'></p>
+        </div>
+    </div>
+    <span className={style.napolitanaPizza}></span>
+</div>
+
+<div className={style.foodItem}>
+    <div className={style.informationItem}>
+        <h4 className={style.foodName}>Toscana</h4>
+        <p className={style.ingredients}>Linguiça toscana artesanal, molho de tomate, mussarela, pimenta-do-reino</p>
+        <div className={style.shoppingInfo}>
+            <button>Adicionar</button>
+            <p id='preco'></p>
+        </div>
+    </div>
+    <span className={style.toscanaPizza}></span>
+</div>
+
+<div className={style.foodItem}>
+    <div className={style.informationItem}>
+        <h4 className={style.foodName}>Bella Speciale</h4>
+        <p className={style.ingredients}>Molho secreto da casa, presunto parma, rúcula, tomate seco, lascas de parmesão</p>
+        <div className={style.shoppingInfo}>
+            <button>Adicionar</button>
+            <p id='preco'></p>
+        </div>
+    </div>
+    <span className={style.bellaPizza}></span>
+</div>
             </div>
 
-                        {/* Categoria Massas - Completa */}
-            <div className="category-container">
-                <h3 className="category-title">🍝 Massas</h3>
-                <div className="food-items">
-                    
-                {/* Massa 1 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Espaguete à Bolonhesa</h4>
-                    <p className={style.ingredients}>Espaguete com molho de carne moída cozido lentamente com tomate, cebola e ervas</p>
-                </div>
-                <span className={style.espagueteBolonhesa}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
+                       {/* Categoria Massas - Completa */}
+<div className="category-container">
+    <h3 className="category-title"> Massas</h3>
+    <div className="food-items">
+        
+        {/* Massa 1 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Espaguete à Bolonhesa</h4>
+                <p className={style.ingredients}>Espaguete com molho de carne moída cozido lentamente com tomate, cebola e ervas</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
                     <p id='preco'></p>
                 </div>
-                </div>
-
-                {/* Massa 2 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Fettuccine Alfredo</h4>
-                    <p className={style.ingredients}>Molho cremoso de parmesão, manteiga e creme de leite</p>
-                </div>
-                    <span className={style.fettucineAlfredo}></span>
-                    <div>
-                        <button>Adicionar ao Carrinho</button>
-                        <p id='preco'></p>
-                    </div>
-                </div>
-
-                {/* Massa 3 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Ravioli de Ricota com Espinafre</h4>
-                    <p className={style.ingredients}>Recheio cremoso com molho branco leve</p>
-                </div>
-                <span className={style.raviolliRicota}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Massa 4 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Penne ao Pesto</h4>
-                    <p className={style.ingredients}>Molho pesto fresco de manjericão, nozes, alho, parmesão e azeite</p>
-                </div>
-                <span className={style.pennePesto}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Massa 5 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Lasanha à Bolonhesa</h4>
-                    <p className={style.ingredients}>Camadas de massa com carne, queijo e molho</p>
-                </div>
-                <span className={style.lasanhaBolonhesa}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Massa 6 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Gnocchi ao Sugo</h4>
-                    <p className={style.ingredients}>Nhoque de batata com molho de tomate e manjericão</p>
-                </div>
-                <span className={style.gnocchiSugo}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Massa 7 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Canelone de Frango</h4>
-                    <p className={style.ingredients}>Recheado com frango e catupiry, coberto com molho rosé</p>
-                </div>
-                <span className={style.caneloneFrango}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Massa 8 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Espaguete Carbonara</h4>
-                    <p className={style.ingredients}>Bacon, ovos, queijo parmesão e pimenta do reino</p>
-                </div>
-                <span className={style.espagueteCarbonara}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Massa 9 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Rondelli de Presunto e Queijo</h4>
-                    <p className={style.ingredients}>Molho bechamel e queijo gratinado</p>
-                </div>
-                <span className={style.rondelliPresunto}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Massa 10 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Farfalle à Quatro Queijos</h4>
-                    <p className={style.ingredients}>Molho de mussarela, gorgonzola, catupiry e parmesão</p>
-                </div>
-                <span className={style.farfalleQueijos}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Massa 11 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Tagliatelle à Puttanesca</h4>
-                    <p className={style.ingredients}>Azeitonas, alcaparras, tomate e alho</p>
-                </div>
-                <span className={style.tagliatellePutatesca}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Massa 12 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Tortellini de Carne com Molho Funghi</h4>
-                    <p>Cogumelos frescos, creme e queijo</p>
-                </div>
-                <span className={style.tortelliniCarne}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
             </div>
-            </div>
-                        
-                        {/* Categoria Pratos Executivos */}
-            <div className="category-container">
-            <h3 className="category-title">🍽️ Pratos Executivos</h3>
-            <div className="food-items">
-                
-                {/* Prato 1 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Filé à Parmegiana</h4>
-                    <p className={style.ingredients}>Filé empanado com molho de tomate e queijo, arroz branco e batatas fritas</p>
-                </div>
-                <span className={style.fileParmegiana}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Prato 2 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Strogonoff de Frango</h4>
-                    <p className={style.ingredients}>Arroz branco, batata palha e frango em molho cremoso</p>
-                </div>
-                <span className={style.strogonoffFrango}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Prato 3 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Bife Acebolado</h4>
-                    <p className={style.ingredients}>Acompanha arroz, feijão, farofa e salada</p>
-                </div>
-                <span className={style.bifeAcebolado}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Prato 4 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Peixe Grelhado com Legumes</h4>
-                    <p className={style.ingredients}>Tilápia grelhada com mix de legumes no vapor</p>
-                </div>
-                <span className={style.peixeGrelhado}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Prato 5 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Frango Grelhado com Purê</h4>
-                    <p className={style.ingredients}>Purê de batata caseiro e arroz</p>
-                </div>
-                <span className={style.frangoGrelhado}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Prato 6 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Risoto de Cogumelos</h4>
-                    <p className={style.ingredients}>Arroz arbório, cogumelos frescos, vinho branco, parmesão</p>
-                </div>
-                <span className={style.risotoCogumelos}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Prato 7 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Almôndegas ao Sugo</h4>
-                    <p className={style.ingredients}>Com arroz branco e purê de batata</p>
-                </div>
-                <span className={style.almondegasSugo}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Prato 8 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Carne Assada com Polenta</h4>
-                    <p className={style.ingredients}>Fatias macias de carne com molho e polenta cremosa</p>
-                </div>
-                <span className={style.carneAssada}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-            </div>
-            </div>
-
-                        {/* Categoria Porções */}
-            <div className="category-container">
-            <h3 className="category-title">🍟 Porções</h3>
-            <div className="food-items">
-                
-                {/* Porção 1 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Batata Frita Tradicional</h4>
-                    <p className={style.ingredients}>Batatas crocantes com sal e orégano</p>
-                </div>
-                <span className={style.batataFritaTrad}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 2 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Batata Rústica com Alho e Alecrim</h4>
-                    <p className={style.ingredients}>Batatas assadas com alho fresco e alecrim</p>
-                </div>
-                <span className={style.batataRustica}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 3 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Polenta Frita</h4>
-                    <p className={style.ingredients}>Palitos de polenta crocantes</p>
-                </div>
-                <span className={style.polentaFrita}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 4 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Mandioca Frita</h4>
-                    <p className={style.ingredients}>Servida com molho da casa</p>
-                </div>
-                <span className={style.mandiocaFrita}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 5 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Anéis de Cebola Empanados</h4>
-                    <p className={style.ingredients}>Cebola empanada crocante</p>
-                </div>
-                <span className={style.aneisCebola}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 6 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Iscas de Frango Empanadas</h4>
-                    <p className={style.ingredients}>Acompanha molho mostarda e mel</p>
-                </div>
-                <span className={style.iscasFrango}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 7 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Mini Almôndegas</h4>
-                    <p>Com molho de tomate</p>
-                </div>
-                <span className={style.miniAlmondegas}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 8 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Bolinho de Arroz com Queijo</h4>
-                    <p className={style.ingredients}>Bolinho crocante com recheio de queijo derretido</p>
-                </div>
-                <span className={style.bolinhoArroz}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 9 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Mini Pizzas (6 unid)</h4>
-                    <p className={style.ingredients}>Sabores variados</p>
-                </div>
-                <span className={style.miniPizzas}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 10 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Pão de Alho com Queijo</h4>
-                    <p className={style.ingredients}>4 unidades</p>
-                </div>
-                <span className={style.paoAlho}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 11 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Tábua de Frios</h4>
-                    <p className={style.ingredients}>Presunto parma, salame, queijos, azeitonas</p>
-                </div>
-                <span className={style.tabuaFrios}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                {/* Porção 12 */}
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Cesta de Pães com Patês Artesanais</h4>
-                    <p className={style.ingredients}>Pães variados com seleção de patês</p>
-                </div>
-                <span className={style.cestaPaes}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-            </div>
-            </div>
-
-                        {/* Categoria Sem Glúten */}
-            <div className="category-container">
-            <h3 className="category-title">🌱 Sem Glúten</h3>
-            <div className="food-items">
-                
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Espaguete Sem Glúten ao Pomodoro</h4>
-                    <p className={style.ingredients}>Molho de tomate fresco, manjericão e parmesão</p>
-                </div>
-                <span className={style.espagueteSemGluten}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Risoto de Frango com Legumes</h4>
-                    <p className={style.ingredients}>Sem uso de farinha ou glúten</p>
-                </div>
-                <span className={style.risotoLegumes}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Nhoque de Mandioquinha com Molho Suave</h4>
-                    <p className={style.ingredients}>Feito com mandioquinha fresca</p>
-                </div>
-                <span className={style.nhoqueMandioquinha}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Salada Bella</h4>
-                    <p className={style.ingredients}>Alface, rúcula, tomate, pepino, ovo cozido, frango grelhado</p>
-                </div>
-                <span className={style.saladaBella}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Quibe de Abóbora Assado com Hortelã</h4>
-                    <p className={style.ingredients}>Acompanhado de salada</p>
-                </div>
-                <span className={style.quibeAbobora}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Panqueca de Tapioca com Recheio de Queijo e Tomate</h4>
-                    <p className={style.ingredients}>Massa 100% sem glúten</p>
-                </div>
-                <span className={style.panquecaTapioca}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-            </div>
-            </div>
-
-                        {/* Categoria Sobremesas */}
-            <div className="category-container">
-            <h3 className="category-title">🧁 Sobremesas</h3>
-            <div className="food-items">
-                
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Tiramisù Tradicional</h4>
-                    <p className={style.ingredients}>Creme de mascarpone, café e cacau</p>
-                </div>
-                <span className={style.tiramisuTradicional}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Panna Cotta com Frutas Vermelhas</h4>
-                    <p className={style.ingredients}>Creme italiano com calda de frutas</p>
-                </div>
-                <span className={style.pannaCotta}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Torta de Limão com Merengue</h4>
-                    <p className={style.ingredients}>Base crocante, creme de limão e merengue</p>
-                </div>
-                <span className={style.tortaLimao}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Mousse de Chocolate Meio Amargo</h4>
-                    <p className={style.ingredients}>Textura aerada e sabor intenso</p>
-                </div>
-                <span className={style.mousseChocolate}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Gelato Italiano (3 sabores)</h4>
-                    <p className={style.ingredients}>Chocolate, baunilha e frutas vermelhas</p>
-                </div>
-                <span className={style.gelatoItaliano}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Cannoli com Ricota e Gotas de Chocolate</h4>
-                    <p className={style.ingredients}>Massa crocante recheada</p>
-                </div>
-                <span className={style.cannoliRicota}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Cheesecake de Frutas Vermelhas</h4>
-                    <p className={style.ingredients}>Base de biscoito, creme de queijo e geleia</p>
-                </div>
-                <span className={style.cheesecakeFrutas}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Brownie com Calda de Nutella</h4>
-                    <p className={style.ingredients}>Quentinho e acompanha sorvete</p>
-                </div>
-                <span className={style.brownieNutella}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Creme Brûlée com Baunilha</h4>
-                    <p className={style.ingredients}>Creme francês com açúcar queimado</p>
-                </div>
-                <span className={style.cremeBaunilha}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Mini Pudim de Leite Condensado</h4>
-                    <p className={style.ingredients}>Porção individual com calda de caramelo</p>
-                </div>
-                <span className={style.miniPudim}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-            </div>
-            </div>
-
+            <span className={style.espagueteBolonhesa}></span>
         </div>
 
-                    {/* Categoria Bebidas */}
-            <div className="category-container">
-            <h3 className="category-title">🥤 Bebidas</h3>
-            <div className="food-items">
-                
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Refrigerante Lata (350ml)</h4>
-                    <p className={style.ingredients}>Coca-Cola, Guaraná Antarctica, Fanta Laranja, Sprite</p>
-                </div>
-                <span className={style.refrigeranteLata}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
+        {/* Massa 2 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Fettuccine Alfredo</h4>
+                <p className={style.ingredients}>Molho cremoso de parmesão, manteiga e creme de leite</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
                     <p id='preco'></p>
                 </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Água Mineral</h4>
-                    <p className={style.ingredients}>Com ou sem gás (500ml)</p>
-                </div>
-                <span className={style.agua}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Suco Natural (300ml)</h4>
-                    <p className={style.ingredients}>Laranja, Uva, Abacaxi com Hortelã, Manga</p>
-                </div>
-                <span className={style.sucoNatural}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Suco Detox (300ml)</h4>
-                    <p className={style.ingredients}>Couve, limão, gengibre e maçã</p>
-                </div>
-                <span className={style.sucoDetox}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Chá Gelado (500ml)</h4>
-                    <p className={style.ingredients}>Limão ou Pêssego</p>
-                </div>
-                <span className={style.chaGelado}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Café Expresso</h4>
-                    <p className={style.ingredients}>Grãos 100% arábica</p>
-                </div>
-                <span className={style.cafeExpresso}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Capuccino Cremoso</h4>
-                    <p className={style.ingredients}>Com chocolate em pó ou canela</p>
-                </div>
-                <span className={style.capuccinoCremoso}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Cerveja Long Neck (355ml)</h4>
-                    <p className={style.ingredients}>Heineken, Budweiser, Stella Artois</p>
-                </div>
-                <span className={style.cervejaLongNeck}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Vinho Tinto Taça (180ml)</h4>
-                    <p className={style.ingredients}>Chianti ou Merlot</p>
-                </div>
-                <span className={style.vinhoTinto}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Vinho Branco Taça (180ml)</h4>
-                    <p className={style.ingredients}>Chardonnay ou Sauvignon Blanc</p>
-                </div>
-                <span className={style.vinhoBranco}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Spritz Italiano</h4>
-                    <p className={style.ingredients}>Aperol com prosecco e soda</p>
-                </div>
-                <span className={style.spritzItaliano}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Água Tônica com Limão</h4>
-                    <p className={style.ingredients}>Servida com gelo e rodelas de limão</p>
-                </div>
-                <span className={style.aguaTonica}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
-                <div className={style.foodItem}>
-                <div>
-                    <h4>Limonada Siciliana</h4>
-                    <p className={style.ingredients}>Feita com limões frescos e hortelã</p>
-                </div>
-                <span className={style.limonadaSiciliana}></span>
-                <div>
-                    <button>Adicionar ao Carrinho</button>
-                    <p id='preco'></p>
-                </div>
-                </div>
-
             </div>
+            <span className={style.fettucineAlfredo}></span>
+        </div>
+
+        {/* Massa 3 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Ravioli de Ricota com Espinafre</h4>
+                <p className={style.ingredients}>Recheio cremoso com molho branco leve</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
             </div>
+            <span className={style.raviolliRicota}></span>
+        </div>
+
+        {/* Massa 4 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Penne ao Pesto</h4>
+                <p className={style.ingredients}>Molho pesto fresco de manjericão, nozes, alho, parmesão e azeite</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.pennePesto}></span>
+        </div>
+
+        {/* Massa 5 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Lasanha à Bolonhesa</h4>
+                <p className={style.ingredients}>Camadas de massa com carne, queijo e molho</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.lasanhaBolonhesa}></span>
+        </div>
+
+        {/* Massa 6 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Gnocchi ao Sugo</h4>
+                <p className={style.ingredients}>Nhoque de batata com molho de tomate e manjericão</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.gnocchiSugo}></span>
+        </div>
+
+        {/* Massa 7 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Canelone de Frango</h4>
+                <p className={style.ingredients}>Recheado com frango e catupiry, coberto com molho rosé</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.caneloneFrango}></span>
+        </div>
+
+        {/* Massa 8 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Espaguete Carbonara</h4>
+                <p className={style.ingredients}>Bacon, ovos, queijo parmesão e pimenta do reino</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.espagueteCarbonara}></span>
+        </div>
+
+        {/* Massa 9 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Rondelli de Presunto e Queijo</h4>
+                <p className={style.ingredients}>Molho bechamel e queijo gratinado</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.rondelliPresunto}></span>
+        </div>
+
+        {/* Massa 10 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Farfalle à Quatro Queijos</h4>
+                <p className={style.ingredients}>Molho de mussarela, gorgonzola, catupiry e parmesão</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.farfalleQueijos}></span>
+        </div>
+
+        {/* Massa 11 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Tagliatelle à Puttanesca</h4>
+                <p className={style.ingredients}>Azeitonas, alcaparras, tomate e alho</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.tagliatellePutatesca}></span>
+        </div>
+
+        {/* Massa 12 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Tortellini de Carne com Molho Funghi</h4>
+                <p className={style.ingredients}>Cogumelos frescos, creme e queijo</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.tortelliniCarne}></span>
+        </div>
+
+    </div>
+</div>
+                        
+                        {/* Categoria Pratos Executivos */}
+<div className="category-container">
+    <h3 className="category-title"> Pratos Executivos</h3>
+    <div className="food-items">
+        
+        {/* Prato 1 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Filé à Parmegiana</h4>
+                <p className={style.ingredients}>Filé empanado com molho de tomate e queijo, arroz branco e batatas fritas</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.fileParmegiana}></span>
+        </div>
+
+        {/* Prato 2 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Strogonoff de Frango</h4>
+                <p className={style.ingredients}>Arroz branco, batata palha e frango em molho cremoso</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.strogonoffFrango}></span>
+        </div>
+
+        {/* Prato 3 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Bife Acebolado</h4>
+                <p className={style.ingredients}>Acompanha arroz, feijão, farofa e salada</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.bifeAcebolado}></span>
+        </div>
+
+        {/* Prato 4 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Peixe Grelhado com Legumes</h4>
+                <p className={style.ingredients}>Tilápia grelhada com mix de legumes no vapor</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.peixeGrelhado}></span>
+        </div>
+
+        {/* Prato 5 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Frango Grelhado com Purê</h4>
+                <p className={style.ingredients}>Purê de batata caseiro e arroz</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.frangoGrelhado}></span>
+        </div>
+
+        {/* Prato 6 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Risoto de Cogumelos</h4>
+                <p className={style.ingredients}>Arroz arbório, cogumelos frescos, vinho branco, parmesão</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.risotoCogumelos}></span>
+        </div>
+
+        {/* Prato 7 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Almôndegas ao Sugo</h4>
+                <p className={style.ingredients}>Com arroz branco e purê de batata</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.almondegasSugo}></span>
+        </div>
+
+        {/* Prato 8 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Carne Assada com Polenta</h4>
+                <p className={style.ingredients}>Fatias macias de carne com molho e polenta cremosa</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.carneAssada}></span>
+        </div>
+
+    </div>
+</div>
+
+                       {/* Categoria Porções */}
+<div className="category-container">
+    <h3 className="category-title"> Porções</h3>
+    <div className="food-items">
+        
+        {/* Porção 1 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Batata Frita Tradicional</h4>
+                <p className={style.ingredients}>Batatas crocantes com sal e orégano</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.batataFritaTrad}></span>
+        </div>
+
+        {/* Porção 2 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Batata Rústica com Alho e Alecrim</h4>
+                <p className={style.ingredients}>Batatas assadas com alho fresco e alecrim</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.batataRustica}></span>
+        </div>
+
+        {/* Porção 3 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Polenta Frita</h4>
+                <p className={style.ingredients}>Palitos de polenta crocantes</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.polentaFrita}></span>
+        </div>
+
+        {/* Porção 4 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Mandioca Frita</h4>
+                <p className={style.ingredients}>Servida com molho da casa</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.mandiocaFrita}></span>
+        </div>
+
+        {/* Porção 5 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Anéis de Cebola Empanados</h4>
+                <p className={style.ingredients}>Cebola empanada crocante</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.aneisCebola}></span>
+        </div>
+
+        {/* Porção 6 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Iscas de Frango Empanadas</h4>
+                <p className={style.ingredients}>Acompanha molho mostarda e mel</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.iscasFrango}></span>
+        </div>
+
+        {/* Porção 7 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Mini Almôndegas</h4>
+                <p className={style.ingredients}>Com molho de tomate</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.miniAlmondegas}></span>
+        </div>
+
+        {/* Porção 8 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Bolinho de Arroz com Queijo</h4>
+                <p className={style.ingredients}>Bolinho crocante dengan recheio de queijo derretido</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.bolinhoArroz}></span>
+        </div>
+
+        {/* Porção 9 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Mini Pizzas (6 unid)</h4>
+                <p className={style.ingredients}>Sabores variados</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.miniPizzas}></span>
+        </div>
+
+        {/* Porção 10 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Pão de Alho com Queijo</h4>
+                <p className={style.ingredients}>4 unidades</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.paoAlho}></span>
+        </div>
+
+        {/* Porção 11 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Tábua de Frios</h4>
+                <p className={style.ingredients}>Presunto parma, salame, queijos, azeitonas</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.tabuaFrios}></span>
+        </div>
+
+        {/* Porção 12 */}
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Cesta de Pães com Patês Artesanais</h4>
+                <p className={style.ingredients}>Pães variados com seleção de patês</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.cestaPaes}></span>
+        </div>
+
+    </div>
+</div>
+
+                       {/* Categoria Sem Glúten */}
+<div className="category-container">
+    <h3 className="category-title"> Sem Glúten</h3>
+    <div className="food-items">
+        
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Espaguete Sem Glúten ao Pomodoro</h4>
+                <p className={style.ingredients}>Molho de tomate fresco, manjericão e parmesão</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.espagueteSemGluten}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Risoto de Frango com Legumes</h4>
+                <p className={style.ingredients}>Sem uso de farinha ou glúten</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.risotoLegumes}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Nhoque de Mandioquinha com Molho Suave</h4>
+                <p className={style.ingredients}>Feito com mandioquinha fresca</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.nhoqueMandioquinha}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Salada Bella</h4>
+                <p className={style.ingredients}>Alface, rúcula, tomate, pepino, ovo cozido, frango grelhado</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.saladaBella}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Quibe de Abóbora Assado com Hortelã</h4>
+                <p className={style.ingredients}>Acompanhado de salada</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.quibeAbobora}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Panqueca de Tapioca com Recheio de Queijo e Tomate</h4>
+                <p className={style.ingredients}>Massa 100% sem glúten</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.panquecaTapioca}></span>
+        </div>
+
+    </div>
+</div>
+
+                        {/* Categoria Sobremesas */}
+<div className="category-container">
+    <h3 className="category-title"> Sobremesas</h3>
+    <div className="food-items">
+        
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Tiramisù Tradicional</h4>
+                <p className={style.ingredients}>Creme de mascarpone, café e cacau</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.tiramisuTradicional}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Panna Cotta com Frutas Vermelhas</h4>
+                <p className={style.ingredients}>Creme italiano com calda de frutas</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.pannaCotta}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Torta de Limão com Merengue</h4>
+                <p className={style.ingredients}>Base crocante, creme de limão merengue</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.tortaLimao}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Mousse de Chocolate Meio Amargo</h4>
+                <p className={style.ingredients}>Textura aerada e sabor intenso</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.mousseChocolate}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Gelato Italiano (3 sabores)</h4>
+                <p className={style.ingredients}>Chocolate, baunilha e frutas vermelhas</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.gelatoItaliano}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Cannoli com Ricota e Gotas de Chocolate</h4>
+                <p className={style.ingredients}>Massa crocante recheada</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.cannoliRicota}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Cheesecake de Frutas Vermelhas</h4>
+                <p className={style.ingredients}>Base de biscoito, creme de queijo e geleia</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.cheesecakeFrutas}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Brownie com Calda de Nutella</h4>
+                <p className={style.ingredients}>Quentinho e acompanha sorvete</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.brownieNutella}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Creme Brûlée com Baunilha</h4>
+                <p className={style.ingredients}>Creme francês com açúcar queimado</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.cremeBaunilha}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Mini Pudim de Leite Condensado</h4>
+                <p className={style.ingredients}>Porção individual com calda de caramelo</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.miniPudim}></span>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+                   {/* Categoria Bebidas */}
+<div className="category-container">
+    <h3 className="category-title"> Bebidas</h3>
+    <div className="food-items">
+        
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Refrigerante Lata (350ml)</h4>
+                <p className={style.ingredients}>Coca-Cola, Guaraná Antarctica, Fanta Laranja, Sprite</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.refrigeranteLata}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Água Mineral</h4>
+                <p className={style.ingredients}>Com ou sem gás (500ml)</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.agua}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Suco Natural (300ml)</h4>
+                <p className={style.ingredients}>Laranja, Uva, Abacaxi com Hortelã, Manga</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.sucoNatural}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Suco Detox (300ml)</h4>
+                <p className={style.ingredients}>Couve, limão, gengibre e maçã</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.sucoDetox}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Chá Gelado (500ml)</h4>
+                <p className={style.ingredients}>Limão ou Pêssego</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.chaGelado}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Café Expresso</h4>
+                <p className={style.ingredients}>Grãos 100% arábica</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.cafeExpresso}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Capuccino Cremoso</h4>
+                <p className={style.ingredients}>Com chocolate em pó ou canela</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.capuccinoCremoso}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Cerveja Long Neck (355ml)</h4>
+                <p className={style.ingredients}>Heineken, Budweiser, Stella Artois</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.cervejaLongNeck}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Vinho Tinto Taça (180ml)</h4>
+                <p className={style.ingredients}>Chianti ou Merlot</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.vinhoTinto}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Vinho Branco Taça (180ml)</h4>
+                <p className={style.ingredients}>Chardonnay ou Sauvignon Blanc</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.vinhoBranco}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Spritz Italiano</h4>
+                <p className={style.ingredients}>Aperol com prosecco e soda</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.spritzItaliano}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Água Tônica com Limão</h4>
+                <p className={style.ingredients}>Servida com gelo e rodelas de limão</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.aguaTonica}></span>
+        </div>
+
+        <div className={style.foodItem}>
+            <div className={style.informationItem}>
+                <h4 className={style.foodName}>Limonada Siciliana</h4>
+                <p className={style.ingredients}>Feita com limões frescos e hortelã</p>
+                <div className={style.shoppingInfo}>
+                    <button>Adicionar +</button>
+                    <p id='preco'></p>
+                </div>
+            </div>
+            <span className={style.limonadaSiciliana}></span>
+        </div>
+
+    </div>
+</div>
 
         </main>
     );

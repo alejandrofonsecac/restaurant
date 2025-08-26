@@ -2,6 +2,7 @@
 
 
 :root{
+    --principal-color : #8B0000;
     --primary-color: #ff6347; /* Cor primária */
     --secondary-color: #f0f0f0; /* Cor secundária */
     --text-color: #333; /* Cor do texto */
@@ -20,6 +21,11 @@ main > menu {
     margin: auto;
     padding: 0 !important;
     touch-action: pan-y;
+}
+
+a{
+    text-decoration: none;
+    color: var(--principal-color);
 }
 
 .containerMenu {
@@ -123,6 +129,7 @@ main > menu {
     width: 100%;
     display: flex;
     align-items: center;
+    margin-top: 42px;
 }
 
 .food-item > div{
@@ -146,6 +153,24 @@ main > menu {
     width: 100%;
 }
 
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+button{
+    background-color: var(--principal-color);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 4px 16px 0px rgba(0, 0, 0, 0.473);
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow:  3px 3px 6px rgba(0, 0, 0, 0.473);
+}
+
 .shoppingInfo{
     display: flex;
 }
@@ -157,8 +182,8 @@ main > menu {
 
 .foodItem > span{
     display: block;
-    width: 100px;
-    height: 60px;
+    width: 175px;
+    height: 80px;
     border-radius: 8px;
     margin: 8px;
 }
