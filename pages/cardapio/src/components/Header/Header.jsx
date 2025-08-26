@@ -4,6 +4,7 @@ import React from 'react';
 import '../../../style/header.css';
 import '../../../style/main.module.css';
 import '../../../style/generalSettings.css';
+import {clickMenu} from '../clickMenu'
 
 function Header() {
   return (
@@ -24,7 +25,7 @@ function Header() {
         </div>
         
         <div>
-          <span className="material-icons" >menu</span>
+          <span className="material-icons" onClick={clickMenu}>menu</span>
         </div>
       </div>
 
