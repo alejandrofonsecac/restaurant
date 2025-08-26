@@ -45,6 +45,13 @@ header {
     background-color: white;
 }
 
+#contatoText{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-family: var(--font-secundaria);
+    font-weight: bold;
+}
+
 header > h1 {
     font-family: var(--font-principal);
     color: var(--color-primary);

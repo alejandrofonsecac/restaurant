@@ -285,7 +285,7 @@ function Main() {
 
                        {/* Categoria Massas - Completa */}
 <div className="category-container"  ref={(el) => (refsDeSecoes.current.massas = el)}>
-    <h3 className="category-title"> + Massas</h3>
+    <h3 className="category-title">Massas</h3>
     <div className="food-items" id='massasCategory'>
         
         {/* Massa 1 */}
