@@ -37,6 +37,14 @@ header > div.header-icons > span{
     display: none;
 }
 
+#shoppingCart{
+    margin-right: 80px;
+}
+
+.cart-count{
+    margin-right: 80px;
+}
+
 header > .menu-desktop{
     display: flex !important;
     justify-content: space-between;

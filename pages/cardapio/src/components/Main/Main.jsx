@@ -138,7 +138,7 @@ function Main() {
                             <h4 className={style.foodName}>Margherita</h4>
                             <p className={style.ingredients}>Massa artesanal, molho de tomate italiano, mussarela de búfala, manjericão fresco, azeite extra virgem</p>
                             <div className={style.shoppingInfo}>
-                                <button>Adicionar</button>
+                                <button>Adicionar +</button>
                                 <p id='preco'></p>
                             </div>                            
                         </div>
@@ -150,7 +150,7 @@ function Main() {
         <h4 className={style.foodName}>Pepperoni</h4>
         <p className={style.ingredients}>Massa crocante, molho de tomate, mussarela, fatias generosas de pepperoni</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar</button>
+            <button>Adicionar +</button>
             <p id='preco'></p>
         </div> 
     </div>
@@ -162,7 +162,7 @@ function Main() {
         <h4 className={style.foodName}>Frango com Catupiry</h4>
         <p className={style.ingredients}>Massa bem passada, molho de tomate, mussarela, frango desfiado temperado, catupiry cremoso</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar</button>
+            <button>Adicionar +</button>
             <p id='preco'></p>
         </div> 
     </div>
@@ -174,7 +174,7 @@ function Main() {
         <h4 className={style.foodName}>Calabresa</h4>
         <p className={style.ingredients}>Molho de tomate, queijo mussarela, calabresa fatiada, cebola roxa, orégano</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar</button>
+            <button>Adicionar +</button>
             <p id='preco'></p>
         </div>
     </div>
@@ -198,7 +198,7 @@ function Main() {
         <h4 className={style.foodName}>Portuguesa</h4>
         <p className={style.ingredients}>Presunto, ovos, cebola, azeitona, pimentão, molho e queijo mussarela</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar</button>
+            <button>Adicionar +</button>
             <p id='preco'></p>
         </div>
     </div>
@@ -210,7 +210,7 @@ function Main() {
         <h4 className={style.foodName}>Vegetariana</h4>
         <p className={style.ingredients}>Abobrinha grelhada, berinjela, pimentões coloridos, cebola, tomate, molho e queijo</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar</button>
+            <button>Adicionar +</button>
             <p id='preco'></p>
         </div>
     </div>
@@ -222,7 +222,7 @@ function Main() {
         <h4 className={style.foodName}>Napolitana</h4>
         <p className={style.ingredients}>Molho artesanal, queijo, tomate fresco, orégano, manjericão</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar</button>
+            <button>Adicionar +</button>
             <p id='preco'></p>
         </div>
     </div>
@@ -234,7 +234,7 @@ function Main() {
         <h4 className={style.foodName}>Toscana</h4>
         <p className={style.ingredients}>Linguiça toscana artesanal, molho de tomate, mussarela, pimenta-do-reino</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar</button>
+            <button>Adicionar +</button>
             <p id='preco'></p>
         </div>
     </div>
@@ -246,7 +246,7 @@ function Main() {
         <h4 className={style.foodName}>Bella Speciale</h4>
         <p className={style.ingredients}>Molho secreto da casa, presunto parma, rúcula, tomate seco, lascas de parmesão</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar</button>
+            <button>Adicionar +</button>
             <p id='preco'></p>
         </div>
     </div>
@@ -256,7 +256,7 @@ function Main() {
 
                        {/* Categoria Massas - Completa */}
 <div className="category-container">
-    <h3 className="category-title"> Massas</h3>
+    <h3 className="category-title"> + Massas</h3>
     <div className="food-items">
         
         {/* Massa 1 */}

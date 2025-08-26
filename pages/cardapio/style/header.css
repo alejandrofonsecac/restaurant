@@ -34,7 +34,7 @@ header > .menu-desktop{
 
 header > div.header-icons{
     width: 100px;
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -46,8 +46,8 @@ header > div.header-icons > div.icon-wrapper {
 
 }
 
-header > div.header-icons > span.material-icons{
-    font-size: 33px;
+.material-icons{
+    font-size: 35px;
     margin: 0px 5px;
 }
 

@@ -65,8 +65,12 @@ header > div.header-icons{
 }
 
 header > div.header-icons > span.material-icons{
-    font-size: 33px;
-    margin: 0px 5px;
+    font-size: 43px;
+    margin: 0px 15px;
+}
+
+#shoppingCart{
+    font-size: 28px;
 }
 
 header > div.header-icons > span.material-icons > ul > li {

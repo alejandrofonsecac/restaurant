@@ -171,6 +171,13 @@ button{
     text-shadow:  3px 3px 6px rgba(0, 0, 0, 0.473);
 }
 
+button:hover{
+    background-color: white;
+    color: #8B0000;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
 .shoppingInfo{
     display: flex;
 }
