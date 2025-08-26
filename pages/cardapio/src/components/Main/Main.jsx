@@ -139,34 +139,36 @@ function Main() {
                             <p className={style.ingredients}>Massa artesanal, molho de tomate italiano, mussarela de búfala, manjericão fresco, azeite extra virgem</p>
                             <div className={style.shoppingInfo}>
                                 <button>Adicionar</button>
-                                <p>23423</p>
+                                <p id='preco'></p>
                             </div>                            
                         </div>
                         <span className={style.margueritaPizza}></span>
                     </div>
                     
                     <div className={style.foodItem}>
-                        <div>
+                        <div className={style.informationItem}>
                             <h4 className="food-name">Pepperoni</h4>
                             <p className={style.ingredients}>Massa crocante, molho de tomate, mussarela, fatias generosas de pepperoni</p>
+
+                            <div className={style.shoppingInfo}>
+                                <button>Adicionar</button>
+                                <p id='preco'></p>
+                            </div> 
                         </div>
                         <span className={style.pepperoniPizza}></span>
-                        <div>
-                            <button>Adicionar ao Carrinho</button>
-                            <p id='preco'></p>
-                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
-                        <div>
+                        <div className={style.informationItem}>
                             <h4 className="food-name">Frango com Catupiry</h4>
                             <p className={style.ingredients}>Massa bem passada, molho de tomate, mussarela, frango desfiado temperado, catupiry cremoso</p>
+
+                            <div className={style.shoppingInfo}>
+                                <button>Adicionar</button>
+                                <p id='preco'></p>
+                            </div> 
                         </div>
                         <span className={style.frangoPizza}></span>
-                        <div>
-                            <button>Adicionar ao Carrinho</button>
-                            <p id='preco'></p>
-                        </div>
                     </div>
                     
                     <div className={style.foodItem}>
