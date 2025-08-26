@@ -4,54 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
-    <link rel="stylesheet" href="../styles/sobrenós.css">
+    <link rel="stylesheet" href="../styles/sobre-nos/sobre-nós.css">
+
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
 </head>
 <body>
+        <header>
+        <h1>Pasta Bella</h1>
+        <ul class="menu-desktop" id="itensDesktop">
+            <li><a href="#">Contato</a></li>
+            <li><a href="pages/cardapio/cardapio.html">Cardapio</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+        </ul>  
+            <div class="header-icons">
+                <!-- Carrinho -->
+                    <div class="icon-wrapper">
+                        <span class="material-icons" id="shoppingCart" >shopping_cart</span>
+                <!-- Contador de itens no carrinho -->
+                        <span class="cart-count">0</span>
+                    </div>
+
+
+                <!-- Menu -->
+                <span class="material-icons" onclick="clickMenu()">menu</span>
     
-        <h1>Sobre Nós</h1>
+    <menu id="itens" style="display: none;" class="menu-mobile">
+        <ul>
+            <li><a href="#">Cardapio</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre nós</a></li>   
+        </ul>
+    </menu>
 
-        <section class="nossa-historia">
-            <h2> Nossa História</h2>
-            <p>
-            Fundado em <strong>2018</strong>, o <strong>Pasta Bella</strong> surgiu do sonho de unir tradição, sabor e afeto em um único lugar. Criado por <strong>Giuseppe e Maria Bellini</strong>, imigrantes italianos vindos da região da Toscana, o restaurante começou como uma pequena cozinha familiar, servindo pratos típicos para amigos e vizinhos em um bairro tranquilo da cidade.
-            </p>
-            <p>
-            Com o tempo, o sabor autêntico da culinária italiana e a simpatia da família conquistaram corações e paladares, transformando o espaço em um verdadeiro ponto de encontro para amantes da boa comida. O nome “<strong>Pasta Bella</strong>”, que em italiano significa "massa bonita", foi inspirado na beleza simples e artesanal das massas feitas à mão pela matriarca da família, usando receitas que atravessaram gerações.
-            </p>
-        </section>
+     
+    </header>
+        <main>
+            <h1>Sobre Nós</h1>
+            <section class="nossa-historia">
+                <h2> Nossa História</h2>
+                <p>
+                Fundado em <strong>2018</strong>, o <strong>Pasta Bella</strong> surgiu do sonho de unir tradição, sabor e afeto em um único lugar. Criado por <strong>Giuseppe e Maria Bellini</strong>, imigrantes italianos vindos da região da Toscana, o restaurante começou como uma pequena cozinha familiar, servindo pratos típicos para amigos e vizinhos em um bairro tranquilo da cidade.
+                </p>
+                <p>
+                Com o tempo, o sabor autêntico da culinária italiana e a simpatia da família conquistaram corações e paladares, transformando o espaço em um verdadeiro ponto de encontro para amantes da boa comida. O nome “<strong>Pasta Bella</strong>”, que em italiano significa "massa bonita", foi inspirado na beleza simples e artesanal das massas feitas à mão pela matriarca da família, usando receitas que atravessaram gerações.
+                </p>
+            </section>
+            <section class="conceito-filosofia">
+                <h2> Conceito e Filosofia</h2>
+                <p>
+                Nosso cardápio é uma celebração da <strong>cozinha italiana tradicional</strong>, com toques modernos e ingredientes de altíssima qualidade. Buscamos representar o verdadeiro espírito da Itália, onde comer é mais do que se alimentar — é compartilhar histórias, momentos e amor à mesa.
+                </p>
+                <p>
+                Valorizamos o uso de <strong>ingredientes frescos</strong>, como tomates colhidos no ponto certo, manjericão fresco, massas produzidas artesanalmente todos os dias e azeites extra virgens importados da Itália. Onde possível, priorizamos produtores locais, apoiando a agricultura sustentável e reduzindo o impacto ambiental.
+                </p>
+                <p>
+                Nosso compromisso vai além da comida: oferecemos uma experiência completa. Isso inclui embalagens sustentáveis para delivery, práticas conscientes na cozinha e respeito por dietas restritivas, como opções <strong>sem glúten</strong> e <strong>vegetarianas</strong>.
+                </p>
+            </section>
+            <section class="nossa-equipe">
+                <h2> Nossa Equipe</h2>
+                <p>
+                Liderando nossa equipe está o talentoso <strong>Chef Alessandro Bellini</strong>, filho dos fundadores. Formado na Scuola Italiana di Cucina, Alessandro traz em sua bagagem experiências em renomados restaurantes de Roma e Milão. Ele combina a tradição familiar com técnicas modernas, criando pratos que emocionam.
+                </p>
+                <p>
+                Ao seu lado, temos uma equipe de profissionais apaixonados por gastronomia: cozinheiros, auxiliares, atendentes e entregadores treinados para garantir excelência em cada etapa. Cada membro compartilha o compromisso de entregar mais que uma refeição — entregar uma memória saborosa.
+                </p>
+            </section>
+            <img id="chef"  src="..//imagens/sobre-nos/cozinheiro.jpg" alt="">
+            <section class="local-ambiente">
+                <h2> Local e Ambiente</h2>
+                <p>
+                O <strong>Pasta Bella</strong> está localizado no coração da cidade, em um espaço aconchegante, decorado com elementos que remetem às tradicionais vilas italianas — madeira rústica, luzes amareladas e fotografias antigas da família Bellini adornam nossas paredes.
+                </p>
+                <p>
+                Criamos um ambiente ideal para refeições tranquilas, encontros especiais e também para o dia a dia. Seja para um almoço executivo ou um jantar romântico, garantimos uma <strong>experiência acolhedora, familiar e inesquecível</strong>.
+                </p>
+            </section>
+        </main>
 
-        <section class="conceito-filosofia">
-            <h2> Conceito e Filosofia</h2>
-            <p>
-            Nosso cardápio é uma celebração da <strong>cozinha italiana tradicional</strong>, com toques modernos e ingredientes de altíssima qualidade. Buscamos representar o verdadeiro espírito da Itália, onde comer é mais do que se alimentar — é compartilhar histórias, momentos e amor à mesa.
-            </p>
-            <p>
-            Valorizamos o uso de <strong>ingredientes frescos</strong>, como tomates colhidos no ponto certo, manjericão fresco, massas produzidas artesanalmente todos os dias e azeites extra virgens importados da Itália. Onde possível, priorizamos produtores locais, apoiando a agricultura sustentável e reduzindo o impacto ambiental.
-            </p>
-            <p>
-            Nosso compromisso vai além da comida: oferecemos uma experiência completa. Isso inclui embalagens sustentáveis para delivery, práticas conscientes na cozinha e respeito por dietas restritivas, como opções <strong>sem glúten</strong> e <strong>vegetarianas</strong>.
-            </p>
-        </section>
+        <footer>
+        <div>
+            <h2>Pasta Bella</h2>
+                <p>Sabores da Itália direto para sua casa</p>
+                <div>
+                    <img src="../imagens/icones/redes sociais/facebook.png" alt="Icone facebook" width="35" class="animation">
+                    <img src="../imagens/icones/redes sociais/instagram.png" alt="Icone instagram" width="35" class="animation">
+                    <img src="../imagens/icones/redes sociais/tripadvisor.png" alt="Icone Tripa d Visor" width="35" class="animation">
+                </div>
+                <p>2025 Pasta Bella. Todos os direitos reservados.</p>
+                <p>Desenvolvido com AMOR para amantes da culinária italiana</p>
+        </div>
+    </footer>
 
-        <section class="nossa-equipe">
-            <h2> Nossa Equipe</h2>
-            <p>
-            Liderando nossa equipe está o talentoso <strong>Chef Alessandro Bellini</strong>, filho dos fundadores. Formado na Scuola Italiana di Cucina, Alessandro traz em sua bagagem experiências em renomados restaurantes de Roma e Milão. Ele combina a tradição familiar com técnicas modernas, criando pratos que emocionam.
-            </p>
-            <p>
-            Ao seu lado, temos uma equipe de profissionais apaixonados por gastronomia: cozinheiros, auxiliares, atendentes e entregadores treinados para garantir excelência em cada etapa. Cada membro compartilha o compromisso de entregar mais que uma refeição — entregar uma memória saborosa.
-            </p>
-        </section>
-
-        <section class="local-ambiente">
-            <h2> Local e Ambiente</h2>
-            <p>
-            O <strong>Pasta Bella</strong> está localizado no coração da cidade, em um espaço aconchegante, decorado com elementos que remetem às tradicionais vilas italianas — madeira rústica, luzes amareladas e fotografias antigas da família Bellini adornam nossas paredes.
-            </p>
-            <p>
-            Criamos um ambiente ideal para refeições tranquilas, encontros especiais e também para o dia a dia. Seja para um almoço executivo ou um jantar romântico, garantimos uma <strong>experiência acolhedora, familiar e inesquecível</strong>.
-            </p>
-        </section>
 
 </body>
+<script src="../scripts/Nova pasta/menu.js"></script>
 </html>
