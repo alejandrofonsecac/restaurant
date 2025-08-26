@@ -4,6 +4,27 @@ import style from '../../../style/main.module.css'
 function Main() {
     const containerRef = useRef(null);
 
+ const refsDeSecoes = useRef({
+        pizzas: null,
+        massas: null,
+        executivos: null,
+        porcoes: null,
+        semGluten: null,
+        sobremesas: null,
+        bebidas: null
+    });
+
+    // Função para rolar até a seção
+    const rolarParaSecao = (id) => {
+        const secao = refsDeSecoes.current[id];
+        if (secao) {
+            secao.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
     // Variáveis de estado para o carrossel
     const state = useRef({
         isDown: false,
@@ -118,18 +139,26 @@ function Main() {
                     onTouchEnd={handleEnd}
                 >
                     <div className={`${style.itens} ${style.principalMenu}`}><p>Menu Principal</p></div>
+
                     <div className={`${style.itens} ${style.PizzasMenu}`}><p>Pizzas</p></div>
-                    <div className={`${style.itens} ${style.pratosExecutivos}`}><p>Pratos Executivos</p></div>
+
+                    <div className= {`${style.itens} ${style.massasMenu}`}><p>Massas</p></div>
+
+                    <div className={`${style.itens} ${style.pratosExecutivos}`} onClick={() => rolarParaSecao('executivos')}><p>Pratos Executivos</p></div>
+
                     <div className={`${style.itens} ${style.porções}`}><p>Porções</p></div>
-                    <div className={`${style.itens} ${style.semGluten}`}><p>Sem Glúten</p></div>
-                    <div className={`${style.itens} ${style.sobremesas}`}><p>Sobremesas</p></div>
-                    <div className={`${style.itens} ${style.bebidas}`}><p>Bebidas</p></div>
+
+                    <div className={`${style.itens} ${style.semGluten}`}  onClick={() => rolarParaSecao('porcoes')}><p>Sem Glúten</p></div>
+
+                    <div className={`${style.itens} ${style.sobremesas}`}  onClick={() => rolarParaSecao('semGluten')}><p>Sobremesas</p></div>
+
+                    <div className={`${style.itens} ${style.bebidas}`} onClick={() => rolarParaSecao('sobremesas')}><p>Bebidas</p></div>
                 </div>
             </menu>
 
             
                         {/* Categoria Pizzas */}
-            <div className="category-container">
+            <div className="category-container" ref={(el) => (refsDeSecoes.current.pizzas = el)}>
                 <h3 className="category-title">Pizzas</h3>
                 <div className="food-items">
                 
@@ -138,7 +167,7 @@ function Main() {
                             <h4 className={style.foodName}>Margherita</h4>
                             <p className={style.ingredients}>Massa artesanal, molho de tomate italiano, mussarela de búfala, manjericão fresco, azeite extra virgem</p>
                             <div className={style.shoppingInfo}>
-                                <button>Adicionar +</button>
+                                <a className={style.addToCart}>+ Adicionar</a>
                                 <p id='preco'></p>
                             </div>                            
                         </div>
@@ -150,7 +179,7 @@ function Main() {
         <h4 className={style.foodName}>Pepperoni</h4>
         <p className={style.ingredients}>Massa crocante, molho de tomate, mussarela, fatias generosas de pepperoni</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar +</button>
+            <a className={style.addToCart}>+ Adicionar</a>
             <p id='preco'></p>
         </div> 
     </div>
@@ -162,7 +191,7 @@ function Main() {
         <h4 className={style.foodName}>Frango com Catupiry</h4>
         <p className={style.ingredients}>Massa bem passada, molho de tomate, mussarela, frango desfiado temperado, catupiry cremoso</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar +</button>
+            <a className={style.addToCart}>+ Adicionar</a>
             <p id='preco'></p>
         </div> 
     </div>
@@ -174,7 +203,7 @@ function Main() {
         <h4 className={style.foodName}>Calabresa</h4>
         <p className={style.ingredients}>Molho de tomate, queijo mussarela, calabresa fatiada, cebola roxa, orégano</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar +</button>
+            <a className={style.addToCart}>+ Adicionar</a>
             <p id='preco'></p>
         </div>
     </div>
@@ -186,7 +215,7 @@ function Main() {
         <h4 className={style.foodName}>Quatro Queijos</h4>
         <p className={style.ingredients}>Queijo mussarela, parmesão, gorgonzola e catupiry sobre massa fina</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar +</button>
+            <a className={style.addToCart}>+ Adicionar</a>
             <p id='preco'></p>
         </div>
     </div>
@@ -198,7 +227,7 @@ function Main() {
         <h4 className={style.foodName}>Portuguesa</h4>
         <p className={style.ingredients}>Presunto, ovos, cebola, azeitona, pimentão, molho e queijo mussarela</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar +</button>
+            <a className={style.addToCart}>+ Adicionar</a>
             <p id='preco'></p>
         </div>
     </div>
@@ -210,7 +239,7 @@ function Main() {
         <h4 className={style.foodName}>Vegetariana</h4>
         <p className={style.ingredients}>Abobrinha grelhada, berinjela, pimentões coloridos, cebola, tomate, molho e queijo</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar +</button>
+            <a className={style.addToCart}>+ Adicionar</a>
             <p id='preco'></p>
         </div>
     </div>
@@ -222,7 +251,7 @@ function Main() {
         <h4 className={style.foodName}>Napolitana</h4>
         <p className={style.ingredients}>Molho artesanal, queijo, tomate fresco, orégano, manjericão</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar +</button>
+            <a className={style.addToCart}>+ Adicionar</a>
             <p id='preco'></p>
         </div>
     </div>
@@ -234,7 +263,7 @@ function Main() {
         <h4 className={style.foodName}>Toscana</h4>
         <p className={style.ingredients}>Linguiça toscana artesanal, molho de tomate, mussarela, pimenta-do-reino</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar +</button>
+            <a className={style.addToCart}>+ Adicionar</a>
             <p id='preco'></p>
         </div>
     </div>
@@ -246,7 +275,7 @@ function Main() {
         <h4 className={style.foodName}>Bella Speciale</h4>
         <p className={style.ingredients}>Molho secreto da casa, presunto parma, rúcula, tomate seco, lascas de parmesão</p>
         <div className={style.shoppingInfo}>
-            <button>Adicionar +</button>
+            <a className={style.addToCart}>+ Adicionar</a>
             <p id='preco'></p>
         </div>
     </div>
@@ -255,9 +284,9 @@ function Main() {
             </div>
 
                        {/* Categoria Massas - Completa */}
-<div className="category-container">
+<div className="category-container"  ref={(el) => (refsDeSecoes.current.massas = el)}>
     <h3 className="category-title"> + Massas</h3>
-    <div className="food-items">
+    <div className="food-items" id='massasCategory'>
         
         {/* Massa 1 */}
         <div className={style.foodItem}>
@@ -265,7 +294,7 @@ function Main() {
                 <h4 className={style.foodName}>Espaguete à Bolonhesa</h4>
                 <p className={style.ingredients}>Espaguete com molho de carne moída cozido lentamente com tomate, cebola e ervas</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -278,7 +307,7 @@ function Main() {
                 <h4 className={style.foodName}>Fettuccine Alfredo</h4>
                 <p className={style.ingredients}>Molho cremoso de parmesão, manteiga e creme de leite</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -291,7 +320,7 @@ function Main() {
                 <h4 className={style.foodName}>Ravioli de Ricota com Espinafre</h4>
                 <p className={style.ingredients}>Recheio cremoso com molho branco leve</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -304,7 +333,7 @@ function Main() {
                 <h4 className={style.foodName}>Penne ao Pesto</h4>
                 <p className={style.ingredients}>Molho pesto fresco de manjericão, nozes, alho, parmesão e azeite</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -317,7 +346,7 @@ function Main() {
                 <h4 className={style.foodName}>Lasanha à Bolonhesa</h4>
                 <p className={style.ingredients}>Camadas de massa com carne, queijo e molho</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -330,7 +359,7 @@ function Main() {
                 <h4 className={style.foodName}>Gnocchi ao Sugo</h4>
                 <p className={style.ingredients}>Nhoque de batata com molho de tomate e manjericão</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -343,7 +372,7 @@ function Main() {
                 <h4 className={style.foodName}>Canelone de Frango</h4>
                 <p className={style.ingredients}>Recheado com frango e catupiry, coberto com molho rosé</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -356,7 +385,7 @@ function Main() {
                 <h4 className={style.foodName}>Espaguete Carbonara</h4>
                 <p className={style.ingredients}>Bacon, ovos, queijo parmesão e pimenta do reino</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -369,7 +398,7 @@ function Main() {
                 <h4 className={style.foodName}>Rondelli de Presunto e Queijo</h4>
                 <p className={style.ingredients}>Molho bechamel e queijo gratinado</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -382,7 +411,7 @@ function Main() {
                 <h4 className={style.foodName}>Farfalle à Quatro Queijos</h4>
                 <p className={style.ingredients}>Molho de mussarela, gorgonzola, catupiry e parmesão</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -395,7 +424,7 @@ function Main() {
                 <h4 className={style.foodName}>Tagliatelle à Puttanesca</h4>
                 <p className={style.ingredients}>Azeitonas, alcaparras, tomate e alho</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -408,7 +437,7 @@ function Main() {
                 <h4 className={style.foodName}>Tortellini de Carne com Molho Funghi</h4>
                 <p className={style.ingredients}>Cogumelos frescos, creme e queijo</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -419,9 +448,9 @@ function Main() {
 </div>
                         
                         {/* Categoria Pratos Executivos */}
-<div className="category-container">
+<div className="category-container" ref={(el) => (refsDeSecoes.current.executivos = el)}>
     <h3 className="category-title"> Pratos Executivos</h3>
-    <div className="food-items">
+    <div className="food-items" id='executivosCategory'>
         
         {/* Prato 1 */}
         <div className={style.foodItem}>
@@ -429,7 +458,7 @@ function Main() {
                 <h4 className={style.foodName}>Filé à Parmegiana</h4>
                 <p className={style.ingredients}>Filé empanado com molho de tomate e queijo, arroz branco e batatas fritas</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -442,7 +471,7 @@ function Main() {
                 <h4 className={style.foodName}>Strogonoff de Frango</h4>
                 <p className={style.ingredients}>Arroz branco, batata palha e frango em molho cremoso</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -455,7 +484,7 @@ function Main() {
                 <h4 className={style.foodName}>Bife Acebolado</h4>
                 <p className={style.ingredients}>Acompanha arroz, feijão, farofa e salada</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -468,7 +497,7 @@ function Main() {
                 <h4 className={style.foodName}>Peixe Grelhado com Legumes</h4>
                 <p className={style.ingredients}>Tilápia grelhada com mix de legumes no vapor</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -481,7 +510,7 @@ function Main() {
                 <h4 className={style.foodName}>Frango Grelhado com Purê</h4>
                 <p className={style.ingredients}>Purê de batata caseiro e arroz</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -494,7 +523,7 @@ function Main() {
                 <h4 className={style.foodName}>Risoto de Cogumelos</h4>
                 <p className={style.ingredients}>Arroz arbório, cogumelos frescos, vinho branco, parmesão</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -507,7 +536,7 @@ function Main() {
                 <h4 className={style.foodName}>Almôndegas ao Sugo</h4>
                 <p className={style.ingredients}>Com arroz branco e purê de batata</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -520,7 +549,7 @@ function Main() {
                 <h4 className={style.foodName}>Carne Assada com Polenta</h4>
                 <p className={style.ingredients}>Fatias macias de carne com molho e polenta cremosa</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -533,7 +562,7 @@ function Main() {
                        {/* Categoria Porções */}
 <div className="category-container">
     <h3 className="category-title"> Porções</h3>
-    <div className="food-items">
+    <div className="food-items" id='porcoesCategory'>
         
         {/* Porção 1 */}
         <div className={style.foodItem}>
@@ -541,7 +570,7 @@ function Main() {
                 <h4 className={style.foodName}>Batata Frita Tradicional</h4>
                 <p className={style.ingredients}>Batatas crocantes com sal e orégano</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -554,7 +583,7 @@ function Main() {
                 <h4 className={style.foodName}>Batata Rústica com Alho e Alecrim</h4>
                 <p className={style.ingredients}>Batatas assadas com alho fresco e alecrim</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -567,7 +596,7 @@ function Main() {
                 <h4 className={style.foodName}>Polenta Frita</h4>
                 <p className={style.ingredients}>Palitos de polenta crocantes</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -580,7 +609,7 @@ function Main() {
                 <h4 className={style.foodName}>Mandioca Frita</h4>
                 <p className={style.ingredients}>Servida com molho da casa</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -593,7 +622,7 @@ function Main() {
                 <h4 className={style.foodName}>Anéis de Cebola Empanados</h4>
                 <p className={style.ingredients}>Cebola empanada crocante</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -606,7 +635,7 @@ function Main() {
                 <h4 className={style.foodName}>Iscas de Frango Empanadas</h4>
                 <p className={style.ingredients}>Acompanha molho mostarda e mel</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -619,7 +648,7 @@ function Main() {
                 <h4 className={style.foodName}>Mini Almôndegas</h4>
                 <p className={style.ingredients}>Com molho de tomate</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -632,7 +661,7 @@ function Main() {
                 <h4 className={style.foodName}>Bolinho de Arroz com Queijo</h4>
                 <p className={style.ingredients}>Bolinho crocante dengan recheio de queijo derretido</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -645,7 +674,7 @@ function Main() {
                 <h4 className={style.foodName}>Mini Pizzas (6 unid)</h4>
                 <p className={style.ingredients}>Sabores variados</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -658,7 +687,7 @@ function Main() {
                 <h4 className={style.foodName}>Pão de Alho com Queijo</h4>
                 <p className={style.ingredients}>4 unidades</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -671,7 +700,7 @@ function Main() {
                 <h4 className={style.foodName}>Tábua de Frios</h4>
                 <p className={style.ingredients}>Presunto parma, salame, queijos, azeitonas</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -684,7 +713,7 @@ function Main() {
                 <h4 className={style.foodName}>Cesta de Pães com Patês Artesanais</h4>
                 <p className={style.ingredients}>Pães variados com seleção de patês</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -697,14 +726,14 @@ function Main() {
                        {/* Categoria Sem Glúten */}
 <div className="category-container">
     <h3 className="category-title"> Sem Glúten</h3>
-    <div className="food-items">
+    <div className="food-items" id='semGlutenCategory'>
         
         <div className={style.foodItem}>
             <div className={style.informationItem}>
                 <h4 className={style.foodName}>Espaguete Sem Glúten ao Pomodoro</h4>
                 <p className={style.ingredients}>Molho de tomate fresco, manjericão e parmesão</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -716,7 +745,7 @@ function Main() {
                 <h4 className={style.foodName}>Risoto de Frango com Legumes</h4>
                 <p className={style.ingredients}>Sem uso de farinha ou glúten</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -728,7 +757,7 @@ function Main() {
                 <h4 className={style.foodName}>Nhoque de Mandioquinha com Molho Suave</h4>
                 <p className={style.ingredients}>Feito com mandioquinha fresca</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -740,7 +769,7 @@ function Main() {
                 <h4 className={style.foodName}>Salada Bella</h4>
                 <p className={style.ingredients}>Alface, rúcula, tomate, pepino, ovo cozido, frango grelhado</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -752,7 +781,7 @@ function Main() {
                 <h4 className={style.foodName}>Quibe de Abóbora Assado com Hortelã</h4>
                 <p className={style.ingredients}>Acompanhado de salada</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -764,7 +793,7 @@ function Main() {
                 <h4 className={style.foodName}>Panqueca de Tapioca com Recheio de Queijo e Tomate</h4>
                 <p className={style.ingredients}>Massa 100% sem glúten</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -777,14 +806,14 @@ function Main() {
                         {/* Categoria Sobremesas */}
 <div className="category-container">
     <h3 className="category-title"> Sobremesas</h3>
-    <div className="food-items">
+    <div className="food-items" id='sobremesasCategory'>
         
         <div className={style.foodItem}>
             <div className={style.informationItem}>
                 <h4 className={style.foodName}>Tiramisù Tradicional</h4>
                 <p className={style.ingredients}>Creme de mascarpone, café e cacau</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -796,7 +825,7 @@ function Main() {
                 <h4 className={style.foodName}>Panna Cotta com Frutas Vermelhas</h4>
                 <p className={style.ingredients}>Creme italiano com calda de frutas</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -808,7 +837,7 @@ function Main() {
                 <h4 className={style.foodName}>Torta de Limão com Merengue</h4>
                 <p className={style.ingredients}>Base crocante, creme de limão merengue</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -820,7 +849,7 @@ function Main() {
                 <h4 className={style.foodName}>Mousse de Chocolate Meio Amargo</h4>
                 <p className={style.ingredients}>Textura aerada e sabor intenso</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -832,7 +861,7 @@ function Main() {
                 <h4 className={style.foodName}>Gelato Italiano (3 sabores)</h4>
                 <p className={style.ingredients}>Chocolate, baunilha e frutas vermelhas</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -844,7 +873,7 @@ function Main() {
                 <h4 className={style.foodName}>Cannoli com Ricota e Gotas de Chocolate</h4>
                 <p className={style.ingredients}>Massa crocante recheada</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -856,7 +885,7 @@ function Main() {
                 <h4 className={style.foodName}>Cheesecake de Frutas Vermelhas</h4>
                 <p className={style.ingredients}>Base de biscoito, creme de queijo e geleia</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -868,7 +897,7 @@ function Main() {
                 <h4 className={style.foodName}>Brownie com Calda de Nutella</h4>
                 <p className={style.ingredients}>Quentinho e acompanha sorvete</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -880,7 +909,7 @@ function Main() {
                 <h4 className={style.foodName}>Creme Brûlée com Baunilha</h4>
                 <p className={style.ingredients}>Creme francês com açúcar queimado</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -892,7 +921,7 @@ function Main() {
                 <h4 className={style.foodName}>Mini Pudim de Leite Condensado</h4>
                 <p className={style.ingredients}>Porção individual com calda de caramelo</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -907,14 +936,14 @@ function Main() {
                    {/* Categoria Bebidas */}
 <div className="category-container">
     <h3 className="category-title"> Bebidas</h3>
-    <div className="food-items">
+    <div className="food-items" id='bebidasCategory'>
         
         <div className={style.foodItem}>
             <div className={style.informationItem}>
                 <h4 className={style.foodName}>Refrigerante Lata (350ml)</h4>
                 <p className={style.ingredients}>Coca-Cola, Guaraná Antarctica, Fanta Laranja, Sprite</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -926,7 +955,7 @@ function Main() {
                 <h4 className={style.foodName}>Água Mineral</h4>
                 <p className={style.ingredients}>Com ou sem gás (500ml)</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -938,7 +967,7 @@ function Main() {
                 <h4 className={style.foodName}>Suco Natural (300ml)</h4>
                 <p className={style.ingredients}>Laranja, Uva, Abacaxi com Hortelã, Manga</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -950,7 +979,7 @@ function Main() {
                 <h4 className={style.foodName}>Suco Detox (300ml)</h4>
                 <p className={style.ingredients}>Couve, limão, gengibre e maçã</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -962,7 +991,7 @@ function Main() {
                 <h4 className={style.foodName}>Chá Gelado (500ml)</h4>
                 <p className={style.ingredients}>Limão ou Pêssego</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -974,7 +1003,7 @@ function Main() {
                 <h4 className={style.foodName}>Café Expresso</h4>
                 <p className={style.ingredients}>Grãos 100% arábica</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -986,7 +1015,7 @@ function Main() {
                 <h4 className={style.foodName}>Capuccino Cremoso</h4>
                 <p className={style.ingredients}>Com chocolate em pó ou canela</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -998,7 +1027,7 @@ function Main() {
                 <h4 className={style.foodName}>Cerveja Long Neck (355ml)</h4>
                 <p className={style.ingredients}>Heineken, Budweiser, Stella Artois</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -1010,7 +1039,7 @@ function Main() {
                 <h4 className={style.foodName}>Vinho Tinto Taça (180ml)</h4>
                 <p className={style.ingredients}>Chianti ou Merlot</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -1022,7 +1051,7 @@ function Main() {
                 <h4 className={style.foodName}>Vinho Branco Taça (180ml)</h4>
                 <p className={style.ingredients}>Chardonnay ou Sauvignon Blanc</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -1034,7 +1063,7 @@ function Main() {
                 <h4 className={style.foodName}>Spritz Italiano</h4>
                 <p className={style.ingredients}>Aperol com prosecco e soda</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -1046,7 +1075,7 @@ function Main() {
                 <h4 className={style.foodName}>Água Tônica com Limão</h4>
                 <p className={style.ingredients}>Servida com gelo e rodelas de limão</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
@@ -1058,7 +1087,7 @@ function Main() {
                 <h4 className={style.foodName}>Limonada Siciliana</h4>
                 <p className={style.ingredients}>Feita com limões frescos e hortelã</p>
                 <div className={style.shoppingInfo}>
-                    <button>Adicionar +</button>
+                    <a className={style.addToCart}>+ Adicionar</a>
                     <p id='preco'></p>
                 </div>
             </div>
