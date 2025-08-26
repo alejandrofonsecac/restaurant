@@ -33,8 +33,7 @@ menu > ul > li > a{
     color: var(--principal-color);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: 1.3em;
-    
+    font-size: 1.3em;    
 }
 
 li{
@@ -128,13 +127,14 @@ li{
 /* FOOD ITEM */
 
 .ingredients {
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: #585858e3;
     margin-top: 5px;
 }
 
 .foodName{
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-weight: bold;
     margin: 0;
     color: #1f1f1f;
 }
@@ -143,7 +143,7 @@ li{
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 42px;
+    margin-top: 75px;
 }
 
 .food-item > div{
@@ -162,6 +162,12 @@ li{
 
 /*------ Imagens ------*/
 
+.addToCart{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
 .informationItem{
     display: flex;
     width: 100%;
@@ -174,19 +180,18 @@ h3{
 }
 
 button{
-    background-color: var(--principal-color);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border: none;
     box-shadow: 3px 4px 16px 0px rgba(0, 0, 0, 0.473);
 
-    color: white;
+    color: var(--principal-color);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-shadow:  3px 3px 6px rgba(0, 0, 0, 0.473);
 }
 
 button:hover{
-    background-color: white;
     color: #8B0000;
     transform: scale(1.05);
     transition: transform 0.3s;
