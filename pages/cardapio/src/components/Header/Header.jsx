@@ -6,6 +6,7 @@ import '../../../style/main.module.css';
 import '../../../style/generalSettings.css';
 import {clickMenu} from '../clickMenu'
 
+
 function Header() {
   return (
     <header className="header">
@@ -31,11 +32,9 @@ function Header() {
 
       <menu id="itens" style={{ display: 'none' }} className="menu-mobile">
         <ul>
-          <li><a href="#">Opção 1</a></li>
-          <li><a href="#">Opção 2</a></li>
-          <li><a href="#">Opção 3</a></li>
-          <li><a href="#">Opção 4</a></li>
-          <li><a href="#">Opção 5</a></li>
+          <li><a href="#">Cardapio</a></li>
+          <li><a href="#" style={{color: 'black'}}>Sobre nós</a></li>
+          <li><a href="../../../../index.html">Home</a></li>
         </ul>
       </menu>
     </header>

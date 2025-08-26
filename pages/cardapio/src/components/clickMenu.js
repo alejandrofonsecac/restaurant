@@ -33,8 +33,8 @@ export function clickMenu() {
         itens.style.position = 'fixed';
         itens.style.top = '0';
         itens.style.right = '0';
-        itens.style.width = '40%';
-        itens.style.height = '50%';
+        itens.style.width = '50%';
+        itens.style.height = '40%';
         itens.style.backgroundColor = 'white';
         itens.style.zIndex = '1000';
         itens.style.padding = '20px';
