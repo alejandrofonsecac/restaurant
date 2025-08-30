@@ -219,6 +219,16 @@ button:hover{
     margin: 8px;
 }
 
+/* Interaações e Ver Mais */
+
+.verMais{
+    display: none;
+}
+
+
+
+/* --- Background de Imagens --- */
+
  .margueritaPizza {
     background: url('../public/imagens/cardapioPizza/mobile/pizzaMarguerita.jpg') no-repeat center center;
     background-size: cover;
