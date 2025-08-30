@@ -1,228 +1,113 @@
 import React, { useRef, useEffect, useState } from 'react';
 import style from '../../../style/main.module.css';
+import CaroselMenu from './_components/CarroselMenu';
+
+
 
 function Main() {
-    const containerRef = useRef(null);
+
     const categoryRefs = useRef({});
-    const [activeCategory, setActiveCategory] = useState('');
-    const [isDragging, setIsDragging] = useState(false);
+  const [activeCategory, setActiveCategory] = useState('');
+  const [isDragging, setIsDragging] = useState(false);
 
-    // Variáveis de estado para o carrossel
-    const state = useRef({
-        isDown: false,
-        startX: 0,
-        scrollLeft: 0,
-        velocity: 0,
-        lastX: 0,
-        momentumID: null,
-        lastTime: 0
-    }).current;
+  const scrollToCategory = (categoryId) => {
+    if (isDragging) return;
+    
+    if (categoryRefs.current[categoryId]) {
+      setActiveCategory(categoryId);
+      
+      const element = categoryRefs.current[categoryId];
+      const headerOffset = 90;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-    // Para a inércia
-    const stopMomentum = () => {
-        cancelAnimationFrame(state.momentumID);
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  // Efeito para observar a seção visível na tela
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
     };
 
-    // Função que cria o efeito de desaceleração
-    const momentumScroll = () => {
-        containerRef.current.scrollLeft += state.velocity;
-        state.velocity *= 0.6; // fator de desaceleração
-        
-        if (Math.abs(state.velocity) > 0.5) {
-            state.momentumID = requestAnimationFrame(momentumScroll);
-        } else {
-            // Snap suave quando a velocidade for baixa
-            const container = containerRef.current;
-            const itemWidth = 150 + 8;
-            const snapPosition = Math.round(container.scrollLeft / itemWidth) * itemWidth;
-            
-            container.scrollTo({
-                left: snapPosition,
-                behavior: 'smooth'
-            });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          setActiveCategory(id);
         }
+      });
+    }, observerOptions);
+
+    // Observar todas as categorias
+    Object.values(categoryRefs.current).forEach(ref => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      observer.disconnect();
     };
-
-    const handleDown = (clientX) => {
-        state.isDown = true;
-        setIsDragging(false); // Reset dragging state
-        const container = containerRef.current;
-        state.startX = clientX - container.getBoundingClientRect().left;
-        state.scrollLeft = container.scrollLeft;
-        state.lastX = state.startX;
-        state.velocity = 0;
-        state.lastTime = performance.now();
-        stopMomentum();
-    };
-
-    const handleMove = (clientX) => {
-        if (!state.isDown) return;
-        
-        setIsDragging(true);
-        
-        const container = containerRef.current;
-        const x = clientX - container.getBoundingClientRect().left;
-        const walk = (x - state.startX) * 1.5; // sensibilidade do arrasto
-        container.scrollLeft = state.scrollLeft - walk;
-
-        // Calcula velocidade para a inércia
-        const now = performance.now();
-        const deltaTime = now - state.lastTime;
-        
-        if (deltaTime > 0) {
-            state.velocity = (container.scrollLeft - (state.scrollLeft - walk)) / deltaTime * 16;
-        }
-        
-        state.lastX = x;
-        state.lastTime = now;
-    };
-
-    const handleEnd = () => {
-        if (state.isDown) {
-            state.isDown = false;
-            momentumScroll();
-            
-            setTimeout(() => setIsDragging(false), 50);
-        }
-    };
-
-    const handleMouseDown = (e) => {
-        handleDown(e.clientX);
-    };
-
-    const handleMouseMove = (e) => {
-        handleMove(e.clientX);
-    };
-
-    const handleTouchStart = (e) => {
-        handleDown(e.touches[0].clientX);
-    };
-
-    const handleTouchMove = (e) => {
-        handleMove(e.touches[0].clientX);
-    };
-
-    const scrollToCategory = (categoryId) => {
-        if (isDragging) return;
-        
-        if (categoryRefs.current[categoryId]) {
-            setActiveCategory(categoryId);
-            
-            const element = categoryRefs.current[categoryId];
-            const headerOffset = 90;
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
-    };
-
-    // Mapeamento de categorias para IDs
-    const categoryMap = {
-        'principalMenu': 'menu-principal',
-        'PizzasMenu': 'pizzas',
-        'pratosExecutivos': 'pratos-executivos',
-        'porções': 'porcoes',
-        'semGluten': 'sem-gluten',
-        'sobremesas': 'sobremesas',
-        'bebidas': 'bebidas'
-    };
-
-    // Cleanup effect
-    useEffect(() => {
-        return () => {
-            stopMomentum();
-        };
-    }, []);
-
-    // Efeito para observar a seção visível na tela
-    useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.id;
-                    setActiveCategory(id);
-                }
-            });
-        }, observerOptions);
-
-        // Observar todas as categorias
-        Object.values(categoryRefs.current).forEach(ref => {
-            if (ref) observer.observe(ref);
-        });
-
-        return () => {
-            observer.disconnect();
-        };
-    }, []);
+  }, []);
+  
 
     return (
         <main>
             <menu>
-                <div
-                    className={style.containerMenu}
-                    ref={containerRef}
-                    onMouseDown={handleMouseDown}
-                    onMouseLeave={handleEnd}
-                    onMouseUp={handleEnd}
-                    onMouseMove={handleMouseMove}
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
-                    onTouchEnd={handleEnd}
-                >
-                    <div 
-                        className={`${style.itens} ${style.principalMenu} ${activeCategory === 'menu-principal' ? style.activeCategory : ''}`} 
-                        onClick={() => scrollToCategory('menu-principal')}
-                    >
-                        <p>Menu Principal</p>
-                    </div>
-                    <div 
-                        className={`${style.itens} ${style.PizzasMenu} ${activeCategory === 'pizzas' ? style.activeCategory : ''}`} 
-                        onClick={() => scrollToCategory('pizzas')}
-                    >
-                        <p>Pizzas</p>
-                    </div>
-                    <div 
-                        className={`${style.itens} ${style.pratosExecutivos} ${activeCategory === 'pratos-executivos' ? style.activeCategory : ''}`} 
-                        onClick={() => scrollToCategory('pratos-executivos')}
-                    >
-                        <p>Pratos Executivos</p>
-                    </div>
-                    <div 
-                        className={`${style.itens} ${style.porções} ${activeCategory === 'porcoes' ? style.activeCategory : ''}`} 
-                        onClick={() => scrollToCategory('porcoes')}
-                    >
-                        <p>Porções</p>
-                    </div>
-                    <div 
-                        className={`${style.itens} ${style.semGluten} ${activeCategory === 'sem-gluten' ? style.activeCategory : ''}`} 
-                        onClick={() => scrollToCategory('sem-gluten')}
-                    >
-                        <p>Sem Glúten</p>
-                    </div>
-                    <div 
-                        className={`${style.itens} ${style.sobremesas} ${activeCategory === 'sobremesas' ? style.activeCategory : ''}`} 
-                        onClick={() => scrollToCategory('sobremesas')}
-                    >
-                        <p>Sobremesas</p>
-                    </div>
-                    <div 
-                        className={`${style.itens} ${style.bebidas} ${activeCategory === 'bebidas' ? style.activeCategory : ''}`} 
-                        onClick={() => scrollToCategory('bebidas')}
-                    >
-                        <p>Bebidas</p>
-                    </div>
-                </div>
-            </menu>
+        <CaroselMenu
+          onMouseDown={() => setIsDragging(false)}
+          onMouseMove={() => setIsDragging(true)}
+          onMouseUp={() => setTimeout(() => setIsDragging(false), 50)}
+        >
+          <div 
+            className={`${style.itens} ${style.principalMenu} ${activeCategory === 'menu-principal' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('menu-principal')}
+          >
+            <p>Menu Principal</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.PizzasMenu} ${activeCategory === 'pizzas' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('pizzas')}
+          >
+            <p>Pizzas</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.pratosExecutivos} ${activeCategory === 'pratos-executivos' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('pratos-executivos')}
+          >
+            <p>Pratos Executivos</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.porções} ${activeCategory === 'porcoes' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('porcoes')}
+          >
+            <p>Porções</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.semGluten} ${activeCategory === 'sem-gluten' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('sem-gluten')}
+          >
+            <p>Sem Glúten</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.sobremesas} ${activeCategory === 'sobremesas' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('sobremesas')}
+          >
+            <p>Sobremesas</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.bebidas} ${activeCategory === 'bebidas' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('bebidas')}
+          >
+            <p>Bebidas</p>
+          </div>
+        </CaroselMenu>
+      </menu>
 
 
             
