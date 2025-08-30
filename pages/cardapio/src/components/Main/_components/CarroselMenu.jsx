@@ -120,7 +120,7 @@ const CarroselMenu = ({ children, onMouseDown, onMouseMove, onMouseUp, onMouseLe
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
       style={{ 
-        overflowX: 'auto', 
+        overflowX: 'hidden',
         cursor: 'grab',
         display: 'flex',
         whiteSpace: 'nowrap'

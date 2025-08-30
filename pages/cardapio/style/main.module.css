@@ -81,6 +81,10 @@ li{
 }
 
 /* Estilo específico para o item do Menu*/
+.itens{
+    margin: 0px 8px;
+}
+
 .principalMenu{
     background: url('../public/imagens/menuImagens/principalMenu.jpg') no-repeat center center;
     background-size: cover;
