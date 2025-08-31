@@ -6,7 +6,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
 
-function Main() {
+function Main() { 
 
     const categoryRefs = useRef({});
   const [activeCategory, setActiveCategory] = useState('');
@@ -57,23 +57,6 @@ function Main() {
     };
   }, []);
   
-
-  //Ver Mais
-  const [mostrarConteudo, setMostrarConteudo] = useState(true);
-  let exibirItens = document.getElementById('exibir')
-
-    const verMais = () => {
-    setMostrarConteudo(!mostrarConteudo);
-
-    
-
-    if (mostrarConteudo === true) {
-      exibirItens.style.display = 'block';
-    } else {
-      exibirItens.style.display = 'none';
-    }
-  };
-
     return (
         <main>
             <menu>
@@ -181,9 +164,6 @@ function Main() {
             </div>
             <span className={style.calabresaPizza}></span>
         </div>
-
-        {/*Ver Mais/ Ver menos*/}
-        <div className={style.ocultoVer} id='exibir'>
             <div className={style.foodItem}>
                 <div className={style.informationItem}>
                     <h4 className={style.foodName}>Quatro Queijos</h4>
@@ -252,9 +232,6 @@ function Main() {
             </div>
                 </div>
             </div>
-        </div>
-
-        <p className={mostrarConteudo ? style.conteudo : style.conteudoOculto} onClick={verMais}><KeyboardArrowDownIcon /> Ver Mais</p>
 
                        {/* Categoria Massas */}
 <div className="category-container" id="massas" ref={el => categoryRefs.current['massas'] = el}>

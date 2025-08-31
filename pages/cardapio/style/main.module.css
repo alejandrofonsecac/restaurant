@@ -82,43 +82,6 @@ li{
 
 
 
-
-/* -----Ver Mais Estilos----- */
-.verMais{
-    display: flex !important;
-    align-items: center;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: 0.8em;
-}
-
-.conteudo{
-    display: flex;
-    align-items: center;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-.conteudoOculto{
-    display: flex;
-    align-items: center;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-.ocultoVer{
-    display: none;
-}
-
-.itens{
-    margin: 0px 8px;
-}
-
-
-
 /* -----Estilo específico para o item do Menu----- */
 
 .principalMenu{
