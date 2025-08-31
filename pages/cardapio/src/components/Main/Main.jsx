@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import style from '../../../style/main.module.css';
 import CaroselMenu from './_components/CarroselMenu';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
 
@@ -164,79 +165,79 @@ function Main() {
             <span className={style.calabresaPizza}></span>
         </div>
 
-        <div className={style.foodItem}>
-            <div className={style.informationItem}>
-                <h4 className={style.foodName}>Quatro Queijos</h4>
-                <p className={style.ingredients}>Queijo mussarela, parmesão, gorgonzola e catupiry sobre massa fina</p>
-                <div className={style.shoppingInfo}>
-                    <a className={style.addToCart}>+ Adicionar</a>
-                    <p id='preco'></p>
-                </div>
-            </div>
-            <span className={style.queijosPizza}></span>
-        </div>
 
-        <div className={style.foodItem}>
-            <div className={style.informationItem}>
-                <h4 className={style.foodName}>Portuguesa</h4>
-                <p className={style.ingredients}>Presunto, ovos, cebola, azeitona, pimentão, molho e queijo mussarela</p>
-                <div className={style.shoppingInfo}>
-                    <a className={style.addToCart}>+ Adicionar</a>
-                    <p id='preco'></p>
-                </div>
-            </div>
-            <span className={style.portuguesaPizza}></span>
-        </div>
+        <p className={style.verMais}  ><KeyboardArrowDownIcon /> Ver Mais</p>
 
-        <div className={style.foodItem}>
-            <div className={style.informationItem}>
-                <h4 className={style.foodName}>Vegetariana</h4>
-                <p className={style.ingredients}>Abobrinha grelhada, berinjela, pimentões coloridos, cebola, tomate, molho e queijo</p>
-                <div className={style.shoppingInfo}>
-                    <a className={style.addToCart}>+ Adicionar</a>
-                    <p id='preco'></p>
+        <div className={style.ocultoVer}>
+            <div className={style.foodItem}>
+                <div className={style.informationItem}>
+                    <h4 className={style.foodName}>Quatro Queijos</h4>
+                    <p className={style.ingredients}>Queijo mussarela, parmesão, gorgonzola e catupiry sobre massa fina</p>
+                    <div className={style.shoppingInfo}>
+                        <a className={style.addToCart}>+ Adicionar</a>
+                        <p id='preco'></p>
+                    </div>
+                </div>
+                <span className={style.queijosPizza}></span>
+            </div>
+            <div className={style.foodItem}>
+                <div className={style.informationItem}>
+                    <h4 className={style.foodName}>Portuguesa</h4>
+                    <p className={style.ingredients}>Presunto, ovos, cebola, azeitona, pimentão, molho e queijo mussarela</p>
+                    <div className={style.shoppingInfo}>
+                        <a className={style.addToCart}>+ Adicionar</a>
+                        <p id='preco'></p>
+                    </div>
+                </div>
+                <span className={style.portuguesaPizza}></span>
+            </div>
+            <div className={style.foodItem}>
+                <div className={style.informationItem}>
+                    <h4 className={style.foodName}>Vegetariana</h4>
+                    <p className={style.ingredients}>Abobrinha grelhada, berinjela, pimentões coloridos, cebola, tomate, molho e queijo</p>
+                    <div className={style.shoppingInfo}>
+                        <a className={style.addToCart}>+ Adicionar</a>
+                        <p id='preco'></p>
+                    </div>
+                </div>
+                <span className={style.vegetarianaPizza}></span>
+            </div>
+            <div className={style.foodItem}>
+                <div className={style.informationItem}>
+                    <h4 className={style.foodName}>Napolitana</h4>
+                    <p className={style.ingredients}>Molho artesanal, queijo, tomate fresco, orégano, manjericão</p>
+                    <div className={style.shoppingInfo}>
+                        <a className={style.addToCart}>+ Adicionar</a>
+                        <p id='preco'></p>
+                    </div>
+                </div>
+                <span className={style.napolitanaPizza}></span>
+            </div>
+            <div className={style.foodItem}>
+                <div className={style.informationItem}>
+                    <h4 className={style.foodName}>Toscana</h4>
+                    <p className={style.ingredients}>Linguiça toscana artesanal, molho de tomate, mussarela, pimenta-do-reino</p>
+                    <div className={style.shoppingInfo}>
+                        <a className={style.addToCart}>+ Adicionar</a>
+                        <p id='preco'></p>
+                    </div>
+                </div>
+                <span className={style.toscanaPizza}></span>
+            </div>
+            <div className={style.foodItem}>
+                <div className={style.informationItem}>
+                    <h4 className={style.foodName}>Bella Speciale</h4>
+                    <p className={style.ingredients}>Molho secreto da casa, presunto parma, rúcula, tomate seco, lascas de parmesão</p>
+                    <div className={style.shoppingInfo}>
+                        <a className={style.addToCart}>+ Adicionar</a>
+                        <p id='preco'></p>
+                    </div>
+                </div>
+                <span className={style.bellaPizza}></span>
+            </div>
                 </div>
             </div>
-            <span className={style.vegetarianaPizza}></span>
         </div>
-
-        <div className={style.foodItem}>
-            <div className={style.informationItem}>
-                <h4 className={style.foodName}>Napolitana</h4>
-                <p className={style.ingredients}>Molho artesanal, queijo, tomate fresco, orégano, manjericão</p>
-                <div className={style.shoppingInfo}>
-                    <a className={style.addToCart}>+ Adicionar</a>
-                    <p id='preco'></p>
-                </div>
-            </div>
-            <span className={style.napolitanaPizza}></span>
-        </div>
-
-        <div className={style.foodItem}>
-            <div className={style.informationItem}>
-                <h4 className={style.foodName}>Toscana</h4>
-                <p className={style.ingredients}>Linguiça toscana artesanal, molho de tomate, mussarela, pimenta-do-reino</p>
-                <div className={style.shoppingInfo}>
-                    <a className={style.addToCart}>+ Adicionar</a>
-                    <p id='preco'></p>
-                </div>
-            </div>
-            <span className={style.toscanaPizza}></span>
-        </div>
-
-        <div className={style.foodItem}>
-            <div className={style.informationItem}>
-                <h4 className={style.foodName}>Bella Speciale</h4>
-                <p className={style.ingredients}>Molho secreto da casa, presunto parma, rúcula, tomate seco, lascas de parmesão</p>
-                <div className={style.shoppingInfo}>
-                    <a className={style.addToCart}>+ Adicionar</a>
-                    <p id='preco'></p>
-                </div>
-            </div>
-            <span className={style.bellaPizza}></span>
-        </div>
-    </div>
-</div>
 
                        {/* Categoria Massas */}
 <div className="category-container" id="massas" ref={el => categoryRefs.current['massas'] = el}>
