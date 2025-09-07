@@ -1,10 +1,10 @@
 import React from 'react';
 
 //Estilos
-import '../../../style/header.css';
-import '../../../style/main.module.css';
-import '../../../style/generalSettings.css';
-import {clickMenu} from '../clickMenu'
+import '../style/header.css';
+import '../style/main.module.css';
+import '../style/generalSettings.css';
+import {clickMenu} from './_components/clickMenu'
 
 
 function Header() {

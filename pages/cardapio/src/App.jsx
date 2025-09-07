@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main'
+import Header from './Header';
+import Index from './index'
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <Main />
+      <Index />
     </div>
   );
 }

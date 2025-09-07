@@ -1,8 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
-import style from '../../../style/main.module.css';
+import style from '../style/main.module.css';
 import CaroselMenu from './_components/CarroselMenu';
-
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
 
