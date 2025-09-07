@@ -100,6 +100,7 @@ li{
 }
 
 .itens{
+    background-color: rgb(221, 219, 219);
     margin: 10px 10px;
 }
 
@@ -230,12 +231,9 @@ button:hover{
     margin: 8px;
 }
 
-/* Interaações e Ver Mais */
-
-.verMais{
-    display: none;
+.addToCart{
+    cursor: pointer;
 }
-
 
 
 /* --- Background de Imagens --- */
