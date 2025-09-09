@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import App from './src/App';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Carrinho from '../cart/Cart';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 
 const router = createBrowserRouter([
   {
@@ -16,11 +18,8 @@ const router = createBrowserRouter([
 
 ])
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-
-root.render(
+const root = ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
