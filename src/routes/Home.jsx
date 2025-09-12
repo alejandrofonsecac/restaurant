@@ -60,49 +60,7 @@ function App() {
 
   return (
     <>
-      <header>
-        <h1>Pasta Bella</h1>
-        <ul className="menu-desktop" id="itensDesktop">
-          <li>
-            <a href="#">Contato</a>
-          </li>
-          <li>
-            <a href="pages/cardapio/cardapio.html">Cardapio</a>
-          </li>
-          <li>
-            <a href="#">Sobre Nós</a>
-          </li>
-        </ul>
-        <div className="header-icons">
-          <div className="icon-wrapper">
-            <a href="pages/cart.html" className="linkCart">
-              <span className="material-icons" id="shoppingCart">
-                shopping_cart
-              </span>
-              <span className="cart-count">0</span>
-            </a>
-          </div>
-          <span className="material-icons" onClick={clickMenu}>
-            menu
-          </span>
-          <menu id="itens" style={{ display: "none" }} className="menu-mobile">
-            <ul>
-              <li>
-                <a href="#">Cardapio</a>
-              </li>
-              <li>
-                <p data-target="contato" id="contatoText">
-                  Contato
-                </p>
-              </li>
-              <li>
-                <a href="./pages/sobre-nos.html">Sobre nós</a>
-              </li>
-            </ul>
-          </menu>
-        </div>
-      </header>
-
+      
       <main>
         {/* HOME */}
         <section className="home">
