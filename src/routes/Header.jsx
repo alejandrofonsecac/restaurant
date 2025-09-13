@@ -1,10 +1,10 @@
 import React from 'react';
-import style from '../../styles/header/header.module.css'; // <-- Import correto do CSS Module
+import style from '../../styles/header/header.module.css';
 import { clickMenu } from '../_components/clickMenu.js';
 
 function Header() {
   return (
-    <header className={style.header}>
+    <header>
       <a href="../../../../index.html">
         <h1>Pasta Bella</h1>
       </a>

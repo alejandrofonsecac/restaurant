@@ -19,7 +19,25 @@ header {
     height: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: white;
+}
+
+header > a{
+    color: #8B0000;
+    text-decoration: none;
+}
+
+header > ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+header > ul > li > a{
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+    font-weight: bold;
+    color: black;
 }
 
 header > h1 {
@@ -46,12 +64,12 @@ header > div.headerIcons > div.iconWrapper {
 
 }
 
-.material-icons{
+.materialIcons{
     font-size: 35px;
     margin: 0px 5px;
 }
 
-.cart-count {
+.cartCount {
     background-color: var(--color-primary);
     position: absolute;
     top: -6px;
