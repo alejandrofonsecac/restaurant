@@ -41,7 +41,7 @@ button{
 .container > a > button.button-menu{
     background-color: var(--color-primary);
     color: white;  
-    width: 700px;
+    width: 60vw;
 }
 
 .container > a{
@@ -51,7 +51,7 @@ button{
 .container > a > button.button-order-now{
     background-color: white;
     color: var(--color-primary);
-    width: 700px;
+    width: 60vw;
 }
 
 .container {

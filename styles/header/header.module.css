@@ -23,6 +23,10 @@ header {
     background-color: white;
 }
 
+header > a > h1{
+    font-size: 2.5em;
+}
+
 header > a{
     color: #8B0000;
     text-decoration: none;
@@ -33,6 +37,19 @@ header > ul{
     gap: 16px;
     list-style: none;
 }
+
+.menuDesktop{
+    display: none;
+}
+
+.material-icons{
+    font-size: 29px;
+}
+
+.menuMobile{
+    display: none;
+}
+
 header > ul > li > a{
     text-decoration: none;
     font-family: var(--font-secundaria);
