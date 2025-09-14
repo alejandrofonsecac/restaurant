@@ -30,14 +30,15 @@ header > a{
 
 header > ul{
     display: flex;
-    gap: 10px;
+    gap: 16px;
     list-style: none;
 }
 header > ul > li > a{
     text-decoration: none;
     font-family: var(--font-secundaria);
     font-weight: bold;
-    color: black;
+    color: var(--color-primary);
+    font-size: 1.2em;
 }
 
 header > h1 {
