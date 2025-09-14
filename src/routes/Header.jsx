@@ -2,7 +2,6 @@ import React from 'react';
 import style from '../../styles/header/header.module.css';
 import { clickMenu } from '../_components/clickMenu.js';
 
-  import { useMedia } from 'react-media';
 
 function Header() {
   return (
