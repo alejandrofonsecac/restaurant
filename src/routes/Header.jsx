@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import React from 'react';
 import style from '../../styles/header/header.module.css';
 import { clickMenu } from '../_components/clickMenu.js';
@@ -7,9 +8,9 @@ import { clickMenu } from '../_components/clickMenu.js';
 function Header() {
   return (
     <header>
-      <a href="../../../../index.html">
+      <Link to='/'>
         <h1>Pasta Bella</h1>
-      </a>
+      </Link>
 
       <ul className={style.menuDesktop} id="itensdesktop">
         <li><a href="#">Contato</a></li>

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
-import Header from './Header'
+import Header from '../../pages/cardapio/src/Header'
 import style from '../style/main.module.css';
-import CaroselMenu from './_components/CarroselMenu';
+import CaroselMenu from '../_components/CarroselMenu';
 import { useNavigate } from 'react-router-dom';
 
 

@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./src/App";
 import Home from "./src/routes/Home.jsx";
 import Cart from "./src/routes/Cart.jsx";
+import Cardapio from "./src/routes/Cardapio.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +14,12 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        index: true, // rota principal
+        index: true, 
         element: <Home />,
+      },
+      {
+        path: 'cardapio',
+        element: <Cardapio/>
       },
       {
         path: "carrinho",
