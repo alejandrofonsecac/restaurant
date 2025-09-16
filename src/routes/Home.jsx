@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link, Outlet } from 'react-router-dom';
 
 
 // ⚠️ Dica: Google Fonts pode ser importado no index.html ou via CSS global
@@ -69,11 +70,14 @@ function App() {
               <h1>Pasta Bella</h1>
               <p>Sabores da Itália direto para sua casa</p>
             </div>
-            <a href="pages/cardapio/cardapio.html">
+
+            <Link to='/carrinho'>
               <button className="button-menu">
                 <p>Ver Cardápio</p>
               </button>
-            </a>
+            </Link>
+            
+
             <a href="">
               <button className="button-order-now">
                 <p>Peça Agora</p>
@@ -406,6 +410,7 @@ function App() {
           <p>Desenvolvido com AMOR para amantes da culinária italiana</p>
         </div>
       </footer>
+      <Outlet/>
     </>
   );
 }
