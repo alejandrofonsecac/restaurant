@@ -71,7 +71,7 @@ function App() {
               <p>Sabores da Itália direto para sua casa</p>
             </div>
 
-            <Link to='/carrinho'>
+            <Link to='/cardapio'>
               <button className="button-menu">
                 <p>Ver Cardápio</p>
               </button>
