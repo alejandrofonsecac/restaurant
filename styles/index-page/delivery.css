@@ -57,3 +57,11 @@ section.delivery > div > div.texto > p{
     text-align: left;
     color: white;
 }
+
+span.iconBranco{
+    color: white;
+}
+
+span.iconPreto{
+    color: black;
+}

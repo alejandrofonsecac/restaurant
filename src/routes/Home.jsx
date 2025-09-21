@@ -99,11 +99,9 @@ function App() {
                   className="img-food"
                 />
                 <p>Massas</p>
-                <img
-                  src="imagens/icones/icones-geral/seta-direita-vermelha.png"
-                  alt="seta-para-direita"
-                  className="seta"
-                />
+                <span class="material-symbols-outlined">
+                chevron_right
+                </span>
               </div>
               <div className="box right">
                 <img
@@ -113,11 +111,9 @@ function App() {
                   className="img-food"
                 />
                 <p>Almoço e Janta</p>
-                <img
-                  src="imagens/icones/icones-geral/seta-direita-vermelha.png"
-                  alt="seta-para-direita"
-                  className="seta"
-                />
+                <span class="material-symbols-outlined">
+                chevron_right
+                </span>
               </div>
               <div className="box left">
                 <img
@@ -127,11 +123,9 @@ function App() {
                   className="img-food"
                 />
                 <p>Pratos Executivos</p>
-                <img
-                  src="imagens/icones/icones-geral/seta-direita-vermelha.png"
-                  alt="seta-para-direita"
-                  className="seta"
-                />
+                <span class="material-symbols-outlined">
+                chevron_right
+                </span>
               </div>
               <div className="box right">
                 <img
@@ -141,11 +135,9 @@ function App() {
                   className="img-food"
                 />
                 <p>Sem Glúten</p>
-                <img
-                  src="imagens/icones/icones-geral/seta-direita-vermelha.png"
-                  alt="seta-para-direita"
-                  className="seta"
-                />
+                <span class="material-symbols-outlined">
+                chevron_right
+                </span>
               </div>
               <div className="box left">
                 <img
@@ -155,11 +147,9 @@ function App() {
                   className="img-food"
                 />
                 <p>Porções & Fast Food</p>
-                <img
-                  src="../../public/index-page/cardapio/massas.jpg"
-                  alt="seta-para-direita"
-                  className="seta"
-                />
+                <span class="material-symbols-outlined">
+chevron_right
+</span>
               </div>
               <div className="box right">
                 <img
@@ -169,11 +159,9 @@ function App() {
                   className="img-food"
                 />
                 <p>Sobremesas & Bebidas</p>
-                <img
-                  src="imagens/icones/icones-geral/seta-direita-vermelha.png"
-                  alt="seta-para-direita"
-                  className="seta"
-                />
+                <span class="material-symbols-outlined">
+                chevron_right
+                </span>
               </div>
             </div>
           </div>
@@ -186,11 +174,10 @@ function App() {
           <h2>Delivery</h2>
           <div className="box-all">
             <div className="box-son">
-              <img
-                src="imagens/icones/icones-geral/relogio2.png"
-                alt="Relogio"
-                width="30"
-              />
+              <span class="material-symbols-outlined iconBranco">
+                acute
+                </span>
+
               <div className="texto">
                 <p>Horário de Funcionamento</p>
                 <p>Terça a Domingo: 18h às 23h</p>
@@ -198,11 +185,9 @@ function App() {
             </div>
 
             <div className="box-son">
-              <img
-                src="imagens/icones/icones-geral/motocicleta.png"
-                alt="Motocicleta"
-                width="30"
-              />
+              <span class="material-symbols-outlined">
+                moped
+              </span>
               <div className="texto">
                 <p>Tempo de Entrega</p>
                 <p>30-45 minutos (dependendo da região)</p>
@@ -210,11 +195,9 @@ function App() {
             </div>
 
             <div className="box-son">
-              <img
-                src="imagens/icones/icones-geral/localizacao.png"
-                alt="Localização"
-                width="30"
-              />
+              <span class="material-symbols-outlined">
+              location_on
+              </span>
               <div className="texto">
                 <p>Área de Entrega</p>
                 <p>Até 8km do restaurante</p>
@@ -240,40 +223,32 @@ function App() {
               ></iframe>
 
               <div className="location-box">
-                <img
-                  src="imagens/icones/icones-geral/localizacao.png"
-                  alt="Localização"
-                  width="30"
-                />
+                <span class="material-symbols-outlined">
+                location_on
+                </span>
                 <p className="txt">
                   Rua das Oliveiras. 123 - Centro São Paulo. SP
                 </p>
               </div>
 
               <div className="location-box">
-                <img
-                  src="imagens/icones/icones-geral/telefone.png"
-                  alt="Telefone"
-                  width="30"
-                />
+                <span class="material-symbols-outlined">
+                call
+                </span>
                 <p className="txt">(11) 99999-9999</p>
               </div>
 
               <div className="location-box">
-                <img
-                  src="imagens/icones/icones-geral/email.png"
-                  alt="Email"
-                  width="30"
-                />
+                <span class="material-symbols-outlined">
+                stacked_email
+                </span>
                 <p className="txt">contato@pastabella.com.br</p>
               </div>
 
               <div className="location-box">
-                <img
-                  src="imagens/icones/icones-geral/relogio.png"
-                  alt="Relogia"
-                  width="30"
-                />
+                <span class="material-symbols-outlined">
+                pace
+                </span>
                 <p className="txt">Terça a Domingo: 18h às 23h</p>
               </div>
             </article>
@@ -315,19 +290,19 @@ function App() {
           <p>Sabores da Itália direto para sua casa</p>
           <div>
             <img
-              src="imagens/icones/redes sociais/facebook.png"
+              src="../../public/icones/redes-sociais/facebook.png"
               alt="Icone facebook"
               width="35"
               className="animation"
             />
             <img
-              src="imagens/icones/redes sociais/instagram.png"
+              src="../../public/icones/redes-sociais/instagram.png"
               alt="Icone instagram"
               width="35"
               className="animation"
             />
             <img
-              src="imagens/icones/redes sociais/tripadvisor.png"
+              src="../../public/icones/redes-sociais/tripadvisor.png"
               alt="Icone Tripa d Visor"
               width="35"
               className="animation"

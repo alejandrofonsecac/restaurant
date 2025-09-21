@@ -6,6 +6,10 @@
     margin: 0 auto;
 }
 
+.animation{
+    margin: 8px 10px;
+}
+
 .animation:hover{
     filter: brightness(0.9);
     transform: translateY(-5px);
