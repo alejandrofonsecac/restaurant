@@ -2,7 +2,7 @@
 
 section.home{
 
-    background-image: url(.../../../../imagens/index-page/backgrounds/pizza-background.jpg);
+    background-image: url(../../public/index-page/backgrounds/pizza-background.jpg);
     background-position: right center;
     background-size: cover;
     
@@ -41,6 +41,7 @@ button{
 .container > a > button.button-menu{
     background-color: var(--color-primary);
     color: white;  
+    width: 60vw;
 }
 
 .container > a{
@@ -50,6 +51,7 @@ button{
 .container > a > button.button-order-now{
     background-color: white;
     color: var(--color-primary);
+    width: 60vw;
 }
 
 .container {

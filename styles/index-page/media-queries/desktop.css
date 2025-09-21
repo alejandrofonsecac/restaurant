@@ -24,7 +24,7 @@ main{
     border-radius: 5px;
 }
 
-header{
+header{ 
     height: 80px;
 }
 
@@ -45,7 +45,7 @@ header > div.header-icons > span{
     margin-right: 80px;
 }
 
-header > .menu-desktop{
+header > .menuDesktop{
     display: flex !important;
     justify-content: space-between;
     align-items: flex-end;

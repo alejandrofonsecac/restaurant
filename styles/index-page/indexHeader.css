@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+:root {
+    --color-primary: #8B0000;
+
+    /*
+    Fontes:
+        Playfair Display (TÍTULOS PRINCIPAIS)
+        Montserrat (SUBTÍTULOS)
+        Sans-serif (LEITURA PADRÃO)
+    */
+    --font-principal: 'Playfair Display', serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font-padrao: sans-serif, arial;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+header > h1 {
+    font-family: var(--font-principal);
+    color: var(--color-primary);
+    margin: 5px;
+}
+
+header > .menu-desktop{
+    display: none;
+}
+
+header > div.header-icons{
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header > div.header-icons > div.icon-wrapper {
+    position: relative;
+
+}
+
+.material-icons{
+    font-size: 35px;
+    margin: 0px 5px;
+}
+
+.cart-count {
+    background-color: var(--color-primary);
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-weight: bold;
+    pointer-events: none;
+}
