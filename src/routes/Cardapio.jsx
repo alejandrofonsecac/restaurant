@@ -12,7 +12,7 @@ const cardapio = {
             name: 'Margherita',
             ingredients: 'Massa artesanal, molho de tomate italiano, mussarela de búfala,manjericão fresco, azeite extra virgem', 
             price: 'R$ 35,00', 
-            className: 'margueritaPizza' 
+            className: 'margueritaPizza'
         },
         
         {

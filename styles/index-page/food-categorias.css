@@ -6,6 +6,10 @@ section.food-categorias{
     height: auto;
 }
 
+img{
+    border-radius: 8px;
+}
+
 section.food-categorias > .container > h2 {
     font-family: var(--font-secundaria);
     color: var(--color-primary);

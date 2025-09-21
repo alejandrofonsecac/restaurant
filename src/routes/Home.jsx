@@ -93,7 +93,7 @@ function App() {
             <div className="menu-index">
               <div className="box left">
                 <img
-                  src="imagens/index-page/cardapio/massas.jpg"
+                  src="../../public/index-page/cardapio/massas.jpg"
                   alt="massas"
                   width="100"
                   className="img-food"
@@ -107,7 +107,7 @@ function App() {
               </div>
               <div className="box right">
                 <img
-                  src="imagens/index-page/cardapio/almoço-e-janta.jpg"
+                  src="../../public/index-page/cardapio/almoço-e-janta.jpg"
                   alt="Almoço e Janta"
                   width="100"
                   className="img-food"
@@ -121,7 +121,7 @@ function App() {
               </div>
               <div className="box left">
                 <img
-                  src="imagens/index-page/cardapio/pratos-executivos.jpg"
+                  src="../../public/index-page/cardapio/pratos-executivos.jpg"
                   alt="Pratos Executivos"
                   width="100"
                   className="img-food"
@@ -135,7 +135,7 @@ function App() {
               </div>
               <div className="box right">
                 <img
-                  src="imagens/index-page/cardapio/sem-gluten.jpg"
+                  src="../../public/index-page/cardapio/sem-gluten.jpg"
                   alt="Sem Gluten"
                   width="100"
                   className="img-food"
@@ -149,21 +149,21 @@ function App() {
               </div>
               <div className="box left">
                 <img
-                  src="imagens/index-page/cardapio/porções-e-fast-food.jpg"
+                  src="../../public/index-page/cardapio/porções-e-fast-food.jpg"
                   alt="Porçoes e Fast Foods"
                   width="100"
                   className="img-food"
                 />
                 <p>Porções & Fast Food</p>
                 <img
-                  src="imagens/icones/icones-geral/seta-direita-vermelha.png"
+                  src="../../public/index-page/cardapio/massas.jpg"
                   alt="seta-para-direita"
                   className="seta"
                 />
               </div>
               <div className="box right">
                 <img
-                  src="imagens/index-page/cardapio/sobremesas-e-bebidas.jpg"
+                  src="../../public/index-page/cardapio/sobremesas-e-bebidas.jpg"
                   alt="Sobremesas e Bebidas"
                   width="100"
                   className="img-food"
@@ -179,80 +179,7 @@ function App() {
           </div>
         </section>
 
-        {/* MENU HIGHLIGHTS */}
-        <section className="menu-highlights">
-          <h2>Destaques do Cardápio</h2>
-          <p>Nossos produtos mais pedidos</p>
-          <div className="menu-all">
-            <div className="food-cart">
-              <img
-                src="imagens/index-page/destaques/spagetti-carbonara.jpg"
-                alt="Spaghetti Carbonara"
-                width="280"
-                height="250"
-              />
-              <div>
-                <h3>Spaghetti Carbonara</h3>
-                <div id="preco-carbonara" className="preco"></div>
-                <p>
-                  Massa fresca, pancetta crocante, ovos, queijo pecorino e
-                  pimenta preta.
-                </p>
-                <button
-                  className="animation-scale"
-                  onMouseOver={(e) => e.target.classList.add("-active")}
-                  onMouseOut={(e) => e.target.classList.remove("-active")}
-                >
-                  + Adicionar ao Pedido
-                </button>
-              </div>
-            </div>
-
-            <div className="food-cart">
-              <img
-                src="imagens/index-page/destaques/lasanha-bolonhesa.jpg"
-                alt="Lasanha Bolonhesa"
-                width="200"
-              />
-              <div>
-                <h3>Lasanha à Bolonhesa</h3>
-                <p>
-                  Camadas de massa, molho bolonhesa caseiro, bechame e queijo
-                  gratinado.
-                </p>
-                <button
-                  className="animation-scale"
-                  onMouseOver={(e) => e.target.classList.add("-active")}
-                  onMouseOut={(e) => e.target.classList.remove("-active")}
-                >
-                  + Adicionar ao Pedido
-                </button>
-              </div>
-            </div>
-
-            <div className="food-cart">
-              <img
-                src="imagens/index-page/destaques/rissoto-de-fungo.jpg"
-                alt="risotto de fungo"
-                width="200"
-              />
-              <div>
-                <h3>Risotto de Fungo</h3>
-                <p>
-                  Arroz arbóreo, mix de cogumelos frescos, vinho branco,
-                  manteiga e parmesão.
-                </p>
-                <button
-                  className="animation-scale"
-                  onMouseOver={(e) => e.target.classList.add("-active")}
-                  onMouseOut={(e) => e.target.classList.remove("-active")}
-                >
-                  + Adicionar ao Pedido
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* DELIVERY */}
         <section className="delivery">
