@@ -123,7 +123,7 @@ const CarroselMenu = ({ children, onMouseDown, onMouseMove, onMouseUp, onMouseLe
         overflowX: 'hidden',
         cursor: 'grab',
         display: 'flex',
-        whiteSpace: 'nowrap'
+        whiteSpace: 'nowrap',
       }}
     >
       {children}

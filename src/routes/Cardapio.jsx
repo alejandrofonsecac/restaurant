@@ -636,7 +636,10 @@ function Cardapio() {
                 activeCategory={activeCategory}
                 scrollToCategory={scrollToCategory}
                 setIsDragging={setIsDragging}
-            />
+                className={style.menuContainer}
+            >
+                <div className={`${style.itens}`}><p>Pizzas</p></div>
+            </CaroselMenu>
             
             <div className={style.menuContainer}>
                 {/* Mapeia o array de categorias para renderizar os componentes */}

@@ -85,17 +85,17 @@ li{
 /* -----Estilo específico para o item do Menu----- */
 
 .principalMenu{
-    background: url('../public/imagens/menuImagens/principalMenu.jpg') no-repeat center center;
+    background: url('../public/cardapio/imagens/menuImagens/') no-repeat center center;
     background-size: cover;
 }
 
 .PizzasMenu {
-    background: url('../public/imagens/menuImagens/pizzaMenu.jpeg') no-repeat center center;
+    background: url('../public/cardapio/imagens/menuImagens/pizzaMenu.jpeg') no-repeat center center;
     background-size: cover;
 }
 
 .massasMenu{
-    background: url('../public/imagens/menuImagens/') no-repeat center center;
+    background: url('../public/cardapio/imagens/menuImagens/') no-repeat center center;
     background-size: cover;
 }
 
@@ -113,27 +113,27 @@ li{
 }
 
 .pratosExecutivos {
-    background: url('../public/imagens/menuImagens/pratosExecutivosMenu.jpg') no-repeat center center;
+    background: url('../public/cardapio/imagens/menuImagens/pratosExecutivosMenu.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .porções{
-    background: url('../public/imagens/menuImagens/porçõesMenu.jpg') no-repeat center center;
+    background: url('../public/cardapio/imagens/menuImagens/porçõesMenu.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .semGluten{
-    background: url('../public/imagens/menuImagens/semGlutenMenu.jpg') no-repeat center center;
+    background: url('../public/cardapio/imagens/menuImagens/semGlutenMenu.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .sobremesas{
-    background: url('../public/imagens/menuImagens/sobremesasMenu.jpg') no-repeat center center;
+    background: url('../public/cardapio/imagens/menuImagens/sobremesasMenu.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .bebidas{
-    background: url('../public/imagens/menuImagens/bebidasMenu.jpg') no-repeat center center;
+    background: url('../public/cardapio/imagens/menuImagens/bebidasMenu.jpg') no-repeat center center;
     background-size: cover;
 }
 
