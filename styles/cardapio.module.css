@@ -94,16 +94,6 @@ li{
     background-size: cover;
 }
 
-.massasMenu{
-    background: url('../public/cardapio/imagens/menuImagens/') no-repeat center center;
-    background-size: cover;
-}
-
-.itens{
-    background-color: rgb(221, 219, 219);
-    margin: 10px 10px;
-}
-
 .PizzasMenu > p, .itens > p {
     color: white;
     font-size: 1.2rem;

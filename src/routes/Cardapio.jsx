@@ -638,7 +638,48 @@ function Cardapio() {
                 setIsDragging={setIsDragging}
                 className={style.menuContainer}
             >
-                <div className={`${style.itens}`}><p>Pizzas</p></div>
+                <div 
+            className={`${style.itens} ${style.principalMenu} ${activeCategory === 'menu-principal' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('menu-principal')}
+          >
+            <p>Menu Principal</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.PizzasMenu} ${activeCategory === 'pizzas' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('pizzas')}
+          >
+            <p>Pizzas</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.pratosExecutivos} ${activeCategory === 'pratos-executivos' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('pratos-executivos')}
+          >
+            <p>Pratos Executivos</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.porções} ${activeCategory === 'porcoes' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('porcoes')}
+          >
+            <p>Porções</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.semGluten} ${activeCategory === 'sem-gluten' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('sem-gluten')}
+          >
+            <p>Sem Glúten</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.sobremesas} ${activeCategory === 'sobremesas' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('sobremesas')}
+          >
+            <p>Sobremesas</p>
+          </div>
+          <div 
+            className={`${style.itens} ${style.bebidas} ${activeCategory === 'bebidas' ? style.activeCategory : ''}`} 
+            onClick={() => scrollToCategory('bebidas')}
+          >
+            <p>Bebidas</p>
+          </div>
             </CaroselMenu>
             
             <div className={style.menuContainer}>
