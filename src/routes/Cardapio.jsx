@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState, forwardRef } from 'react';
 import style from '../../styles/cardapio.module.css';
 import CaroselMenu from '../_components/CarroselMenu';
+import { Link } from 'react-router';
 
 // ----------------------------------------------------
 // 1. DADOS: O objeto 'cardapio' que centraliza tudo
@@ -557,7 +558,7 @@ const MenuCategory = forwardRef(({ id, title, items }, ref) => {
                             <h4 className={style.foodName}>{item.name}</h4>
                             <p className={style.ingredients}>{item.ingredients}</p>
                             <div className={style.shoppingInfo}>
-                                <a className={style.addToCart}>+ Adicionar</a>
+                                <Link to='/carrinho' className={style.addToCart}> + Adicionar</Link>
                                 <p className={style.price}>{item.price}</p>
                             </div>
                             {item.image && ( // Condição para renderizar a imagem
@@ -600,7 +601,6 @@ function Cardapio() {
         }
     };
 
-    // Efeito para observar a seção visível na tela
     useEffect(() => {
         const observerOptions = {
             root: null,
@@ -630,7 +630,6 @@ function Cardapio() {
 
     return (
         <>
-            {/* O Carrossel de navegação usará a função scrollToCategory */}
             <CaroselMenu 
                 categories={categories}
                 activeCategory={activeCategory}
