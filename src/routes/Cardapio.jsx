@@ -558,7 +558,9 @@ const MenuCategory = forwardRef(({ id, title, items }, ref) => {
                             <h4 className={style.foodName}>{item.name}</h4>
                             <p className={style.ingredients}>{item.ingredients}</p>
                             <div className={style.shoppingInfo}>
-                                <Link to='/carrinho' className={style.addToCart}> + Adicionar</Link>
+                                <Link to='/carrinho'
+                                state={{ itemAdicionado: item }}
+                                 className={style.addToCart}> + Adicionar</Link>
                                 <p className={style.price}>{item.price}</p>
                             </div>
                             {item.image && ( // Condição para renderizar a imagem
@@ -577,7 +579,7 @@ const MenuCategory = forwardRef(({ id, title, items }, ref) => {
 // 3. COMPONENTE PRINCIPAL: 'Cardapio'
 // ----------------------------------------------------
 
-function Cardapio() {
+function Cardapio({item}) {
     const categoryRefs = useRef({});
     const [activeCategory, setActiveCategory] = useState('');
     const [isDragging, setIsDragging] = useState(false);

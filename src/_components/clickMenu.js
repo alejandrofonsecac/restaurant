@@ -6,12 +6,9 @@ export function clickMenu() {
         }
     } else {
         itens.style.display = 'block';
-        
-        //       *****Overlay e a parte que fica atras do menu*****
-        // Cria o overlay
+
         const overlay = document.createElement('div');
         overlay.className = 'menu-overlay';
-        // Estilo do overlay
         overlay.style.position = 'fixed';
         overlay.style.top = '0';
         overlay.style.right = '0';
@@ -21,15 +18,12 @@ export function clickMenu() {
         overlay.style.zIndex = '999';
         overlay.style.backdropFilter = 'blur(1px)';
 
-        // Fecha o menu quando clicar no overlay
         overlay.addEventListener('click', function() {
-            itens.style.display = 'none';
-            document.body.removeChild(overlay);
-            document.removeEventListener('click', closeMenuOnClickOutside);
+            fecharMenu();
         });
-        
+
         document.body.appendChild(overlay);
-        // Estilização do menu
+
         itens.style.position = 'fixed';
         itens.style.top = '0';
         itens.style.right = '0';
@@ -42,10 +36,6 @@ export function clickMenu() {
         itens.style.overflowY = 'auto';
         itens.style.borderRadius = '15px';
 
-
-
-
-        // Adiciona o ícone de fechar
         const closeOverlay = document.createElement('span');
         closeOverlay.className = 'material-symbols-outlined';
         closeOverlay.textContent = 'close';
@@ -53,34 +43,36 @@ export function clickMenu() {
         closeOverlay.style.top = '5px';    
         closeOverlay.style.right = '10px';
         closeOverlay.style.cursor = 'pointer';
-        
-        // Adiciona evento de clique no X
         itens.appendChild(closeOverlay);
         closeOverlay.addEventListener('click', function(e) {
             e.stopPropagation();
-            itens.style.display = 'none';
-            document.body.removeChild(overlay);
-            document.removeEventListener('click', closeMenuOnClickOutside);
+            fecharMenu();
         });
 
+        // ✅ FECHAR AO CLICAR EM QUALQUER LINK DO MENU
+        itens.querySelectorAll('a, li').forEach(link => {
+            link.addEventListener('click', () => {
+                fecharMenu();
+            });
+        });
 
-        setTimeout(() => {//?
+        setTimeout(() => {
             document.addEventListener('click', closeMenuOnClickOutside);
         }, 0);
-
-        
     }
+}
+
+function fecharMenu() {
+    itens.style.display = 'none';
+    const overlay = document.querySelector('.menu-overlay');
+    if (overlay) document.body.removeChild(overlay);
+    document.removeEventListener('click', closeMenuOnClickOutside);
 }
 
 function closeMenuOnClickOutside(e) {
     const menu = document.getElementById('itens');
     const overlay = document.querySelector('.menu-overlay');
-    
-    // Se o clique foi fora do menu e do overlay, e o overlay existe
-    if (overlay && !menu.contains(e.target) && e.target !== document.querySelector('.menu-icon')) { // Adicione a classe do seu ícone de menu aqui
-        menu.style.display = 'none';
-        document.body.removeChild(overlay);
-        // Remove este event listener depois de usar
-        document.removeEventListener('click', closeMenuOnClickOutside);
+    if (overlay && !menu.contains(e.target) && e.target !== document.querySelector('.menu-icon')) {
+        fecharMenu();
     }
 }

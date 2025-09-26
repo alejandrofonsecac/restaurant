@@ -19,8 +19,11 @@ function Header() {
       </ul>
 
       <div className={style.headerIcons}>
+        
         <div className={style.iconWrapper}>
-          <span className="material-icons" style={{fontSize: 26}}>shopping_cart</span>
+          <Link to='/carrinho' style={{color: 'black'}}>
+            <span className="material-icons" style={{fontSize: 26}}>shopping_cart</span>
+          </Link>
           <span className={style.cartCount}>0</span>
         </div>
 
@@ -31,9 +34,17 @@ function Header() {
 
       <menu id="itens" className={style.menuMobile}>
         <ul>
-          <li><a href="#">Cardapio</a></li>
-          <li><a href="#" style={{ color: 'black' }}>Sobre nós</a></li>
-          <li><a href="../../../../index.html">Home</a></li>
+          <Link to='/cardapio'
+          >
+            <li>Cardapio</li>
+          </Link>
+          <Link
+          >
+            <li>Sobre Nós</li>
+          </Link>
+          <Link to='/' >
+            <li>Home</li>
+          </Link>
         </ul>
       </menu>
     </header>
