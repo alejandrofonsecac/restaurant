@@ -1,9 +1,10 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { StrictMode } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import App from "./src/App";
+import CartProvider from "./src/_components/CartContext.jsx"; 
+
+import App from "./src/App"; 
 import Home from "./src/routes/Home.jsx";
 import Cart from "./src/routes/Cart.jsx";
 import Cardapio from "./src/routes/Cardapio.jsx";
@@ -31,6 +32,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </StrictMode>
 );
