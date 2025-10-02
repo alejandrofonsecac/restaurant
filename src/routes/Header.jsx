@@ -1,13 +1,13 @@
+import React, { useContext } from "react";
 import { Link } from 'react-router-dom';
-import React from 'react';
 import style from '../../styles/header/header.module.css';
 import { clickMenu } from '../_components/clickMenu.js';
 
-import { useCart } from '../_components/CartContext.jsx'; 
+import { CartContext } from "../_components/CartContext.jsx";
+ 
 
 function Header() {
-    const { cartItems } = useCart();
-    const totalItems = cartItems.length;
+    const { cart } = useContext(CartContext);
 
     return (
         <header>
@@ -27,7 +27,7 @@ function Header() {
                     <Link to='/carrinho' style={{color: 'black'}}>
                         <span className="material-icons" style={{fontSize: 26}}>shopping_cart</span>
                     </Link>
-                    <span className={style.cartCount}>{totalItems}</span> 
+                    <span className={style.cartCount}>{cart.length}</span> 
                 </div>
 
                 <div>

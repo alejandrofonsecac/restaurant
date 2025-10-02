@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, Outlet } from 'react-router-dom';
+import { CartContext } from "../_components/CartContext.jsx";
+
 
 
 // ⚠️ Dica: Google Fonts pode ser importado no index.html ou via CSS global
@@ -99,7 +101,7 @@ function App() {
                   className="img-food"
                 />
                 <p>Massas</p>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                 chevron_right
                 </span>
               </div>
@@ -111,7 +113,7 @@ function App() {
                   className="img-food"
                 />
                 <p>Almoço e Janta</p>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                 chevron_right
                 </span>
               </div>
@@ -123,7 +125,7 @@ function App() {
                   className="img-food"
                 />
                 <p>Pratos Executivos</p>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                 chevron_right
                 </span>
               </div>
@@ -135,7 +137,7 @@ function App() {
                   className="img-food"
                 />
                 <p>Sem Glúten</p>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                 chevron_right
                 </span>
               </div>
@@ -147,7 +149,7 @@ function App() {
                   className="img-food"
                 />
                 <p>Porções & Fast Food</p>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
 chevron_right
 </span>
               </div>
@@ -159,7 +161,7 @@ chevron_right
                   className="img-food"
                 />
                 <p>Sobremesas & Bebidas</p>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                 chevron_right
                 </span>
               </div>
@@ -174,7 +176,7 @@ chevron_right
           <h2>Delivery</h2>
           <div className="box-all">
             <div className="box-son">
-              <span class="material-symbols-outlined iconBranco">
+              <span className="material-symbols-outlined iconBranco">
                 acute
                 </span>
 
@@ -185,7 +187,7 @@ chevron_right
             </div>
 
             <div className="box-son">
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
                 moped
               </span>
               <div className="texto">
@@ -195,7 +197,7 @@ chevron_right
             </div>
 
             <div className="box-son">
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
               location_on
               </span>
               <div className="texto">
@@ -223,7 +225,7 @@ chevron_right
               ></iframe>
 
               <div className="location-box">
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                 location_on
                 </span>
                 <p className="txt">
@@ -232,21 +234,21 @@ chevron_right
               </div>
 
               <div className="location-box">
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                 call
                 </span>
                 <p className="txt">(11) 99999-9999</p>
               </div>
 
               <div className="location-box">
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                 stacked_email
                 </span>
                 <p className="txt">contato@pastabella.com.br</p>
               </div>
 
               <div className="location-box">
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                 pace
                 </span>
                 <p className="txt">Terça a Domingo: 18h às 23h</p>

@@ -2,7 +2,8 @@ import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import CartProvider from "./src/_components/CartContext.jsx"; 
+import CartProvider from "./src/_components/CartContext.jsx";
+
 
 import App from "./src/App"; 
 import Home from "./src/routes/Home.jsx";

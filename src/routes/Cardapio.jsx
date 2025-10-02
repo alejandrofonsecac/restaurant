@@ -1,11 +1,10 @@
-import React, { useRef, useEffect, useState, forwardRef } from 'react';
+import { useRef, useEffect, useState, forwardRef, useContext } from 'react';
 import style from '../../styles/cardapio.module.css';
 import CaroselMenu from '../_components/CarroselMenu';
 import { Link } from 'react-router';
 
-// ----------------------------------------------------
-// 1. DADOS: O objeto 'cardapio' que centraliza tudo
-// ----------------------------------------------------
+import { CartContext } from "../_components/CartContext.jsx";
+
 
 const cardapio = {
     pizzas: [
@@ -541,14 +540,10 @@ const categories = [
     { id: 'bebidas', title: 'Bebidas' }
 ];
 
-// ----------------------------------------------------
-// 2. COMPONENTE REUTILIZÁVEL: 'MenuCategory' com forwardRef
-//    Adicionamos também a prop `id` para o observer.
-// ----------------------------------------------------
-
 const MenuCategory = forwardRef(({ id, title, items }, ref) => {
+    const { addToCart } = useContext(CartContext);
+
     return (
-        // O ID é necessário para o IntersectionObserver identificar o elemento
         <div ref={ref} id={id}> 
             <h3 className="category-title">{title}</h3>
             <div className="food-items">
@@ -558,14 +553,16 @@ const MenuCategory = forwardRef(({ id, title, items }, ref) => {
                             <h4 className={style.foodName}>{item.name}</h4>
                             <p className={style.ingredients}>{item.ingredients}</p>
                             <div className={style.shoppingInfo}>
-                                <Link to='/carrinho'
-                                state={{ itemAdicionado: item }}
-                                 className={style.addToCart}> + Adicionar</Link>
+
+                                <button 
+                                  onClick={() => addToCart(item)} 
+                                  className={style.addToCart}
+                                >
+                                  + Adicionar
+                                </button>
+
                                 <p className={style.price}>{item.price}</p>
                             </div>
-                            {item.image && ( // Condição para renderizar a imagem
-                            <img src={item.image} alt={item.name} className={style.foodImage} />
-                        )}
                         </div>
                         <span className={style[item.className]}></span>
                     </div>
@@ -574,10 +571,6 @@ const MenuCategory = forwardRef(({ id, title, items }, ref) => {
         </div>
     );
 });
-
-// ----------------------------------------------------
-// 3. COMPONENTE PRINCIPAL: 'Cardapio'
-// ----------------------------------------------------
 
 function Cardapio({item}) {
     const categoryRefs = useRef({});
@@ -619,13 +612,11 @@ function Cardapio({item}) {
             });
         }, observerOptions);
 
-        // Observar todas as categorias referenciadas
         Object.values(categoryRefs.current).forEach(ref => {
             if (ref) observer.observe(ref);
         });
 
         return () => {
-            // Limpa o observer ao desmontar o componente
             observer.disconnect();
         };
     }, []);
@@ -684,14 +675,13 @@ function Cardapio({item}) {
             </CaroselMenu>
             
             <div className={style.menuContainer}>
-                {/* Mapeia o array de categorias para renderizar os componentes */}
+                {/* Mapa do array de categorias para renderizar os componentes */}
                 {categories.map((category) => (
                     <MenuCategory 
                         key={category.id}
                         id={category.id}
                         title={category.title}
                         items={cardapio[category.id]}
-                        // Seta a referência para o objeto `categoryRefs.current`
                         ref={(el) => (categoryRefs.current[category.id] = el)}
                     />
                 ))}
