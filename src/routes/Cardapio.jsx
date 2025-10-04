@@ -632,12 +632,7 @@ function Cardapio({item}) {
                 setIsDragging={setIsDragging}
                 className={style.menuContainer}
             >
-                <div 
-            className={`${style.itens} ${style.principalMenu} ${activeCategory === 'menu-principal' ? style.activeCategory : ''}`} 
-            onClick={() => scrollToCategory('menu-principal')}
-          >
-            <p>Menu Principal</p>
-          </div>
+
           <div 
             className={`${style.itens} ${style.PizzasMenu} ${activeCategory === 'pizzas' ? style.activeCategory : ''}`} 
             onClick={() => scrollToCategory('pizzas')}
