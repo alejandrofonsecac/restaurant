@@ -1,9 +1,8 @@
 import { useRef, useEffect, useState, forwardRef, useContext } from 'react';
-import style from '../../styles/cardapio.module.css';
-import CaroselMenu from '../_components/CarroselMenu';
-import { Link } from 'react-router';
 
+import CaroselMenu from '../_components/CarroselMenu';
 import { CartContext } from "../_components/CartContext.jsx";
+import style from '../../styles/cardapio.module.css';
 
 
 const cardapio = {
@@ -554,14 +553,17 @@ const MenuCategory = forwardRef(({ id, title, items }, ref) => {
                             <p className={style.ingredients}>{item.ingredients}</p>
                             <div className={style.shoppingInfo}>
 
-                                <button 
+                                <div
                                   onClick={() => addToCart(item)} 
                                   className={style.addToCart}
+                                  style={{background: 'none'}}
                                 >
                                   + Adicionar
-                                </button>
+                                </div>
 
-                                <p className={style.price}>{item.price}</p>
+                                <div className={style.price}>
+                                    <p>{item.price}</p>
+                                </div>
                             </div>
                         </div>
                         <span className={style[item.className]}></span>

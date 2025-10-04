@@ -15,30 +15,20 @@
     user-select: none;
 }
 
-main > menu {
-    width: 90%;
-    height: 70px;
-    margin: auto;
-    padding: 0 !important;
-    touch-action: pan-y;
-}
-
-a{
-    text-decoration: none;
-    color: #8B0000;
-}
-
-menu > ul > li > a{
-    text-decoration: none;
-    color: var(--principal-color);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: 1.3em;    
-}
-
-li{
-    list-style: none;
-    margin-top: 24px;
+/* ------ Estilo das Categorias----- */
+.itens, .PizzasMenu {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    white-space: nowrap;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+    user-select: none;
+    margin-right: 8px;
 }
 
 .containerMenu {
@@ -65,20 +55,116 @@ li{
     display: none;
 }
 
-/* Estilo para todos os itens do menu */
-.itens, .PizzasMenu {
-    flex: 0 0 auto;
-    width: 150px;
-    height: 100%;
+main > menu {
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    padding: 0 !important;
+    touch-action: pan-y;
+}
+
+a{
+    text-decoration: none;
+    color: #8B0000;
+}
+
+menu > ul > li > a{
+    text-decoration: none;
+    color: var(--principal-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.3em;    
+}
+
+li{
+    list-style: none;
+    margin-top: 24px;
+}
+
+/* FOOD ITEM */
+
+.categoryContainer{
+    margin: 0px 16px !important;
+}
+
+.ingredients {
+    font-size: 0.8em;
+    color: #585858e3;
+    margin-top: 5px;
+}
+
+.foodName{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    color: #1f1f1f;
+}
+
+.foodItem {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    scroll-snap-align: start;
-    white-space: nowrap;
-    border-radius: 8px;
-    transition: transform 0.2s ease;
-    user-select: none;
+    margin-top: 75px;
 }
+
+.food-item > div{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.food-item > div > p {
+    font-size: 0.7em;
+    color: #585858e3;
+    margin-top: 5px;
+}
+
+.addToCart{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    color: var(--principal-color);
+}
+
+.informationItem{
+    display: flex;
+    width: 100%;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+button{
+    background-color: #DDDBDB;
+    border: none;
+    color: var(--principal-color);
+}
+
+.shoppingInfo{
+    display: flex;
+}
+
+
+.foodItem > div{
+    display: block;
+}
+
+.foodItem > span{
+    display: block;
+    width: 175px;
+    height: 80px;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.price{
+    display: flex;
+}
+
 
 
 
@@ -127,103 +213,6 @@ li{
     background-size: cover;
 }
 
-/* FOOD ITEM */
-
-.categoryContainer{
-    margin: 0px 16px !important;
-}
-
-.ingredients {
-    font-size: 0.8em;
-    color: #585858e3;
-    margin-top: 5px;
-}
-
-.foodName{
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 0;
-    color: #1f1f1f;
-}
-
-.foodItem {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 75px;
-}
-
-.food-item > div{
-    width: 80%;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.food-item > div > p {
-    font-size: 0.7em;
-    color: #585858e3;
-    margin-top: 5px;
-}
-
-
-
-/*------ Imagens ------*/
-
-.addToCart{
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 0.9em;
-}
-
-.informationItem{
-    display: flex;
-    width: 100%;
-}
-
-h3{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-button{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    border: none;
-    box-shadow: 3px 4px 16px 0px rgba(0, 0, 0, 0.473);
-
-    color: var(--principal-color);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-shadow:  3px 3px 6px rgba(0, 0, 0, 0.473);
-}
-
-button:hover{
-    color: #8B0000;
-    transform: scale(1.05);
-    transition: transform 0.3s;
-}
-
-.shoppingInfo{
-    display: flex;
-}
-
-
-.foodItem > div{
-    display: block;
-}
-
-.foodItem > span{
-    display: block;
-    width: 175px;
-    height: 80px;
-    border-radius: 8px;
-    margin: 8px;
-}
-
-.addToCart{
-    cursor: pointer;
-}
 
 
 /* --- Background de Imagens --- */
