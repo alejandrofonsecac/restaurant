@@ -15,7 +15,21 @@ function Cart() {
         <div key={index}>
           <h3>{item.name}</h3>
           <p>{item.ingredients}</p>
-          <p>{item.price}</p>
+          <p>Preço base: {item.price}</p>
+
+          {item.precoPizza && (
+            <div>
+              <label>Escolha o tamanho: </label>
+              <select>
+                {Object.entries(item.precoPizza).map(([tamanho, valor]) => (
+                  <option key={tamanho} value={tamanho}>
+                    {tamanho} - R$ {valor}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+
           <button onClick={() => removeFromCartByIndex(index)}>Remover</button>
           <hr />
         </div>

@@ -14,7 +14,7 @@ const cardapio = {
             className: 'margueritaPizza',
             price: 'R$ 45,00',
 
-                preco: {
+                precoPizza: {
                     P: 30,
                     M: 45,
                     G: 60,
@@ -30,7 +30,7 @@ const cardapio = {
          price: 'R$ 50,00',
          
          
-         preco: {
+         precoPizza: {
                     P: 35,
                     M: 50,
                     G: 60,
@@ -46,7 +46,7 @@ const cardapio = {
         price: 'R$ 55,00',
         
         
-        precos: {
+        precoPizza: {
                     P: 40,
                     M: 55,
                     G: 65,
@@ -62,7 +62,7 @@ const cardapio = {
             price: 'R$ 40,00',
             
 
-            precos: {
+            precoPizza: {
                     P: 30,
                     M: 40,
                     G: 60,
@@ -78,7 +78,7 @@ const cardapio = {
             price: 'R$ 50,00',
             
             
-            precos: {
+            precoPizza: {
                     P: 40,
                     M: 50,
                     G: 60,
@@ -94,7 +94,7 @@ const cardapio = {
             price: 'R$ 50,00',
             
 
-            precos: {
+            precoPizza: {
                     P: 40,
                     M: 50,
                     G: 60,
@@ -110,7 +110,7 @@ const cardapio = {
             price: 'R$ 38,00',
             
 
-            precos: {
+            precoPizza: {
                     P: 30,
                     M: 38,
                     G: 45,
@@ -126,7 +126,7 @@ const cardapio = {
             price: 'R$ 40,00',
             
 
-            precos: {
+            precoPizza: {
                     P: 35,
                     M: 40,
                     G: 50,
@@ -142,7 +142,7 @@ const cardapio = {
             price: 'R$ 45,00',
             
 
-            precos: {
+            precoPizza: {
                     P: 35,
                     M: 45,
                     G: 53,
@@ -159,7 +159,7 @@ const cardapio = {
             price: 'R$ 48,00',
             
 
-            precos: {
+            precoPizza: {
                     P: 40,
                     M: 48,
                     G: 60,
