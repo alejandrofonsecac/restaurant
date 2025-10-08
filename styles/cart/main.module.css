@@ -18,9 +18,31 @@ h2{
 }
 
 .itemPedido{
+    display: flex;
+    flex-direction: column;
     background-color: white;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.Name{
+    font-family: var(--font-secundaria);
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.ingredients{
+    font-family: var(--font-padrao);
+    font-size: 0.8em;
 }
 
 .clearItem{
+    width: 10%;
     text-decoration: underline;
 }

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { CartContext } from "../_components/CartContext.jsx";
 
 import style from '../../styles/cart/main.module.css'
+import { Description } from '@mui/icons-material';
 
 function Cart() {
   const { cart, removeFromCartByIndex, clearCart } = useContext(CartContext);
@@ -16,9 +17,12 @@ function Cart() {
         <h2>Seu Pedido</h2>
 
         {cart.map((item, index) => (
-          <div key={index}>
-            <h3 className={style.Name}>{item.name}</h3>
-            <p className={style.ingredients}>{item.ingredients}</p>
+          <div key={index} className={style.itemPedido}>
+
+            <div className={style.description}>
+              <h3 className={style.Name}>{item.name}</h3>
+              <p className={style.ingredients}>{item.ingredients}</p>
+            </div>
 
             {item.precoPizza ?(
               <div>
@@ -39,6 +43,8 @@ function Cart() {
             <hr />
           </div>
         ))}
+
+        
 
         <button onClick={clearCart}>Limpar Carrinho</button>
       </section>
