@@ -591,7 +591,7 @@ const cardapio = {
 
         {
             id: 61,
-            name: 'Suco Natural (300ml)', 
+            name: 'Suco Natural (350ml)', 
             ingredients: 'Laranja, Uva, Abacaxi com Hortelã, Manga', 
             price: 'R$ 12,00', 
             className: 'sucoNatural'
@@ -607,7 +607,7 @@ const cardapio = {
 
         {
             id: 63,
-            name: 'Chá Gelado (500ml)', 
+            name: 'Chá Gelado (400ml)', 
             ingredients: 'Limão ou Pêssego', 
             price: 'R$ 10,00', 
             className: 'chaGelado'
@@ -657,7 +657,7 @@ const cardapio = {
             id: 69,
             name: 'Spritz Italiano', 
             ingredients: 'Aperol com prosecco e soda', 
-            price: 'R$ 32,00', 
+            price: 'R$ 26,00', 
             className: 'spritzItaliano' 
         },
 

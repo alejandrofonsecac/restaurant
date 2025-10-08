@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+:root {
+    --primary-color: #8B0000;
+    --background-color: #F9F5F0;
+    --text-color: #333333;
+    --font-principal: 'Playfair Display', serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font-padrao: sans-serif, arial;
+}
+
+h2{
+    color: #8B0000;
+    font-family: var(--font-principal);
+    font-size: 3em;
+    text-align: center;
+    margin: 16px auto;
+}
+
+.itemPedido{
+    background-color: white;
+}
+
+.clearItem{
+    text-decoration: underline;
+}
