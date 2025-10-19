@@ -1,17 +1,25 @@
 import React, { useContext } from 'react';
 import { CartContext } from "../_components/CartContext.jsx";
+import { Link } from 'react-router';
 
 import style from '../../styles/cart/main.module.css'
-import { Description } from '@mui/icons-material';
+
+import { Restaurant } from '@mui/icons-material';
 
 function Cart() {
   const { cart, removeFromCartByIndex, clearCart } = useContext(CartContext);
 
   if(cart.length === 0){
-    return <h1>O carrinho está vazio</h1>
-  }
-
-  return(
+    return(
+      <>
+        <h1>Carrinho vazio </h1>
+        <Link to='/cardapio'>
+          <p>Esvazie a sua fome aqui <Restaurant/></p>
+        </Link>
+      </>
+    )
+  }else{
+    return(
     <>
       <section>
         <h2>Seu Pedido</h2>
@@ -50,6 +58,9 @@ function Cart() {
       </section>
     </>
   )
+  }
+
+  
 }
 
 export default Cart;

@@ -3,7 +3,6 @@ import React, { useRef, useEffect } from "react";
 const CarroselMenu = ({ children, onMouseDown, onMouseMove, onMouseUp, onMouseLeave, onTouchStart, onTouchMove, onTouchEnd }) => {
   const containerRef = useRef(null);
   
-  // Variáveis de estado para o carrossel
   const state = useRef({
     isDown: false,
     startX: 0,
@@ -14,28 +13,18 @@ const CarroselMenu = ({ children, onMouseDown, onMouseMove, onMouseUp, onMouseLe
     lastTime: 0
   }).current;
 
-  // Para a inércia
-  const stopMomentum = () => {
-    cancelAnimationFrame(state.momentumID);
-  };
+  const stopMomentum = () => cancelAnimationFrame(state.momentumID);
 
-  // Função que cria o efeito de desaceleração
   const momentumScroll = () => {
     containerRef.current.scrollLeft += state.velocity;
-    state.velocity *= 0.6; // fator de desaceleração
-    
+    state.velocity *= 0.6;
     if (Math.abs(state.velocity) > 0.5) {
       state.momentumID = requestAnimationFrame(momentumScroll);
     } else {
-      // Snap suave quando a velocidade for baixa
       const container = containerRef.current;
       const itemWidth = 150 + 8;
       const snapPosition = Math.round(container.scrollLeft / itemWidth) * itemWidth;
-      
-      container.scrollTo({
-        left: snapPosition,
-        behavior: 'smooth'
-      });
+      container.scrollTo({ left: snapPosition, behavior: 'smooth' });
     }
   };
 
@@ -52,20 +41,13 @@ const CarroselMenu = ({ children, onMouseDown, onMouseMove, onMouseUp, onMouseLe
 
   const handleMove = (clientX) => {
     if (!state.isDown) return;
-    
     const container = containerRef.current;
     const x = clientX - container.getBoundingClientRect().left;
-    const walk = (x - state.startX) * 1.5; // sensibilidade do arrasto
+    const walk = (x - state.startX) * 1.5;
     container.scrollLeft = state.scrollLeft - walk;
-
-    // Calcula velocidade para a inércia
     const now = performance.now();
     const deltaTime = now - state.lastTime;
-    
-    if (deltaTime > 0) {
-      state.velocity = (container.scrollLeft - (state.scrollLeft - walk)) / deltaTime * 16;
-    }
-    
+    if (deltaTime > 0) state.velocity = (container.scrollLeft - (state.scrollLeft - walk)) / deltaTime * 16;
     state.lastX = x;
     state.lastTime = now;
   };
@@ -77,54 +59,19 @@ const CarroselMenu = ({ children, onMouseDown, onMouseMove, onMouseUp, onMouseLe
     }
   };
 
-  const handleMouseDown = (e) => {
-    handleDown(e.clientX);
-    if (onMouseDown) onMouseDown(e);
-  };
-
-  const handleMouseMove = (e) => {
-    handleMove(e.clientX);
-    if (onMouseMove) onMouseMove(e);
-  };
-
-  const handleTouchStart = (e) => {
-    handleDown(e.touches[0].clientX);
-    if (onTouchStart) onTouchStart(e);
-  };
-
-  const handleTouchMove = (e) => {
-    handleMove(e.touches[0].clientX);
-    if (onTouchMove) onTouchMove(e);
-  };
-
-  const handleTouchEnd = (e) => {
-    handleEnd();
-    if (onTouchEnd) onTouchEnd(e);
-  };
-
-  // Cleanup effect
-  useEffect(() => {
-    return () => {
-      stopMomentum();
-    };
-  }, []);
+  useEffect(() => () => stopMomentum(), []);
 
   return (
     <div 
       ref={containerRef}
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
+      onMouseDown={(e) => handleDown(e.clientX)}
+      onMouseMove={(e) => handleMove(e.clientX)}
       onMouseUp={handleEnd}
       onMouseLeave={handleEnd}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-      style={{ 
-        overflowX: 'hidden',
-        cursor: 'grab',
-        display: 'flex',
-        whiteSpace: 'nowrap',
-      }}
+      onTouchStart={(e) => handleDown(e.touches[0].clientX)}
+      onTouchMove={(e) => handleMove(e.touches[0].clientX)}
+      onTouchEnd={handleEnd}
+      style={{ overflowX: 'hidden', cursor: 'grab', display: 'flex', whiteSpace: 'nowrap' }}
     >
       {children}
     </div>

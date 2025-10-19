@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* Desktop Media */
+@media (min-width: 1050px) {
+    
+    body{
+        background-color: red;
+    }
+}

@@ -49,7 +49,6 @@ export function clickMenu() {
             fecharMenu();
         });
 
-        // ✅ FECHAR AO CLICAR EM QUALQUER LINK DO MENU
         itens.querySelectorAll('a, li').forEach(link => {
             link.addEventListener('click', () => {
                 fecharMenu();

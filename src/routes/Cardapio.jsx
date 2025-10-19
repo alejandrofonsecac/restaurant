@@ -2,7 +2,9 @@ import { useRef, useEffect, useState, forwardRef, useContext } from 'react';
 
 import CaroselMenu from '../_components/CarroselMenu';
 import { CartContext } from "../_components/CartContext.jsx";
-import style from '../../styles/cardapio.module.css';
+
+import style from '../../styles/cardapio/cardapio.module.css';
+
 
 
 const cardapio = {
@@ -695,8 +697,8 @@ const MenuCategory = forwardRef(({ id, title, items }, ref) => {
 
     return (
         <div ref={ref} id={id}> 
-            <h3 className="category-title">{title}</h3>
-            <div className="food-items">
+            <h3 className={style.categoryTitle}>{title}</h3>
+            <div className={style.containerItems}>
                 {items.map((item, index) => (
                     <div className={style.foodItem} key={index}>
                         <div className={style.informationItem}>
@@ -730,7 +732,9 @@ function Cardapio({item}) {
     const [activeCategory, setActiveCategory] = useState('');
     const [isDragging, setIsDragging] = useState(false);
 
-    // Função de rolagem para as categorias
+
+
+    // ----- Função de rolagem para as categorias ------
     const scrollToCategory = (categoryId) => {
         if (isDragging) return;
         

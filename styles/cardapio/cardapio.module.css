@@ -8,6 +8,10 @@
     --text-color: #333; /* Cor do texto */
     --background-color: #fff; /* Cor de fundo */
     --border-radius: 8px; /* Raio de borda padrão */
+
+    --font-principal: 'Playfair Display', serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font-padrao: sans-serif, arial;
 }
 
 * {
@@ -87,6 +91,11 @@ li{
     margin: 0px 16px !important;
 }
 
+.categoryTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+}
+
 .ingredients {
     font-size: 0.8em;
     color: #585858e3;
@@ -94,7 +103,8 @@ li{
 }
 
 .foodName{
-    font-size: 1.5em;
+    font-family: var(--font-secundaria);
+    font-size: 1.3em;
     font-weight: bold;
     margin: 0;
     color: #1f1f1f;
@@ -168,6 +178,33 @@ button{
     font-weight: bold;
     font-size: 0.8em;
 }
+
+.containerItems{
+    width: 100%;
+}
+
+
+
+
+/* --- MEDIA QUERIES --- */
+@media (min-width: 1050px) {
+    
+    .foodItem{
+        width: 500px;
+        margin: auto;
+    }
+
+    .containerItems{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .categoryTitle{
+        text-align: center;
+        margin-top: 60px;
+    }
+}
+
 
 
 
