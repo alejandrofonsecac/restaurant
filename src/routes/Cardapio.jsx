@@ -176,7 +176,8 @@ const cardapio = {
             id: 11,
             name: 'Espaguete à Bolonhesa', 
             ingredients: 'Espaguete com molho de carne moída cozido lentamente com tomate, cebola e ervas', 
-            price: 'R$ 20,00', 
+            priceText: 'R$ 20,00',
+            preco: 20, 
             className: 'espagueteBolonhesa'
         },
 
@@ -184,7 +185,8 @@ const cardapio = {
             id: 12,
             name: 'Fettuccine Alfredo', 
             ingredients: 'Molho cremoso de parmesão, manteiga e creme de leite', 
-            price: 'R$ 25,00', 
+            priceText: 'R$ 25,00',
+            preco: 25, 
             className: 'fettucineAlfredo'
         },
 
@@ -192,7 +194,8 @@ const cardapio = {
             id: 13,
             name: 'Ravioli de Ricota com Espinafre', 
             ingredients: 'Recheio cremoso com molho blanco leve', 
-            price: 'R$ 45,00', 
+            priceText: 'R$ 45,00',
+            preco: 45, 
             className: 'raviolliRicota'
         },
 
@@ -200,7 +203,8 @@ const cardapio = {
             id: 14,
             name: 'Penne ao Pesto', 
             ingredients: 'Molho pesto fresco de manjericão, nozes, alho, parmesão e azeite', 
-            price: 'R$ 38,00', 
+            priceText: 'R$ 38,00',
+            preco: 38, 
             className: 'pennePesto'
 
         },
@@ -209,7 +213,8 @@ const cardapio = {
             id: 15,
             name: 'Lasanha à Bolonhesa', 
             ingredients: 'Camadas de massa com carne, queijo e molho', 
-            price: 'R$ 40,00', 
+            priceText: 'R$ 40,00',
+            preco: 40, 
             className: 'lasanhaBolonhesa'
         },
 
@@ -217,7 +222,8 @@ const cardapio = {
             id: 16,
             name: 'Gnocchi ao Sugo', 
             ingredients: 'Nhoque de batata com molho de tomate e manjericão', 
-            price: 'R$ 42,00', 
+            priceText: 'R$ 42,00',
+            preco: 42, 
             className: 'gnocchiSugo'
         },
 
@@ -225,7 +231,8 @@ const cardapio = {
             id: 17,
             name: 'Canelone de Frango', 
             ingredients: 'Recheado com frango e catupiry, coberto com molho rosé', 
-            price: 'R$ 46,00', 
+            priceText: 'R$ 46,00',
+            preco: 46, 
             className: 'caneloneFrango'
         },
 
@@ -233,7 +240,8 @@ const cardapio = {
             id: 18,
             name: 'Espaguete Carbonara', 
             ingredients: 'Bacon, ovos, queijo parmesão e pimenta do reino', 
-            price: 'R$ 48,00', 
+            priceText: 'R$ 48,00',
+            preco: 48, 
             className: 'espagueteCarbonara'
         },
 
@@ -241,7 +249,8 @@ const cardapio = {
             id: 19,
             name: 'Rondelli de Presunto e Queijo', 
             ingredients: 'Molho bechamel e queijo gratinado', 
-            price: 'R$ 48,00', 
+            priceText: 'R$ 48,00',
+            preco: 48, 
             className: 'rondelliPresunto'
         },
 
@@ -249,7 +258,8 @@ const cardapio = {
             id: 20,
             name: 'Farfalle à Quatro Queijos', 
             ingredients: 'Molho de mussarela, gorgonzola, catupiry e parmesão', 
-            price: 'R$ 49,00', 
+            priceText: 'R$ 49,00',
+            preco: 48, 
             className: 'farfalleQueijos'
         },
 
@@ -257,7 +267,8 @@ const cardapio = {
             id: 21,
             name: 'Tagliatelle à Puttanesca', 
             ingredients: 'Azeitonas, alcaparras, tomate e alho', 
-            price: 'R$ 44,00', 
+            priceText: 'R$ 44,00',
+            preco: 44, 
             className: 'tagliatellePuttanesca'
         },
 
@@ -265,7 +276,8 @@ const cardapio = {
             id: 22,
             name: 'Tortellini de Carne com Molho Funghi', 
             ingredients: 'Cogumelos frescos, creme e queijo', 
-            price: 'R$ 60,00', 
+            priceText: 'R$ 60,00',
+            preco: 60, 
             className: 'tortelliniCarne'
         }
     ],
@@ -277,7 +289,8 @@ const cardapio = {
             id: 23,
             name: 'Filé à Parmegiana', 
             ingredients: 'Filé empanado com molho de tomate e queijo, arroz branco e batatas fritas', 
-            price: 'R$ 65,00', 
+            priceText: 'R$ 65,00',
+            preco: 65, 
             className: 'fileParmegiana'
         },
 
@@ -285,7 +298,8 @@ const cardapio = {
             id: 24,
             name: 'Strogonoff de Frango', 
             ingredients: 'Arroz branco, batata palha e frango em molho cremoso', 
-            price: 'R$ 48,00', 
+            priceText: 'R$ 48,00',
+            preco: 48, 
             className: 'strogonoffFrango'
         },
 
@@ -293,7 +307,8 @@ const cardapio = {
             id: 25,
             name: 'Bife Acebolado', 
             ingredients: 'Acompanha arroz, feijão, farofa e salada', 
-            price: 'R$ 52,00', 
+            priceText: 'R$ 52,00',
+            preco: 52, 
             className: 'bifeAcebolado'
         },
 
@@ -301,7 +316,8 @@ const cardapio = {
             id: 26,
             name: 'Peixe Grelhado com Legumes', 
             ingredients: 'Tilápia grelhada com mix de legumes no vapor', 
-            price: 'R$ 58,00', 
+            priceText: 'R$ 58,00',
+            preco: 58, 
             className: 'peixeGrelhado'
         },
 
@@ -309,7 +325,8 @@ const cardapio = {
             id: 27,
             name: 'Frango Grelhado com Purê', 
             ingredients: 'Purê de batata caseiro e arroz', 
-            price: 'R$ 45,00', 
+            priceText: 'R$ 45,00',
+            preco: 45, 
             className: 'frangoGrelhado'
         },
 
@@ -317,7 +334,8 @@ const cardapio = {
             id: 28,
             name: 'Risoto de Cogumelos', 
             ingredients: 'Arroz arbório, cogumelos frescos, vinho branco, parmesão', 
-            price: 'R$ 55,00', 
+            priceText: 'R$ 55,00',
+            preco: 55, 
             className: 'risotoCogumelos'
         },
 
@@ -325,7 +343,8 @@ const cardapio = {
             id: 29,
             name: 'Almôndegas ao Sugo', 
             ingredients: 'Com arroz branco e purê de batata', 
-            price: 'R$ 42,00', 
+            priceText: 'R$ 42,00',
+            preco: 42, 
             className: 'almondegasSugo'
         },
 
@@ -333,7 +352,8 @@ const cardapio = {
             id: 30,
             name: 'Carne Assada com Polenta', 
             ingredients: 'Fatias macias de carne com molho e polenta cremosa', 
-            price: 'R$ 54,00', 
+            priceText: 'R$ 54,00',
+            preco: 54, 
             className: 'carneAssada'
         }
     ],
@@ -345,7 +365,8 @@ const cardapio = {
             id: 31,
             name: 'Batata Frita Tradicional', 
             ingredients: 'Batatas crocantes com sal e orégano', 
-            price: 'R$ 25,00', 
+            priceText: 'R$ 25,00',
+            preco: 25, 
             className: 'batataFritaTrad'
         },
 
@@ -353,7 +374,8 @@ const cardapio = {
             id: 32,
             name: 'Batata Rústica com Alho e Alecrim', 
             ingredients: 'Batatas assadas com alho fresco e alecrim', 
-            price: 'R$ 28,00', 
+            priceText: 'R$ 28,00',
+            preco: 28, 
             className: 'batataRustica' 
         },
         
@@ -361,7 +383,8 @@ const cardapio = {
             id: 33,
             name: 'Polenta Frita', 
             ingredients: 'Palitos de polenta crocantes', 
-            price: 'R$ 22,00', 
+            priceText: 'R$ 22,00',
+            preco: 22, 
             className: 'polentaFrita'
         },
     
@@ -370,7 +393,8 @@ const cardapio = {
             id: 34,
             name: 'Mandioca Frita', 
             ingredients: 'Servida com molho da casa', 
-            price: 'R$ 23,00', 
+            priceText: 'R$ 23,00',
+            preco: 23, 
             className: 'mandiocaFrita'
         },
 
@@ -378,7 +402,8 @@ const cardapio = {
             id: 35,
             name: 'Anéis de Cebola Empanados', 
             ingredients: 'Cebola empanada crocante', 
-            price: 'R$ 26,00', 
+            priceText: 'R$ 26,00',
+            preco: 26, 
             className: 'aneisCebola'
         },
 
@@ -386,7 +411,8 @@ const cardapio = {
             id: 36,
             name: 'Iscas de Frango Empanadas', 
             ingredients: 'Acompanha molho mostarda e mel', 
-            price: 'R$ 35,00', 
+            priceText: 'R$ 35,00',
+            preco: 35, 
             className: 'iscasFrango'
         },
 
@@ -394,7 +420,8 @@ const cardapio = {
             id: 37,
             name: 'Mini Almôndegas', 
             ingredients: 'Com molho de tomate', 
-            price: 'R$ 30,00', 
+            priceText: 'R$ 30,00',
+            preco: 30, 
             className: 'miniAlmondegas'
         },
 
@@ -402,7 +429,8 @@ const cardapio = {
             id: 38,
             name: 'Bolinho de Arroz com Queijo', 
             ingredients: 'Bolinho crocante com recheio de queijo derretido', 
-            price: 'R$ 24,00', 
+            priceText: 'R$ 24,00',
+            preco: 24, 
             className: 'bolinhoArroz'
         },
 
@@ -410,7 +438,8 @@ const cardapio = {
             id: 39,
             name: 'Mini Pizzas (6 unid)', 
             ingredients: 'Sabores variados', 
-            price: 'R$ 38,00', 
+            priceText: 'R$ 38,00',
+            preco: 38, 
             className: 'miniPizzas'
         },
 
@@ -418,7 +447,8 @@ const cardapio = {
             id: 40,
             name: 'Pão de Alho com Queijo', 
             ingredients: '4 unidades', 
-            price: 'R$ 18,00', 
+            priceText: 'R$ 18,00',
+            preco: 18, 
             className: 'paoAlho'
         },
 
@@ -426,7 +456,8 @@ const cardapio = {
             id: 41,
             name: 'Tábua de Frios', 
             ingredients: 'Presunto parma, salame, queijos, azeitonas', 
-            price: 'R$ 60,00', 
+            priceText: 'R$ 60,00',
+            preco: 60, 
             className: 'tabuaFrios'
         },
 
@@ -434,7 +465,8 @@ const cardapio = {
             id: 42,
             name: 'Cesta de Pães com Patês Artesanais', 
             ingredients: 'Pães variados com seleção de patês', 
-            price: 'R$ 32,00', 
+            priceText: 'R$ 32,00',
+            preco: 32, 
             className: 'cestaPaes'
         }
     ],
@@ -445,7 +477,8 @@ const cardapio = {
             id: 43,
             name: 'Espaguete Sem Glúten ao Pomodoro', 
             ingredients: 'Molho de tomate fresco, manjericão e parmesão', 
-            price: 'R$ 48,00', 
+            priceText: 'R$ 48,00',
+            preco: 48, 
             className: 'espagueteSemGluten'
         },
 
@@ -453,7 +486,8 @@ const cardapio = {
             id: 44,
             name: 'Risoto de Frango com Legumes', 
             ingredients: 'Sem uso de farinha ou glúten', 
-            price: 'R$ 55,00', 
+            priceText: 'R$ 55,00',
+            preco: 55, 
             className: 'risotoLegumes'
         },
 
@@ -461,7 +495,8 @@ const cardapio = {
             id: 45,
             name: 'Nhoque de Mandioquinha com Molho Suave', 
             ingredients: 'Feito com mandioquinha fresca', 
-            price: 'R$ 45,00', 
+            priceText: 'R$ 45,00',
+            preco: 45, 
             className: 'nhoqueMandioquinha'
         },
 
@@ -469,7 +504,8 @@ const cardapio = {
             id: 46,
             name: 'Salada Bella', 
             ingredients: 'Alface, rúcula, tomate, pepino, ovo cozido, frango grelhado', 
-            price: 'R$ 38,00', 
+            priceText: 'R$ 38,00',
+            preco: 38, 
             className: 'saladaBella'
         },
 
@@ -477,7 +513,8 @@ const cardapio = {
             id: 47,
             name: 'Quibe de Abóbora Assado com Hortelã', 
             ingredients: 'Acompanhado de salada', 
-            price: 'R$ 40,00', 
+            priceText: 'R$ 40,00',
+            preco: 40, 
             className: 'quibeAbobora'
         },
 
@@ -485,7 +522,8 @@ const cardapio = {
             id: 48,
             name: 'Panqueca de Tapioca com Recheio de Queijo e Tomate', 
             ingredients: 'Massa 100% sem glúten', 
-            price: 'R$ 35,00', 
+            priceText: 'R$ 35,00',
+            preco: 35, 
             className: 'panquecaTapioca'
         }
     ],
@@ -496,7 +534,8 @@ const cardapio = {
             id: 49,
             name: 'Tiramisù Tradicional', 
             ingredients: 'Creme de mascarpone, café e cacau', 
-            price: 'R$ 25,00', 
+            priceText: 'R$ 25,00',
+            preco: 25, 
             className: 'tiramisuTradicional'
         },
         
@@ -504,7 +543,8 @@ const cardapio = {
             id: 50,
             name: 'Panna Cotta com Frutas Vermelhas', 
             ingredients: 'Creme italiano com calda de frutas', 
-            price: 'R$ 22,00', 
+            priceText: 'R$ 22,00',
+            preco: 22, 
             className: 'pannaCotta' 
         },
 
@@ -512,7 +552,8 @@ const cardapio = {
             id: 51,
             name: 'Torta de Limão com Merengue', 
             ingredients: 'Base crocante, creme de limão merengue', 
-            price: 'R$ 20,00', 
+            priceText: 'R$ 20,00',
+            preco: 20, 
             className: 'tortaLimao'
         },
 
@@ -520,7 +561,8 @@ const cardapio = {
             id: 52,
             name: 'Mousse de Chocolate Meio Amargo', 
             ingredients: 'Textura aerada e sabor intenso', 
-            price: 'R$ 18,00', 
+            priceText: 'R$ 18,00',
+            preco: 18, 
             className: 'mousseChocolate'
         },
 
@@ -528,7 +570,8 @@ const cardapio = {
             id: 53,
             name: 'Gelato Italiano (3 sabores)', 
             ingredients: 'Chocolate, baunilha e frutas vermelhas', 
-            price: 'R$ 28,00', 
+            priceText: 'R$ 28,00',
+            preco: 28, 
             className: 'gelatoItaliano'
         },
         
@@ -536,7 +579,8 @@ const cardapio = {
             id: 54,
             name: 'Cannoli com Ricota e Gotas de Chocolate', 
             ingredients: 'Massa crocante recheada', 
-            price: 'R$ 15,00', 
+            priceText: 'R$ 15,00',
+            preco: 15, 
             className: 'cannoliRicota'
         },
 
@@ -544,7 +588,8 @@ const cardapio = {
             id: 55,
             name: 'Cheesecake de Frutas Vermelhas', 
             ingredients: 'Base de biscoito, creme de queijo e geleia', 
-            price: 'R$ 24,00', 
+            priceText: 'R$ 24,00',
+            preco: 24, 
             className: 'cheesecakeFrutas'
         },
 
@@ -552,7 +597,8 @@ const cardapio = {
             id: 56,
             name: 'Brownie com Calda de Nutella', 
             ingredients: 'Quentinho e acompanha sorvete', 
-            price: 'R$ 26,00', 
+            priceText: 'R$ 26,00',
+            preco: 26, 
             className: 'brownieNutella'
         },
 
@@ -560,7 +606,8 @@ const cardapio = {
             id: 57,
             name: 'Creme Brûlée com Baunilha', 
             ingredients: 'Creme francês com açúcar queimado', 
-            price: 'R$ 27,00', 
+            priceText: 'R$ 27,00',
+            preco: 27, 
             className: 'cremeBaunilha'
         },
 
@@ -568,7 +615,8 @@ const cardapio = {
             id: 58,
             name: 'Mini Pudim de Leite Condensado', 
             ingredients: 'Porção individual com calda de caramelo', 
-            price: 'R$ 16,00', 
+            priceText: 'R$ 16,00',
+            preco: 16, 
             className: 'miniPudim'
         }
     ],
@@ -579,7 +627,8 @@ const cardapio = {
             id: 59,
             name: 'Refrigerante Lata (350ml)', 
             ingredients: 'Coca-Cola, Guaraná Antarctica, Fanta Laranja, Sprite', 
-            price: 'R$ 8,00', 
+            priceText: 'R$ 8,00', 
+            preco: 8,
             className: 'refrigeranteLata'
         },
 
@@ -587,7 +636,8 @@ const cardapio = {
             id: 60,
             name: 'Água Mineral', 
             ingredients: 'Com ou sem gás (500ml)', 
-            price: 'R$ 6,00', 
+            priceText: 'R$ 6,00', 
+            preco: 6,
             className: 'agua'
         },
 
@@ -595,7 +645,8 @@ const cardapio = {
             id: 61,
             name: 'Suco Natural (350ml)', 
             ingredients: 'Laranja, Uva, Abacaxi com Hortelã, Manga', 
-            price: 'R$ 12,00', 
+            priceText: 'R$ 12,00',
+            preco: 12, 
             className: 'sucoNatural'
         },
 
@@ -603,7 +654,8 @@ const cardapio = {
             id: 62,
             name: 'Suco Detox (300ml)', 
             ingredients: 'Couve, limão, gengibre e maçã', 
-            price: 'R$ 15,00', 
+            priceText: 'R$ 15,00',
+            preco: 15, 
             className: 'sucoDetox'
         },
 
@@ -611,7 +663,8 @@ const cardapio = {
             id: 63,
             name: 'Chá Gelado (400ml)', 
             ingredients: 'Limão ou Pêssego', 
-            price: 'R$ 10,00', 
+            priceText: 'R$ 10,00',
+            preco: 10, 
             className: 'chaGelado'
         },
 
@@ -619,7 +672,8 @@ const cardapio = {
             id: 64,
             name: 'Café Expresso', 
             ingredients: 'Grãos 100% arábica', 
-            price: 'R$ 7,00', 
+            priceText: 'R$ 7,00', 
+            preco: 7,
             className: 'cafeExpresso'
         },
 
@@ -627,7 +681,8 @@ const cardapio = {
             id: 65,
             name: 'Capuccino Cremoso', 
             ingredients: 'Com chocolate em pó ou canela', 
-            price: 'R$ 11,00', 
+            priceText: 'R$ 11,00',
+            preco: 11, 
             className: 'capuccinoCremoso'
         },
 
@@ -635,7 +690,8 @@ const cardapio = {
             id: 66,
             name: 'Cerveja Long Neck (355ml)', 
             ingredients: 'Heineken, Budweiser, Stella Artois', 
-            price: 'R$ 14,00', 
+            priceText: 'R$ 14,00',
+            preco: 14, 
             className: 'cervejaLongNeck'
         },
 
@@ -643,7 +699,8 @@ const cardapio = {
             id: 67,
             name: 'Vinho Tinto Taça (180ml)', 
             ingredients: 'Chianti ou Merlot', 
-            price: 'R$ 30,00', 
+            priceText: 'R$ 30,00',
+            preco: 30, 
             className: 'vinhoTinto'
         },
 
@@ -651,7 +708,8 @@ const cardapio = {
             id: 68,
             name: 'Vinho Branco Taça (180ml)', 
             ingredients: 'Chardonnay ou Sauvignon Blanc', 
-            price: 'R$ 28,00', 
+            priceText: 'R$ 28,00',
+            preco: 28, 
             className: 'vinhoBranco'
         },
         
@@ -659,7 +717,8 @@ const cardapio = {
             id: 69,
             name: 'Spritz Italiano', 
             ingredients: 'Aperol com prosecco e soda', 
-            price: 'R$ 26,00', 
+            priceText: 'R$ 26,00',
+            preco: 26, 
             className: 'spritzItaliano' 
         },
 
@@ -667,7 +726,8 @@ const cardapio = {
             id: 70,
             name: 'Água Tônica com Limão', 
             ingredients: 'Servida com gelo e rodelas de limão', 
-            price: 'R$ 9,00', 
+            priceText: 'R$ 9,00', 
+            preco: 9,
             className: 'aguaTonica'
         },
 
@@ -675,7 +735,8 @@ const cardapio = {
             id: 71,
             name: 'Limonada Siciliana', 
             ingredients: 'Feita com limões frescos e hortelã', 
-            price: 'R$ 12,00', 
+            priceText: 'R$ 12,00',
+            preco: 12, 
             className: 'limonadaSiciliana'
         }
     ]
