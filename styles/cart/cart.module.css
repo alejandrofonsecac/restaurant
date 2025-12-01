@@ -1,0 +1,62 @@
+@charset "UTF-8"; 
+
+:root {
+    --primary-color: #8B0000;
+    --background-color: #F9F5F0;
+    --text-color: #333333;
+    --font-principal: 'Playfair Display', serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --font-padrao: sans-serif, arial;
+}
+
+section {
+    margin-top: 30px;
+}
+
+#entregaOpcoes {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Como em CSS Modules NÃO existem seletores globais, 
+   transformamos "label.radio" em uma classe */
+.radio {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Detalhes de cada opção */
+.detalhes {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 24px;
+}
+
+/* Campo do endereço */
+#enderecoEntrega {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin: 8px 0 3px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
