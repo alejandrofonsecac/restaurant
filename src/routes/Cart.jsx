@@ -72,17 +72,17 @@ function Cart() {
         <section className={styles.formaEntrega}>
           <h3 className={styles.tituloSection}>Forma de Entrega</h3>
 
-          <div>
+          <div className={styles.entregaOpcoes}>
             <label className={styles.radio}>
               <input type="radio" name="delivery" defaultChecked />
               Delivery
-              <span className={styles.detalhe}>30–45 min • Taxa a partir de R$ 5,00</span>
+              <span className={styles.detalhes}>30–45 min • Taxa a partir de R$ 5,00</span>
             </label>
 
             <label className={styles.radio}>
               <input type="radio" name="delivery" />
               Retirar no Local
-              <span className={styles.detalhe}>15–20 min • Sem taxa</span>
+              <span className={styles.detalhes}>15–20 min • Sem taxa</span>
             </label>
           </div>
         </section>
