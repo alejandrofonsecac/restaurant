@@ -41,9 +41,9 @@ function Cart() {
               </div>
 
               <div className={styles.quantidade}>
-                <button>-</button>
+                <button className={styles.add}>-</button>
                 <p className={styles.nquantidade}>1</p>
-                <button>+</button>
+                <button className={styles.add}>+</button>
 
                 {item.precoPizza ? (
                   <select>
@@ -74,67 +74,73 @@ function Cart() {
 
           <div className={styles.entregaOpcoes}>
             <label className={styles.radio}>
-              <input type="radio" name="delivery" defaultChecked />
+              <input type="radio" className={styles.radioInput} name="delivery" defaultChecked />
               Delivery
               <span className={styles.detalhes}>30–45 min • Taxa a partir de R$ 5,00</span>
             </label>
 
             <label className={styles.radio}>
-              <input type="radio" name="delivery" />
+              <input type="radio" name="delivery" className={styles.radioInput} />
               Retirar no Local
               <span className={styles.detalhes}>15–20 min • Sem taxa</span>
             </label>
           </div>
         </section>
 
-        <section id="endereco">
+        <section className={styles.enderecoEntrega}>
           <h3 className={styles.tituloSection}>Endereço de Entrega</h3>
 
           <div>
-            <label>CEP</label>
-            <input type="text" placeholder="00000-000" />
+            <label>CEP
+              <input type="text" name = 'cep' placeholder="00000-000" className={styles.input} style={{height: 40}} />
+            </label>
 
-            <label>Endereço</label>
-            <input type="text" placeholder="Rua, número" />
+            <label>Endereço
+              <input type="text" name='endereco' placeholder="Rua, número" className={styles.input} style={{height: 40}} />
+            </label>
 
-            <label>Complemento</label>
-            <input type="text" placeholder="Apto, bloco (opcional)" />
+            <label>Complemento
+              <input type="text" name='complemento' placeholder="Apto, bloco (opcional)" className={styles.input} style={{height: 40}} />
+            </label>
           </div>
         </section>
 
-        <section id="pagamento">
+        <section>
           <h3 className={styles.tituloSection}>Forma de Pagamento</h3>
 
           <div id="pagamento-opcoes" className={styles["pagamento-opcoes"]}>
             <label className={styles.radio}>
-              <input type="radio" name="pagamento" defaultChecked />
+              <input type="radio" name="pagamento" className={styles.radioInput} defaultChecked />
               Cartão de Crédito
             </label>
 
             <label className={styles.radio}>
-              <input type="radio" name="pagamento" />
+              <input type="radio" name="pagamento" className={styles.radioInput} />
               PIX
             </label>
 
             <label className={styles.radio}>
-              <input type="radio" name="pagamento" />
+              <input type="radio" name="pagamento" className={styles.radioInput} />
               Dinheiro
             </label>
           </div>
         </section>
 
-        <section id="infos">
+        <section>
           <h3 className={styles.tituloSection}>Suas Informações</h3>
 
           <div id="infos-opcoes" className={styles["infos-opcoes"]}>
-            <label>Nome Completo</label>
-            <input type="text" placeholder="Seu nome" />
+            <label>Nome Completo
+              <input type="text" placeholder="Seu nome" className={styles.input} />
+            </label>
 
-            <label>WhatsApp</label>
-            <input type="text" placeholder="(00) 00000-0000" />
+            <label>WhatsApp
+              <input type="text" placeholder="(00) 00000-0000" className={styles.input} />
+            </label>
 
-            <label>Observações do Pedido</label>
-            <input type="text" placeholder="Ex: tirar cebola, ponto da carne..." />
+            <label>Observações do Pedido
+              <input type="text" placeholder="Ex: tirar cebola, ponto da carne..." />
+            </label>
           </div>
         </section>
 
@@ -154,7 +160,8 @@ function Cart() {
             <span>R$ 90,80</span>
           </div>
 
-          <button id="finalizar">Finalizar Pedido</button>
+          <button className={styles.finalizarPedido}>Finalizar Pedido 
+          </button>
         </section>
 
       </main>

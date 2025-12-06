@@ -9,20 +9,42 @@
     --font-padrao: sans-serif, arial;
 }
 
+*{
+    box-sizing: border-box;
+    font-family: var(--font-padrao);
+}
+
 body{
     background-color: #F9F5F0;
-    max-width: 600px;
     margin: 0 auto;
     padding: 10px;
 }
 
 main{
     background-color: #F9F5F0;
+    max-width: 600px;
 }
 
 section {
-    margin-top: 60px;
+    margin-top: 30px;
     background-color: white;
+}
+
+section.enderecoEntrega{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+label{
+    margin-left: 16px;
+}
+
+.input{
+    height: 40px;
+    margin-bottom: 16px;
 }
 
 .pedidoComida{
@@ -31,7 +53,7 @@ section {
     margin: auto;
 }
 
-button{
+button.add{
     background-color: #ffffff;
     border: rgb(138, 138, 138) 0.1px solid;
     width: 25px;
@@ -61,6 +83,10 @@ label.radio {
     margin: 16px;
 }
 
+.radioInput{
+    margin-right: 8px;
+}
+
 .detalhes{
     display: block;
     font-size: 0.9em;
@@ -77,9 +103,19 @@ label.radio {
     margin-top: 10px;
 }
 
+.finalizarPedido{
+    width: 100%;
+    background-color: #8B0000;
+    color: white;
+    margin: auto;
+}
+
 input[type="text"] {
     width: 100%;
     padding: 8px;
+    margin-left: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+
+    font-family: var(--font-padrao);
 }
