@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+
 :root {
     --primary-color: #8B0000;
     --background-color: #F9F5F0;
@@ -24,6 +29,19 @@ h2{
     border-radius: 8px;
     margin: 8px;
     padding: 8px;
+}
+
+label{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.detalhes{
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 24px;
 }
 
 .description{
