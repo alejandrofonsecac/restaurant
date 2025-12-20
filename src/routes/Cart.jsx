@@ -6,7 +6,13 @@ import { Restaurant } from '@mui/icons-material';
 import styles from '../../styles/cart/cart.module.css';
 
 function Cart() {
-  const { cart, removeFromCartByIndex, clearCart } = useContext(CartContext);
+  const {
+    cart,
+    increaseQuantity,
+    decreaseQuantity,
+    removeFromCartByIndex,
+    clearCart
+  } = useContext(CartContext);
 
   if (cart.length === 0) {
     return (
@@ -21,14 +27,11 @@ function Cart() {
 
   return (
     <>
-
       <main>
+        {/* ================= PEDIDO ================= */}
         <section id="pedido" className={styles.pedido}>
-        
-
           {cart.map((item, index) => (
-            <div key={index} className={styles["pedidoComida"]}>
-              
+            <div key={index} className={styles.pedidoComida}>
               <img
                 className={styles.img}
                 src={item.img}
@@ -41,9 +44,23 @@ function Cart() {
               </div>
 
               <div className={styles.quantidade}>
-                <button className={styles.add}>-</button>
-                <p className={styles.nquantidade}>1</p>
-                <button className={styles.add}>+</button>
+                <button
+                  className={styles.add}
+                  onClick={() => decreaseQuantity(index)}
+                >
+                  -
+                </button>
+
+                <span className={styles.nquantidade}>
+                  {item.quantidade}
+                </span>
+
+                <button
+                  className={styles.add}
+                  onClick={() => increaseQuantity(index)}
+                >
+                  +
+                </button>
 
                 {item.precoPizza ? (
                   <select>
@@ -65,85 +82,150 @@ function Cart() {
                 </a>
               </div>
             </div>
-
           ))}
         </section>
 
+        {/* ================= ENTREGA ================= */}
         <section className={styles.formaEntrega}>
           <h3 className={styles.tituloSection}>Forma de Entrega</h3>
 
           <div className={styles.entregaOpcoes}>
             <label className={styles.radio}>
-              <input type="radio" className={styles.radioInput} name="delivery" defaultChecked />
+              <input
+                type="radio"
+                className={styles.radioInput}
+                name="delivery"
+                defaultChecked
+              />
               Delivery
-              <span className={styles.detalhes}>30–45 min • Taxa a partir de R$ 5,00</span>
+              <span className={styles.detalhes}>
+                30–45 min • Taxa a partir de R$ 5,00
+              </span>
             </label>
 
             <label className={styles.radio}>
-              <input type="radio" name="delivery" className={styles.radioInput} />
+              <input
+                type="radio"
+                name="delivery"
+                className={styles.radioInput}
+              />
               Retirar no Local
-              <span className={styles.detalhes}>15–20 min • Sem taxa</span>
+              <span className={styles.detalhes}>
+                15–20 min • Sem taxa
+              </span>
             </label>
           </div>
         </section>
 
+        {/* ================= ENDEREÇO ================= */}
         <section className={styles.enderecoEntrega}>
           <h3 className={styles.tituloSection}>Endereço de Entrega</h3>
 
           <div>
-            <label>CEP
-              <input type="text" name = 'cep' placeholder="00000-000" className={styles.input} style={{height: 40}} />
+            <label>
+              CEP
+              <input
+                type="text"
+                name="cep"
+                placeholder="00000-000"
+                className={styles.input}
+                style={{ height: 40 }}
+              />
             </label>
 
-            <label>Endereço
-              <input type="text" name='endereco' placeholder="Rua, número" className={styles.input} style={{height: 40}} />
+            <label>
+              Endereço
+              <input
+                type="text"
+                name="endereco"
+                placeholder="Rua, número"
+                className={styles.input}
+                style={{ height: 40 }}
+              />
             </label>
 
-            <label>Complemento
-              <input type="text" name='complemento' placeholder="Apto, bloco (opcional)" className={styles.input} style={{height: 40}} />
+            <label>
+              Complemento
+              <input
+                type="text"
+                name="complemento"
+                placeholder="Apto, bloco (opcional)"
+                className={styles.input}
+                style={{ height: 40 }}
+              />
             </label>
           </div>
         </section>
 
+        {/* ================= PAGAMENTO ================= */}
         <section>
           <h3 className={styles.tituloSection}>Forma de Pagamento</h3>
 
-          <div id="pagamento-opcoes" className={styles["pagamento-opcoes"]}>
+          <div className={styles["pagamento-opcoes"]}>
             <label className={styles.radio}>
-              <input type="radio" name="pagamento" className={styles.radioInput} defaultChecked />
+              <input
+                type="radio"
+                name="pagamento"
+                className={styles.radioInput}
+                defaultChecked
+              />
               Cartão de Crédito
             </label>
 
             <label className={styles.radio}>
-              <input type="radio" name="pagamento" className={styles.radioInput} />
+              <input
+                type="radio"
+                name="pagamento"
+                className={styles.radioInput}
+              />
               PIX
             </label>
 
             <label className={styles.radio}>
-              <input type="radio" name="pagamento" className={styles.radioInput} />
+              <input
+                type="radio"
+                name="pagamento"
+                className={styles.radioInput}
+              />
               Dinheiro
             </label>
           </div>
         </section>
 
+        {/* ================= INFORMAÇÕES ================= */}
         <section>
           <h3 className={styles.tituloSection}>Suas Informações</h3>
 
-          <div id="infos-opcoes" className={styles["infos-opcoes"]}>
-            <label>Nome Completo
-              <input type="text" placeholder="Seu nome" className={styles.input} />
+          <div className={styles["infos-opcoes"]}>
+            <label>
+              Nome Completo
+              <input
+                type="text"
+                placeholder="Seu nome"
+                className={styles.input}
+              />
             </label>
 
-            <label>WhatsApp
-              <input type="text" placeholder="(00) 00000-0000" className={styles.input} />
+            <label>
+              WhatsApp
+              <input
+                type="text"
+                placeholder="(00) 00000-0000"
+                className={styles.input}
+              />
             </label>
 
-            <label>Observações do Pedido
-              <input type="text" placeholder="Ex: tirar cebola, ponto da carne..." />
+            <label>
+              Observações do Pedido
+              <input
+                type="text"
+                placeholder="Ex: tirar cebola, ponto da carne..."
+              />
             </label>
           </div>
         </section>
 
+        {/* ================= RESUMO ================= */}
         <section id="resumo" className={styles.resumo}>
           <div className={styles["linha-resumo"]}>
             <span>Subtotal</span>
@@ -160,10 +242,10 @@ function Cart() {
             <span>R$ 90,80</span>
           </div>
 
-          <button className={styles.finalizarPedido}>Finalizar Pedido 
+          <button className={styles.finalizarPedido}>
+            Finalizar Pedido
           </button>
         </section>
-
       </main>
     </>
   );

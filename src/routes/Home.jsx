@@ -2,10 +2,6 @@ import React, { useEffect } from "react";
 import { Link, Outlet } from 'react-router-dom';
 import { CartContext } from "../_components/CartContext.jsx";
 
-
-
-// ⚠️ Dica: Google Fonts pode ser importado no index.html ou via CSS global
-
 function App() {
   useEffect(() => {
     let isDragging = false;
