@@ -25,6 +25,16 @@ function Cart() {
     );
   }
 
+  const taxaEntrega = 5;
+
+  const subtotal = cart.reduce((total, item) => {
+    const precoItem = item.price ?? 0;
+    return total + precoItem * item.quantidade;
+  }, 0);
+
+  const total = subtotal + taxaEntrega;
+
+
   return (
     <>
       <main>
@@ -238,8 +248,7 @@ function Cart() {
           </div>
 
           <div className={`${styles["linha-resumo"]} ${styles.total}`}>
-            <span>Total</span>
-            <span>R$ 90,80</span>
+            <span>R$ {subtotal.toFixed(2)}</span>
           </div>
 
           <button className={styles.finalizarPedido}>

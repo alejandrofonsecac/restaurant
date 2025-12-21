@@ -16,12 +16,12 @@ const cardapio = {
             className: 'margueritaPizza',
             price: 'R$ 45,00',
 
-                precoPizza: {
-                    P: 30,
-                    M: 45,
-                    G: 60,
-                    GG: 70
-                }
+            precoPizza: {
+                P: 30,
+                M: 45,
+                G: 60,
+                GG: 70
+            }
         },
         
         {
