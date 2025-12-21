@@ -6,6 +6,7 @@ import { Restaurant } from '@mui/icons-material';
 import styles from '../../styles/cart/cart.module.css';
 
 function Cart() {
+
   const {
     cart,
     increaseQuantity,
@@ -14,25 +15,27 @@ function Cart() {
     clearCart
   } = useContext(CartContext);
 
-  if (cart.length === 0) {
-    return (
-      <>
-        <h1>Carrinho vazio</h1>
-        <Link to="/cardapio">
-          <p>Esvazie a sua fome aqui <Restaurant /></p>
-        </Link>
-      </>
-    );
-  }
 
-  const taxaEntrega = 5;
-
+  {/* --- Function do RESUMO --- */}
   const subtotal = cart.reduce((total, item) => {
-    const precoItem = item.price ?? 0;
-    return total + precoItem * item.quantidade;
+    let precoUnitario = 0;
+
+    if (item.precoPizza) {
+      const tamanho = item.tamanho || 'M';
+      precoUnitario = item.precoPizza[tamanho] || 0;
+    }else if (typeof item.preco === 'number') {
+      precoUnitario = item.preco;
+    }
+
+    return total + precoUnitario * (item.quantidade || 1);
   }, 0);
 
+
+  const taxaEntrega = 5;
   const total = subtotal + taxaEntrega;
+  if (cart.length === 0) {
+    return <h1>Carrinho vazio</h1>;
+  }
 
 
   return (
@@ -236,25 +239,26 @@ function Cart() {
         </section>
 
         {/* ================= RESUMO ================= */}
-        <section id="resumo" className={styles.resumo}>
-          <div className={styles["linha-resumo"]}>
-            <span>Subtotal</span>
-            <span>R$ 85,80</span>
-          </div>
+          <section id="resumo" className={styles.resumo}>
+            <div className={styles["linha-resumo"]}>
+              <span>Subtotal</span>
+              <span>R$ {subtotal.toFixed(2)}</span>
+            </div>
 
-          <div className={styles["linha-resumo"]}>
-            <span>Taxa de entrega</span>
-            <span>R$ 5,00</span>
-          </div>
+            <div className={styles["linha-resumo"]}>
+              <span>Taxa de entrega</span>
+              <span>R$ {taxaEntrega.toFixed(2)}</span>
+            </div>
 
-          <div className={`${styles["linha-resumo"]} ${styles.total}`}>
-            <span>R$ {subtotal.toFixed(2)}</span>
-          </div>
+            <div className={`${styles["linha-resumo"]} ${styles.total}`}>
+              <span>Total</span>
+              <span>R$ {total.toFixed(2)}</span>
+            </div>
 
-          <button className={styles.finalizarPedido}>
-            Finalizar Pedido
-          </button>
-        </section>
+            <button className={styles.finalizarPedido}>
+              Finalizar Pedido
+            </button>
+          </section>
       </main>
     </>
   );
